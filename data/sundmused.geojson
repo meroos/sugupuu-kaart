@@ -82,63 +82,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     25.3264,
-     59.2453
-    ]
-   },
-   "properties": {
-    "koht": "alavere",
-    "aasta": 1829.5,
-    "kuupaev": "1829",
-    "grupp": "weiss",
-    "isik": "Johann Jacob Weiss",
-    "tekst": "laps sündis Alaveres; isa mõisakõrtsmik",
-    "allikas": "MyHeritage; Kose meetrikad"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     25.7042,
-     59.2456
-    ]
-   },
-   "properties": {
-    "koht": "janeda",
-    "aasta": 1831.5,
-    "kuupaev": "1831",
-    "grupp": "weiss",
-    "isik": "Johann Jacob Weiss",
-    "tekst": "laps sündis Jänedal",
-    "allikas": "MyHeritage"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     25.8231,
-     59.2494
-    ]
-   },
-   "properties": {
-    "koht": "lehtse",
-    "aasta": 1836.5,
-    "kuupaev": "1836",
-    "grupp": "weiss",
-    "isik": "Johann Jacob Weiss",
-    "tekst": "laps sündis Lehtses",
-    "allikas": "MyHeritage"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      24.7536,
      59.437
     ]
@@ -246,25 +189,6 @@
     "isik": "Marie Mardi",
     "tekst": "sündis Kõrgesaare vallas",
     "allikas": "ERA.5078.1.10585"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     24.7536,
-     59.437
-    ]
-   },
-   "properties": {
-    "koht": "tallinn",
-    "aasta": 1897.5,
-    "kuupaev": "1897",
-    "grupp": "weiss",
-    "isik": "Aleksander-Georg ja Marie Weiss",
-    "tekst": "abiellusid, elasid Lutheri 30",
-    "allikas": "projektidokument Agja_Klooga"
    }
   },
   {
@@ -487,25 +411,6 @@
    },
    "properties": {
     "koht": "tallinn",
-    "aasta": 1926.995,
-    "kuupaev": "30.12.1926",
-    "grupp": "veimre",
-    "isik": "Arnold Weiss",
-    "tekst": "andis Tallinnas arstivande",
-    "allikas": "EAA.2100.1.17928, kaader 50"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     24.7536,
-     59.437
-    ]
-   },
-   "properties": {
-    "koht": "tallinn",
     "aasta": 1931.05,
     "kuupaev": "18.01.1931",
     "grupp": "veimre",
@@ -601,25 +506,6 @@
    },
    "properties": {
     "koht": "tallinn",
-    "aasta": 1941.45,
-    "kuupaev": "14.06.1941",
-    "grupp": "veimre",
-    "isik": "Arnold Veimre",
-    "tekst": "arreteeriti",
-    "allikas": "ERAF.130SM.1.323-1"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     24.7536,
-     59.437
-    ]
-   },
-   "properties": {
-    "koht": "tallinn",
     "aasta": 1941.63,
     "kuupaev": "19.08.1941",
     "grupp": "tulp",
@@ -652,25 +538,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     21.4114,
-     50.0515
-    ]
-   },
-   "properties": {
-    "koht": "debica",
-    "aasta": 1942.71,
-    "kuupaev": "12.09.1942",
-    "grupp": "tulp",
-    "isik": "Harry Tulp",
-    "tekst": "Eesti Leegioni väljaõpe Heidelageris. Pataljonis oli ta motovirgats ja tulejuht",
-    "allikas": "memoriaal.ee"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      14.5447,
      49.7517
     ]
@@ -690,82 +557,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     37.26,
-     49.21
-    ]
-   },
-   "properties": {
-    "koht": "izjum",
-    "aasta": 1943.55,
-    "kuupaev": "07.–08.1943",
-    "grupp": "tulp",
-    "isik": "pataljon Narva",
-    "tekst": "lahingud Izjumi all diviisi Wiking koosseisus; Harry oli pataljonis",
-    "allikas": "memoriaal.ee; „Terasest tugevamad“; H. Ojalo, „Sõdalase tee“"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     7.1756,
-     47.8067
-    ]
-   },
-   "properties": {
-    "koht": "sennheim",
-    "aasta": 1944.25,
-    "kuupaev": "aeg teadmata",
-    "grupp": "tulp",
-    "isik": "Guido Tulp",
-    "tekst": "väljaõppelaager; määrati pataljoni Narva",
-    "allikas": "memoriaal.ee; ERA.R-67.2.11"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     24.7536,
-     59.437
-    ]
-   },
-   "properties": {
-    "koht": "tallinn",
-    "aasta": 1945.46,
-    "kuupaev": "19.06.1945",
-    "grupp": "tulp",
-    "isik": "Guido Tulp",
-    "tekst": "arreteeriti Õie 3-2 korteris",
-    "allikas": "memoriaal.ee [ük 11593]"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     92.8932,
-     56.0153
-    ]
-   },
-   "properties": {
-    "koht": "krasnojarsk",
-    "aasta": 1956.9,
-    "kuupaev": "26.11.1956",
-    "grupp": "tulp",
-    "isik": "Guido Tulp",
-    "tekst": "vabanes",
-    "allikas": "memoriaal.ee"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      31.2,
      49.2
     ]
@@ -777,44 +568,6 @@
     "grupp": "tulp",
     "isik": "Harry Tulp",
     "tekst": "sai haavata Olšanas Korsun–Tšerkassõ kotis",
-    "allikas": "memoriaal.ee"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     24.7536,
-     59.437
-    ]
-   },
-   "properties": {
-    "koht": "tallinn",
-    "aasta": 1949.22,
-    "kuupaev": "enne 25.03.1949",
-    "grupp": "tulp",
-    "isik": "August ja Aliide Tulp",
-    "tekst": "elasid Tallinnas Õie 3-2",
-    "allikas": "memoriaal.ee"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     88.332,
-     54.851
-    ]
-   },
-   "properties": {
-    "koht": "sarala",
-    "aasta": 1958.21,
-    "kuupaev": "17.03.1958",
-    "grupp": "tulp",
-    "isik": "Harry, August ja Aliide Tulp",
-    "tekst": "vabastati asumiselt",
     "allikas": "memoriaal.ee"
    }
   },
@@ -861,82 +614,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     24.7536,
-     59.437
-    ]
-   },
-   "properties": {
-    "koht": "tallinn",
-    "aasta": 1949.23,
-    "kuupaev": "25.03.1949",
-    "grupp": "veimre",
-    "isik": "Magda, Heli, Harry, August, Aliide",
-    "tekst": "küüditamine; Tulbid Ülemiste jaamast",
-    "allikas": "ERAF.8SM.1.2729; ERAF.3-N.1.1809"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     24.4131,
-     59.3036
-    ]
-   },
-   "properties": {
-    "koht": "keila",
-    "aasta": 1949.23,
-    "kuupaev": "25.03.1949",
-    "grupp": "veimre",
-    "isik": "Hans ja Anna Luhasalu",
-    "tekst": "küüditati Kärneri-Ree talust",
-    "allikas": "memoriaal.ee"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     90.6617,
-     56.8978
-    ]
-   },
-   "properties": {
-    "koht": "polevoje",
-    "aasta": 1949.27,
-    "kuupaev": "9.04.1949",
-    "grupp": "veimre",
-    "isik": "Magda ja Heli Veimre",
-    "tekst": "saabusid asumiskohta, kolhoos",
-    "allikas": "ERAF.8SM.1.2729"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     88.332,
-     54.851
-    ]
-   },
-   "properties": {
-    "koht": "sarala",
-    "aasta": 1949.5,
-    "kuupaev": "07.1949",
-    "grupp": "veimre",
-    "isik": "Heli Veimre",
-    "tekst": "kaevandusse ja tehasesse",
-    "allikas": "ERAF.8SM.1.2729"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      88.332,
      54.851
     ]
@@ -949,25 +626,6 @@
     "isik": "Hans Luhasalu",
     "tekst": "suri asumisel",
     "allikas": "memoriaal.ee"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     88.73,
-     54.66
-    ]
-   },
-   "properties": {
-    "koht": "priiskovoje",
-    "aasta": 1949.98,
-    "kuupaev": "24.12.1949",
-    "grupp": "tulp",
-    "isik": "Harry Tulp ja Heli Veimre",
-    "tekst": "abiellusid, akt nr 57",
-    "allikas": "ERAF.8SM.1.2729"
    }
   },
   {
@@ -1006,25 +664,6 @@
     "isik": "Magda Veimre",
     "tekst": "vabastamise nimekiri (memoriaal.ee: vabastati 1957)",
     "allikas": "ERAF.8SM.1.2729; memoriaal.ee"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     88.332,
-     54.851
-    ]
-   },
-   "properties": {
-    "koht": "sarala",
-    "aasta": 1956.27,
-    "kuupaev": "6.04.1956",
-    "grupp": "veimre",
-    "isik": "Heli Tulp",
-    "tekst": "vabastati asumiselt",
-    "allikas": "ERAF.8SM.1.2729"
    }
   },
   {
