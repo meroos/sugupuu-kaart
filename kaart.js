@@ -30,7 +30,7 @@
                      alavere: "Alavere", kiivera: "Kiivera (Kõpu)",
                      maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola 33)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
-                     sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku (Roheline 6)", petseri: "Pihkva järv, Kolpino saar",
+                     sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku", petseri: "Pihkva järv, Kolpino saar",
                      debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", krasnojarsk: "Krasnojarski krai" };
   const lyhi = id => LUHINIMI[id] || id;
   // Millisest suumist alates silt näha on

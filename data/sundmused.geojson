@@ -734,30 +734,11 @@
    },
    "properties": {
     "koht": "kuusiku",
-    "aasta": 1960.28,
-    "kuupaev": "11.04.1960",
-    "grupp": "veimre",
-    "isik": "Heli Tulp",
-    "tekst": "elukoht Kuusikul",
-    "allikas": "ERA.5078.1.10585"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     24.7289,
-     58.9722
-    ]
-   },
-   "properties": {
-    "koht": "kuusiku",
     "aasta": 2001.49,
     "kuupaev": "28.06.2001",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "suri kodus Kuusikul, Roheline 6; maeti Rapla kalmistule (MyHeritage'i matmiskuupäev 7.03.2001 on vale)",
+    "tekst": "suri kodus Kuusikul; maeti Rapla kalmistule (MyHeritage'i matmiskuupäev 7.03.2001 on vale)",
     "allikas": "ERA.5208.1.340"
    }
   },
