@@ -19,8 +19,8 @@
     kuuditamine:       { nimi: "küüditamine",         siia: "toodi siia küüditatuna",   ara: "küüditati, viidi",      silt: "küüditati" },
     sundumberpaigutus: { nimi: "sundümberpaigutus asumisel", siia: "paigutati siia ümber", ara: "paigutati ümber", silt: "viidi" },
     abiellumine:       { nimi: "abiellumine",         siia: "abiellus siin",            ara: "läks abielluma",        silt: "abiellus" },
-    vabastamine:       { nimi: "vabastamine asumiselt", siia: "naasis",                 ara: "vabastati, lahkus",     silt: "vabastati" },
-    tagasitulek:       { nimi: "tagasitulek",         siia: "naasis",                   ara: "lahkus",                silt: "tagasi" }
+    vabastamine:       { nimi: "vabastamine asumiselt", siia: "tuli asumiselt tagasi", ara: "vabastati, tuli tagasi", silt: "vabastati" },
+    tagasitulek:       { nimi: "tagasitulek asumiselt", siia: "tuli asumiselt tagasi", ara: "tuli tagasi Eestisse",  silt: "tulid tagasi" }
   };
   const KINDLUS = { toendatud: "tõendatud", osaliselt: "osaliselt tõendatud", oletus: "oletus" };
   const TAPSUS = { aadress: "täpne koht", asula: "asula", rajoon: "ainult piirkond", riik: "ainult riik" };
@@ -31,17 +31,17 @@
                      maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola 33)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
                      sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku", petseri: "Pihkva järv, Kolpino saar",
-                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", krasnojarsk: "Krasnojarski krai" };
+                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", sinimaed: "Sinimäed", krasnojarsk: "Krasnojarski krai" };
   const lyhi = id => LUHINIMI[id] || id;
   // Millisest suumist alates silt näha on
   const SILDI_SUUM = { tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, sondershausen: 2.5, janeda: 8, lehtse: 7, sarala: 4,
                        tartu: 5, kiivera: 5, alavere: 6, priiskovoje: 4, kuusiku: 7,
                        kohila: 7, maidla: 7, keila: 8, agja: 8, petseri: 5,
-                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3 };
+                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3, sinimaed: 6 };
   // Kaare kõverus üksikute teekondade kaupa (muidu grupi oma)
   const K_ERAND = { T8: 0.18, T9: 0.22, T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
   // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel
-  const SILT_I = { V6: 46, V7: 44, V8: 22, T3: 32, V11: 36, T4: 28 };
+  const SILT_I = { V6: 46, V7: 44, V8: 22, T3: 32, V11: 36, T4: 30 };
 
   const AJASTUD = [
     [1700, 1918.15, "Vene keisririik, Eestimaa kubermang", "#3a3f4b"],

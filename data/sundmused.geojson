@@ -645,6 +645,28 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     27.725,
+     59.3667
+    ]
+   },
+   "properties": {
+    "koht": "sinimaed",
+    "aasta": 1944.57,
+    "kuupaev": "26.07.–10.08.1944",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "pere andmetel osales Sinimägede lahingutes. Dokumendiga seni tõendamata: memoriaal.ee kirje järgi lõppes tema teenistus pataljonis Narva juunis 1944, Mahtra käsikirja kirjelduse järgi kestis Saksa teenistus 1945. aastani. Väeosa selgub käsikirjast või veteranitoimikust",
+    "allikas": "pere andmed; kontrollida MT 3542:1, ERA.5208.1.340",
+    "polv": [
+     2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      31.2,
      49.2
     ]
@@ -769,6 +791,28 @@
     "allikas": "ERAF.8SM.1.2729; memoriaal.ee",
     "polv": [
      3
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.332,
+     54.851
+    ]
+   },
+   "properties": {
+    "koht": "sarala",
+    "aasta": 1956.27,
+    "kuupaev": "6.04.1956",
+    "grupp": "veimre",
+    "isik": "Heli Tulp",
+    "tekst": "vabastati asumiselt; Harry jäi asumisele kuni 17.03.1958",
+    "allikas": "ERAF.8SM.1.2729; memoriaal.ee",
+    "polv": [
+     2
     ]
    }
   },

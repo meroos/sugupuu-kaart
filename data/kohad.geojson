@@ -374,6 +374,22 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     27.725,
+     59.3667
+    ]
+   },
+   "properties": {
+    "id": "sinimaed",
+    "nimi": "Sinimäed (Vaivara)",
+    "tapsus": "asula",
+    "markus": "Tannenbergi liin Sinimägedel; lahingud 26.07.–10.08.1944."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      31.2,
      49.2
     ]

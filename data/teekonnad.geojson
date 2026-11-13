@@ -745,38 +745,6 @@
     "type": "LineString",
     "coordinates": [
      [
-      88.332,
-      54.851
-     ],
-     [
-      24.7289,
-      58.9722
-     ]
-    ]
-   },
-   "properties": {
-    "id": "V11",
-    "grupp": "veimre",
-    "isik": "Heli Tulp",
-    "aeg": "6.04.1956 → hiljemalt 1958",
-    "aasta": 1956.3,
-    "kindlus": "osaliselt",
-    "tekst": "Vabastati asumiselt 6.04.1956 (Ordžonikidze rajooni erikomandatuur). Oktoobris 1958 elas ta Kuusikul (Rapla rajoon). Teekond ja vahepealsed elukohad teadmata.",
-    "allikas": "ERAF.8SM.1.2729; Kodumaale Tagasipöördumise Eest 3.10.1958",
-    "liikumine": "vabastamine",
-    "lahtekoht": "sarala",
-    "sihtkoht": "kuusiku",
-    "polv": [
-     2
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
       88.73,
       54.66
      ],
@@ -789,12 +757,12 @@
    "properties": {
     "id": "T4",
     "grupp": "tulp",
-    "isik": "Harry Tulp",
-    "aeg": "pärast 17.03.1958",
+    "isik": "Harry ja Heli Tulp",
+    "aeg": "1958",
     "aasta": 1958.25,
     "kindlus": "osaliselt",
-    "tekst": "Vabastati asumiselt 17.03.1958 (ka August ja Aliide). Oktoobris 1958 oli Heli aadress juba Kuusikul, seega tuli pere tagasi 1958. aastal; teekond on teadmata. Harry elas Kuusikul ja suri seal 28.06.2001.",
-    "allikas": "memoriaal.ee; ERA.5208.1.340",
+    "tekst": "Harry vabastati asumiselt 17.03.1958 (koos August ja Aliidega). Heli oli vabastatud juba 6.04.1956, kuid jäi tõenäoliselt mehe juurde, sest Harry ei tohtinud asumiskohast enne lahkuda. Oktoobris 1958 elasid nad Kuusikul. Et nad tulid koos, on järeldus; teekond on teadmata. Harry suri Kuusikul 28.06.2001.",
+    "allikas": "memoriaal.ee; ERAF.8SM.1.2729; Kodumaale Tagasipöördumise Eest 3.10.1958; ERA.5208.1.340",
     "liikumine": "tagasitulek",
     "lahtekoht": "priiskovoje",
     "sihtkoht": "kuusiku",
