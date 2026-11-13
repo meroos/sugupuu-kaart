@@ -709,6 +709,63 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1756,
+     47.8067
+    ]
+   },
+   "properties": {
+    "koht": "sennheim",
+    "aasta": 1944.25,
+    "kuupaev": "aeg teadmata",
+    "grupp": "tulp",
+    "isik": "Guido Tulp",
+    "tekst": "väljaõppelaager; määrati pataljoni Narva",
+    "allikas": "memoriaal.ee; ERA.R-67.2.11"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1945.46,
+    "kuupaev": "19.06.1945",
+    "grupp": "tulp",
+    "isik": "Guido Tulp",
+    "tekst": "arreteeriti Õie 3-2 korteris",
+    "allikas": "memoriaal.ee [ük 11593]"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     92.8932,
+     56.0153
+    ]
+   },
+   "properties": {
+    "koht": "krasnojarsk",
+    "aasta": 1956.9,
+    "kuupaev": "26.11.1956",
+    "grupp": "tulp",
+    "isik": "Guido Tulp",
+    "tekst": "vabanes",
+    "allikas": "memoriaal.ee"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      31.2,
      49.2
     ]

@@ -342,6 +342,38 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1756,
+     47.8067
+    ]
+   },
+   "properties": {
+    "id": "sennheim",
+    "nimi": "Sennheim (Cernay), Elsass",
+    "tapsus": "asula",
+    "markus": "Relva-SS-i väljaõppelaager välismaistele vabatahtlikele. Guido kirjes on nimi kirjutatud „Senneheim“ ja märgitud ebakindlaks."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     92.8932,
+     56.0153
+    ]
+   },
+   "properties": {
+    "id": "krasnojarsk",
+    "nimi": "Krasnojarski krai (laager teadmata)",
+    "tapsus": "riik",
+    "markus": "Guido Tulbi karistuskoht kirjes ainult krai tasandil; punkt on Krasnojarski linnas. Laagri nimi selgub kriminaaltoimikust."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      31.2,
      49.2
     ]

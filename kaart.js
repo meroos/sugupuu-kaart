@@ -31,15 +31,15 @@
                      maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola 33)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
                      sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku (Roheline 6)", petseri: "Pihkva järv, Kolpino saar",
-                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana" };
+                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", krasnojarsk: "Krasnojarski krai" };
   const lyhi = id => LUHINIMI[id] || id;
   // Millisest suumist alates silt näha on
   const SILDI_SUUM = { tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, sondershausen: 2.5, janeda: 8, lehtse: 7, sarala: 4,
                        tartu: 5, kiivera: 5, alavere: 6, priiskovoje: 4, kuusiku: 7,
                        kohila: 7, maidla: 7, keila: 8, agja: 8, petseri: 5,
-                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3 };
+                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3 };
   // Kaare kõverus üksikute teekondade kaupa (muidu grupi oma)
-  const K_ERAND = { T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
+  const K_ERAND = { T8: 0.18, T9: 0.22, T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
   // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel
   const SILT_I = { V6: 46, V7: 44, V8: 22, T3: 32, V11: 36, T4: 28 };
 
@@ -62,7 +62,7 @@
     { nr: 5, a0: 1836, a1: 1930, nimi: "Johann Christian, Rosalie", koik: "Johann Christian ja Rosalie Weiss, Ado Tulp" },
     { nr: 4, a0: 1863, a1: 1959, nimi: "Aleksander-Georg, Marie", koik: "Aleksander-Georg ja Marie Weiss, Hans ja Anna Luhasalu, Jaan Tulp" },
     { nr: 3, a0: 1899, a1: 1978, nimi: "Arnold, Magda, August", koik: "Arnold ja Magda Veimre, August ja Aliide Tulp" },
-    { nr: 2, a0: 1923, a1: 2002, nimi: "Heli, Harry, Udo", koik: "Heli ja Harry Tulp, Udo Veimre" }
+    { nr: 2, a0: 1923, a1: 2002, nimi: "Heli, Harry, Udo", koik: "Heli ja Harry Tulp, Guido Tulp, Udo Veimre" }
   ];
   function aastaAsendiks(a) {
     if (olek.aken) { const [b0, b1] = olek.aken; return Math.max(0, Math.min(1, (a - b0) / (b1 - b0))); }
@@ -103,7 +103,7 @@
   const VAATED = {
     eesti: L.latLngBounds([57.9, 21.7], [59.7, 27.4]),
     siber: L.latLngBounds([53.6, 56], [59.6, 94]),
-    rinne: L.latLngBounds([47.8, 13.5], [60, 38.5])
+    rinne: L.latLngBounds([47.3, 6.5], [60, 38.5])
   };
 
   const olek = { aasta: LOPP, mangib: false, aken: null, grupid: { weiss: true, veimre: true, tulp: true } };
