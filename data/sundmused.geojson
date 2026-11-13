@@ -430,6 +430,25 @@
    },
    "properties": {
     "koht": "tallinn",
+    "aasta": 1926.99,
+    "kuupaev": "30.12.1926",
+    "grupp": "veimre",
+    "isik": "Udo Veiss (Veimre)",
+    "tekst": "sündis Tallinnas, Arnoldi ja Magda poeg; pere elas Tartu mnt 41",
+    "allikas": "ERA.5201.2.36094; ERA.R-67.1.19"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
     "aasta": 1931.05,
     "kuupaev": "18.01.1931",
     "grupp": "veimre",
@@ -452,8 +471,8 @@
     "aasta": 1936.3,
     "kuupaev": "21.04.1936",
     "grupp": "veimre",
-    "isik": "Arnold Weiss",
-    "tekst": "perekonnanimi Veimre",
+    "isik": "Arnold Weiss ja pere",
+    "tekst": "perekonnanimi Weiss → Veimre (ka Magda, Udo ja Heli)",
     "allikas": "ERA.5078.1.10585; ERA.5201.2.36094"
    }
   },
@@ -785,6 +804,44 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     27.6467,
+     58.0483
+    ]
+   },
+   "properties": {
+    "koht": "petseri",
+    "aasta": 1944.31,
+    "kuupaev": "04.1944",
+    "grupp": "veimre",
+    "isik": "Udo Veimre",
+    "tekst": "tõenäoline kadumis- või langemiskoht: memoriaal.ee järgi teadmata kadunud idarindel 04.1944, mil rügement kaitses Pihkva järve kallast ja Kolpino saart. Tõendamata; 21.04.1944 oli ta nimekirjas veel kohal. Kui ta kadus hiljem, on teised võimalikud kohad Võõpsu–Leevaku lõik (august 1944) ja Emajõgi Kavastu–Kastre juures, kus rügement 17.09.1944 purustati",
+    "allikas": "memoriaal.ee; ERA.R-67.1.19; et.wikipedia „1. Eesti Piirikaitserügement“, „Emajõe forsseerimine Kastre suunal“"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7289,
+     58.9722
+    ]
+   },
+   "properties": {
+    "koht": "kuusiku",
+    "aasta": 1958.76,
+    "kuupaev": "3.10.1958",
+    "grupp": "veimre",
+    "isik": "Heli Tulp",
+    "tekst": "otsis venda Udot ajalehes „Kodumaale Tagasipöördumise Eest“ (ka 2.11.1958); aadress juba Kuusiku katsebaas",
+    "allikas": "Kodumaale Tagasipöördumise Eest 3.10.1958 lk 4; 2.11.1958 lk 3 (DIGAR)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      24.7289,
      58.9722
     ]
@@ -842,19 +899,6 @@
     "isik": "Harry Tulp",
     "tekst": "teenistus Saksa väeosades; väeosad ja kohad teadmata",
     "allikas": "mälestused MT 3542:1 (Mahtra muuseum)"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": null,
-   "properties": {
-    "koht": null,
-    "aasta": 1943.5,
-    "kuupaev": "1943",
-    "grupp": "veimre",
-    "isik": "Udo Veimre",
-    "tekst": "„teadmata kadunud 1943. a“",
-    "allikas": "ERA.5078.1.10585"
    }
   },
   {

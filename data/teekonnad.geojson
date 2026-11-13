@@ -591,6 +591,35 @@
       59.437
      ],
      [
+      27.6467,
+      58.0483
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V12",
+    "grupp": "veimre",
+    "isik": "Udo Veimre",
+    "aeg": "9.02.1944",
+    "aasta": 1944.11,
+    "kindlus": "osaliselt",
+    "tekst": "17-aastane Udo astus 9.02.1944 1. Eesti Piirikaitserügementi (II pataljon, 6. kompanii). Rügement moodustati Rakveres, Tallinnas, Vasalemmas ja Riisiperes ning kaitses kevadel Pihkva järve kallast ja Kolpino saart. 21.04.1944 oli ta rügemendi nimekirjas (nr 1089). Astumine on allikaga tõendatud; et ta oli just selles lõigus, on järeldus väeosa asukohast.",
+    "allikas": "ERA.R-67.1.19, kaader 40; memoriaal.ee; et.wikipedia „1. Eesti Piirikaitserügement“",
+    "liikumine": "teenistus",
+    "lahtekoht": "tallinn",
+    "sihtkoht": "petseri"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7536,
+      59.437
+     ],
+     [
       88.73,
       54.66
      ]
@@ -658,11 +687,11 @@
     "id": "V11",
     "grupp": "veimre",
     "isik": "Heli Tulp",
-    "aeg": "6.04.1956 → 1960",
+    "aeg": "6.04.1956 → hiljemalt 1958",
     "aasta": 1956.3,
     "kindlus": "osaliselt",
-    "tekst": "Vabastati asumiselt 6.04.1956 (Ordžonikidze rajooni erikomandatuur). 11.04.1960 oli tema aadress Rapla rajoon, Kuusiku katsebaas. Teekond ja vahepealsed elukohad teadmata.",
-    "allikas": "ERAF.8SM.1.2729; ERA.5078.1.10585",
+    "tekst": "Vabastati asumiselt 6.04.1956 (Ordžonikidze rajooni erikomandatuur). Oktoobris 1958 oli tema aadress Rapla rajoon, Kuusiku katsebaas. Teekond ja vahepealsed elukohad teadmata.",
+    "allikas": "ERAF.8SM.1.2729; Kodumaale Tagasipöördumise Eest 3.10.1958",
     "liikumine": "vabastamine",
     "lahtekoht": "sarala",
     "sihtkoht": "kuusiku"

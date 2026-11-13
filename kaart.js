@@ -12,7 +12,7 @@
   const LIIK = {
     kolimine:          { nimi: "kolimine",            siia: "kolis siia",               ara: "kolis",                 silt: "" },
     valjaranne:        { nimi: "väljaränne",          siia: "saabus siia",              ara: "rändas välja",          silt: "" },
-    teenistus:         { nimi: "sõjaväeteenistus",    siia: "tuli siia teenistusse",    ara: "läks teenistusse",      silt: "" },
+    teenistus:         { nimi: "sõjaväeteenistus",    siia: "tuli siia teenistusse",    ara: "läks teenistusse",      silt: "väeteenistus" },
     opingud:           { nimi: "õpingud",             siia: "tuli siia õppima",         ara: "läks õppima",           silt: "õpingud" },
     arreteerimine:     { nimi: "arreteerimine",       siia: "toodi siia arreteerituna", ara: "arreteeriti, viidi",    silt: "arreteeriti" },
     kuuditamine:       { nimi: "küüditamine",         siia: "toodi siia küüditatuna",   ara: "küüditati, viidi",      silt: "küüditati" },
@@ -24,17 +24,17 @@
   const KINDLUS = { toendatud: "tõendatud", osaliselt: "osaliselt tõendatud", oletus: "oletus" };
   const TAPSUS = { aadress: "täpne koht", asula: "asula", rajoon: "ainult piirkond", riik: "ainult riik" };
   const HALO_M = { rajoon: 45000, riik: 380000 };
-  const HALO_ERAND = { keila: 9000, sondershausen: 40000 };
+  const HALO_ERAND = { keila: 9000, sondershausen: 40000, petseri: 20000 };
   const LUHINIMI = { kalisz: "Kalisz", sondershausen: "Schwarzburg-Sondershausen", janeda: "Jäneda", lehtse: "Lehtse",
                      alavere: "Alavere", kiivera: "Kiivera (Kõpu)",
                      maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola tn)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
-                     sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku" };
+                     sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku", petseri: "Pihkva järv, Kolpino saar" };
   const lyhi = id => LUHINIMI[id] || id;
   // Millisest suumist alates silt näha on
   const SILDI_SUUM = { tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, sondershausen: 2.5, janeda: 8, lehtse: 7, sarala: 4,
                        tartu: 5, kiivera: 5, alavere: 6, priiskovoje: 4, kuusiku: 7,
-                       kohila: 7, maidla: 7, keila: 8, agja: 8 };
+                       kohila: 7, maidla: 7, keila: 8, agja: 8, petseri: 5 };
   // Kaare kõverus üksikute teekondade kaupa (muidu grupi oma)
   const K_ERAND = { V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
   // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel

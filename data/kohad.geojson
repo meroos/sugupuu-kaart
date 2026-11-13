@@ -262,6 +262,22 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     27.6467,
+     58.0483
+    ]
+   },
+   "properties": {
+    "id": "petseri",
+    "nimi": "Pihkva järve kallas ja Kolpino (Kulkna) saar",
+    "tapsus": "rajoon",
+    "markus": "1. Eesti Piirikaitserügement kaitses 1944. a kevadel ja suvel Pihkva järve kallast, Kolpino saart ja Krasnaja Gorka asulat; staap oli Mikitamäel. Punkt on Kolpino saarel; Udo täpne asukoht ei ole teada."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      24.7289,
      58.9722
     ]

@@ -29,9 +29,9 @@ Kõik andmed on kolmes GeoJSON-failis (WGS84). Neid saab muuta tekstiredaktoris 
 
 | Fail | Sisu | Väljad |
 |---|---|---|
-| `data/kohad.geojson` | 17 kohta (punktid) | `id`, `nimi`, `tapsus` (`aadress`, `asula`, `rajoon`, `riik`), `markus` |
-| `data/teekonnad.geojson` | 24 liikumist (jooned lähtekohast sihtkohta) | `id`, `grupp` (`weiss`, `veimre`, `tulp`), `liikumine` (`kolimine`, `valjaranne`, `teenistus`, `opingud`, `arreteerimine`, `kuuditamine`, `sundumberpaigutus`, `abiellumine`, `vabastamine`, `tagasitulek`), `isik`, `aeg` (kuvatav aeg), `aasta` (arv ajajoone jaoks), `kindlus` (`toendatud`, `osaliselt`, `oletus`), `tekst`, `allikas`, `lahtekoht`, `sihtkoht` |
-| `data/sundmused.geojson` | 48 sündmust (sünd, abielu, surm jm); `geometry: null` = koht teadmata | `koht`, `aasta`, `kuupaev`, `grupp`, `isik`, `tekst`, `allikas` |
+| `data/kohad.geojson` | 18 kohta (punktid) | `id`, `nimi`, `tapsus` (`aadress`, `asula`, `rajoon`, `riik`), `markus` |
+| `data/teekonnad.geojson` | 25 liikumist (jooned lähtekohast sihtkohta) | `id`, `grupp` (`weiss`, `veimre`, `tulp`), `liikumine` (`kolimine`, `valjaranne`, `teenistus`, `opingud`, `arreteerimine`, `kuuditamine`, `sundumberpaigutus`, `abiellumine`, `vabastamine`, `tagasitulek`), `isik`, `aeg` (kuvatav aeg), `aasta` (arv ajajoone jaoks), `kindlus` (`toendatud`, `osaliselt`, `oletus`), `tekst`, `allikas`, `lahtekoht`, `sihtkoht` |
+| `data/sundmused.geojson` | 50 sündmust (sünd, abielu, surm jm); `geometry: null` = koht teadmata | `koht`, `aasta`, `kuupaev`, `grupp`, `isik`, `tekst`, `allikas` |
 
 Teekonna kaar arvutatakse brauseris lähte- ja sihtkoha põhjal, joone kujul ei ole tähendust. Kui muudad koha koordinaate failis `kohad.geojson`, muuda samad koordinaadid ka `teekonnad.geojson` joonte otstes (kaart ise kasutab `kohad.geojson` koordinaate).
 
