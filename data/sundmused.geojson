@@ -17,7 +17,10 @@
     "grupp": "weiss",
     "isik": "Rosalie Maikowsky",
     "tekst": "sündis Tallinnas (katoliku ristimisraamatus 13.05.1840 vkj)",
-    "allikas": "TLA.1398.2.1, kaader 84, nr 20; TLA.1359.2.21"
+    "allikas": "TLA.1398.2.1, kaader 84, nr 20; TLA.1359.2.21",
+    "polv": [
+     5
+    ]
    }
   },
   {
@@ -36,7 +39,10 @@
     "grupp": "weiss",
     "isik": "Johann Christian Weiss",
     "tekst": "sündis Alaveres, isa Jacob",
-    "allikas": "TLA.1359.2.21, lk 941"
+    "allikas": "TLA.1359.2.21, lk 941",
+    "polv": [
+     5
+    ]
    }
   },
   {
@@ -55,7 +61,10 @@
     "grupp": "weiss",
     "isik": "Wojciech Majkowski",
     "tekst": "suri; maeti tõenäoliselt Tallinna katoliku kalmistule (hävinud)",
-    "allikas": "katoliku kog. surmameetrika"
+    "allikas": "katoliku kog. surmameetrika",
+    "polv": [
+     6
+    ]
    }
   },
   {
@@ -74,7 +83,10 @@
     "grupp": "weiss",
     "isik": "Johann Jacob Weiss",
     "tekst": "sündis (MyHeritage'i puu järgi); Eesti allikates kinnitamata",
-    "allikas": "MyHeritage"
+    "allikas": "MyHeritage",
+    "polv": [
+     6
+    ]
    }
   },
   {
@@ -93,7 +105,10 @@
     "grupp": "weiss",
     "isik": "Wojciech Majkowski ja Liza",
     "tekst": "laulatati Tallinna katoliku koguduses",
-    "allikas": "TLA.1398.2.9, kaader 32, nr 24"
+    "allikas": "TLA.1398.2.9, kaader 32, nr 24",
+    "polv": [
+     6
+    ]
    }
   },
   {
@@ -112,7 +127,10 @@
     "grupp": "weiss",
     "isik": "Rosalie Maikowsky",
     "tekst": "oli enne abiellumist teenija raehärra Mayeri majapidamises („Magd beim Hr. Rathsh. Mayer“); Mayerid olid Suurgildi kaupmehesuguvõsa",
-    "allikas": "laulatuste nimekiri 1866 nr 5; TLA.238.2.20, lk 309"
+    "allikas": "laulatuste nimekiri 1866 nr 5; TLA.238.2.20, lk 309",
+    "polv": [
+     5
+    ]
    }
   },
   {
@@ -131,7 +149,10 @@
     "grupp": "weiss",
     "isik": "Johann Christian ja Rosalie Weiss",
     "tekst": "laulatati; lapsed Woldemar Johannes (1866), Carl Reinhold (1869), Alexander Georg (1873)",
-    "allikas": "TLA.1359.2.21, lk 941"
+    "allikas": "TLA.1359.2.21, lk 941",
+    "polv": [
+     5
+    ]
    }
   },
   {
@@ -150,7 +171,10 @@
     "grupp": "weiss",
     "isik": "Rosalie Weiss",
     "tekst": "ehitas puumaja Lutheri-Vaestekooli 30 (hiljem Lastekodu 30)",
-    "allikas": "EAA.33.3.958"
+    "allikas": "EAA.33.3.958",
+    "polv": [
+     5
+    ]
    }
   },
   {
@@ -169,7 +193,10 @@
     "grupp": "weiss",
     "isik": "Johann Christian Weiss",
     "tekst": "suri Tallinnas majaomanikuna",
-    "allikas": "TLA.1359.2.6, kaader 309, nr 212"
+    "allikas": "TLA.1359.2.6, kaader 309, nr 212",
+    "polv": [
+     5
+    ]
    }
   },
   {
@@ -188,7 +215,10 @@
     "grupp": "weiss",
     "isik": "Marie Mardi",
     "tekst": "sündis Kõrgesaare vallas",
-    "allikas": "ERA.5078.1.10585"
+    "allikas": "ERA.5078.1.10585",
+    "polv": [
+     4
+    ]
    }
   },
   {
@@ -207,7 +237,10 @@
     "grupp": "veimre",
     "isik": "Arnold-Voldemar Weiss",
     "tekst": "sündis Tallinnas",
-    "allikas": "ERA.5078.1.10585"
+    "allikas": "ERA.5078.1.10585",
+    "polv": [
+     3
+    ]
    }
   },
   {
@@ -226,7 +259,10 @@
     "grupp": "weiss",
     "isik": "Woldemar Johannes Weiss",
     "tekst": "suri",
-    "allikas": "TLA.1359.2.59, nr 68"
+    "allikas": "TLA.1359.2.59, nr 68",
+    "polv": [
+     4
+    ]
    }
   },
   {
@@ -245,7 +281,11 @@
     "grupp": "weiss",
     "isik": "Rosalie → Marie Weiss",
     "tekst": "kinkeakt: Lutheri 30 majavaldus Mariele eluaegse ülalpidamise eest",
-    "allikas": "ERA.891.2.22374"
+    "allikas": "ERA.891.2.22374",
+    "polv": [
+     5,
+     4
+    ]
    }
   },
   {
@@ -264,7 +304,10 @@
     "grupp": "tulp",
     "isik": "Ado Tulp",
     "tekst": "sündis Maidlas",
-    "allikas": "MyHeritage"
+    "allikas": "MyHeritage",
+    "polv": [
+     5
+    ]
    }
   },
   {
@@ -283,7 +326,10 @@
     "grupp": "tulp",
     "isik": "Jaan Tulp",
     "tekst": "sündis Maidlas",
-    "allikas": "MyHeritage"
+    "allikas": "MyHeritage",
+    "polv": [
+     4
+    ]
    }
   },
   {
@@ -302,7 +348,10 @@
     "grupp": "tulp",
     "isik": "August Tulp",
     "tekst": "sündis Kohilas",
-    "allikas": "MyHeritage"
+    "allikas": "MyHeritage",
+    "polv": [
+     3
+    ]
    }
   },
   {
@@ -321,7 +370,10 @@
     "grupp": "tulp",
     "isik": "Harry Tulp",
     "tekst": "sündis Tallinnas Raevalla 2. Aastatel 1923–1948 olid Suur-Raevalla (tänane Peterburi tee) ja Väike-Raevalla; kumb on mõeldud, vajab kontrolli",
-    "allikas": "MyHeritage"
+    "allikas": "MyHeritage",
+    "polv": [
+     2
+    ]
    }
   },
   {
@@ -340,7 +392,10 @@
     "grupp": "weiss",
     "isik": "Rosalie Weiss",
     "tekst": "suri; maeti 12.03.1930 Vana-Kaarli kalmistule",
-    "allikas": "ELK.143.0.34, nr 36"
+    "allikas": "ELK.143.0.34, nr 36",
+    "polv": [
+     5
+    ]
    }
   },
   {
@@ -359,7 +414,10 @@
     "grupp": "veimre",
     "isik": "Udo Veiss (Veimre)",
     "tekst": "sündis Tallinnas, Arnoldi ja Magda poeg; pere elas Tartu mnt 41",
-    "allikas": "ERA.5201.2.36094; ERA.R-67.1.19"
+    "allikas": "ERA.5201.2.36094; ERA.R-67.1.19",
+    "polv": [
+     2
+    ]
    }
   },
   {
@@ -378,7 +436,10 @@
     "grupp": "veimre",
     "isik": "Arnold Weiss",
     "tekst": "avaldus: keemiast arstiteaduskonda; alates 1921. a II semestrist arstiteadus",
-    "allikas": "EAA.2100.1.17928, kaadrid 4 ja 32"
+    "allikas": "EAA.2100.1.17928, kaadrid 4 ja 32",
+    "polv": [
+     3
+    ]
    }
   },
   {
@@ -397,7 +458,10 @@
     "grupp": "veimre",
     "isik": "Arnold Weiss",
     "tekst": "lõpetas arstiteaduskonna: lõpueksam „cum laude“, tunnistati arsti astme vääriliseks; arstidiplom anti välja 21.12.1926 (ülikooli valitsuse otsus; ajutine tunnistus 22.12.1926)",
-    "allikas": "EAA.2100.1.17928, kaader 47 (ajutine tunnistus nr 10276, 22.12.1926)"
+    "allikas": "EAA.2100.1.17928, kaader 47 (ajutine tunnistus nr 10276, 22.12.1926)",
+    "polv": [
+     3
+    ]
    }
   },
   {
@@ -416,7 +480,10 @@
     "grupp": "veimre",
     "isik": "Heli Veimre",
     "tekst": "sündis Tallinnas",
-    "allikas": "ERA.5078.1.10585; ERAF.8SM.1.2729"
+    "allikas": "ERA.5078.1.10585; ERAF.8SM.1.2729",
+    "polv": [
+     2
+    ]
    }
   },
   {
@@ -435,7 +502,10 @@
     "grupp": "veimre",
     "isik": "Arnold Weiss ja pere",
     "tekst": "perekonnanimi Weiss → Veimre (ka Magda, Udo ja Heli)",
-    "allikas": "ERA.5078.1.10585; ERA.5201.2.36094"
+    "allikas": "ERA.5078.1.10585; ERA.5201.2.36094",
+    "polv": [
+     3
+    ]
    }
   },
   {
@@ -454,7 +524,10 @@
     "grupp": "veimre",
     "isik": "Hans ja Anna Lustberg",
     "tekst": "nimi Luhasalu, avaldus Keila vallavalitsuse kaudu",
-    "allikas": "ERA.5201.2.65845"
+    "allikas": "ERA.5201.2.65845",
+    "polv": [
+     4
+    ]
    }
   },
   {
@@ -473,7 +546,10 @@
     "grupp": "veimre",
     "isik": "Agja talu",
     "tekst": "elanike nimekiri: omanik Arnold Veimre, talus Hans ja Anna Luhasalu ning töölised",
-    "allikas": "TLA.1361.3.731, kaadrid 223–224"
+    "allikas": "TLA.1361.3.731, kaadrid 223–224",
+    "polv": [
+     3
+    ]
    }
   },
   {
@@ -492,7 +568,10 @@
     "grupp": "veimre",
     "isik": "Agja talu",
     "tekst": "valitsus eraldas Klooga maa NSV Liidu õhujõududele; Agja läks lennuvälja alla",
-    "allikas": "ERR (T. Türk); ERA.R-6.4.68"
+    "allikas": "ERR (T. Türk); ERA.R-6.4.68",
+    "polv": [
+     3
+    ]
    }
   },
   {
@@ -511,7 +590,10 @@
     "grupp": "tulp",
     "isik": "Harry Tulp",
     "tekst": "arreteeriti Tallinnas Tatari 48-2 (keskharidusega registraator, skautide lippkond „Terassammur“). Grupitoimik koos Hurma, Naaritsa ja Silla vendadega. Pääses ära, kui vange viidi laevaga „Jaan Teär“ Venemaale",
-    "allikas": "memoriaal.ee (Poliitilised arreteerimised Eestis, kd 3); ERAF.130SM.1.5509-1, -2"
+    "allikas": "memoriaal.ee (Poliitilised arreteerimised Eestis, kd 3); ERAF.130SM.1.5509-1, -2",
+    "polv": [
+     2
+    ]
    }
   },
   {
@@ -530,7 +612,10 @@
     "grupp": "tulp",
     "isik": "Harry Tulp",
     "tekst": "astus 39. politseipataljoni 4. kompaniisse ja teenis seal 12.08.1942-ni; kompanii asukoht teadmata",
-    "allikas": "memoriaal.ee (Eestlased Soome ja Saksa sõjaväes)"
+    "allikas": "memoriaal.ee (Eestlased Soome ja Saksa sõjaväes)",
+    "polv": [
+     2
+    ]
    }
   },
   {
@@ -549,7 +634,10 @@
     "grupp": "tulp",
     "isik": "Harry Tulp",
     "tekst": "lõpetas õppe Neveklaus (Relva-SS-i õppeväljak Böömimaal); kursuse liik ja aeg ei ole kirjas",
-    "allikas": "memoriaal.ee"
+    "allikas": "memoriaal.ee",
+    "polv": [
+     2
+    ]
    }
   },
   {
@@ -568,7 +656,10 @@
     "grupp": "tulp",
     "isik": "Harry Tulp",
     "tekst": "sai haavata Olšanas Korsun–Tšerkassõ kotis",
-    "allikas": "memoriaal.ee"
+    "allikas": "memoriaal.ee",
+    "polv": [
+     2
+    ]
    }
   },
   {
@@ -587,7 +678,10 @@
     "grupp": "veimre",
     "isik": "Arnold Veimre",
     "tekst": "suri laagris; surma põhjus surmatunnistusel „südamehalvatus“, uurimistoimikus „pole kindlaks tehtud“",
-    "allikas": "ERAF.130SM.2.2-5; ERA.5078.1.10585"
+    "allikas": "ERAF.130SM.2.2-5; ERA.5078.1.10585",
+    "polv": [
+     3
+    ]
    }
   },
   {
@@ -606,7 +700,10 @@
     "grupp": "weiss",
     "isik": "Aleksander-Georg Weiss",
     "tekst": "suri; maeti 5.04.1945 Vana-Kaarli platsile VI-504",
-    "allikas": "TLA.1531.1.449, l 51p"
+    "allikas": "TLA.1531.1.449, l 51p",
+    "polv": [
+     4
+    ]
    }
   },
   {
@@ -625,7 +722,10 @@
     "grupp": "veimre",
     "isik": "Hans Luhasalu",
     "tekst": "suri asumisel",
-    "allikas": "memoriaal.ee"
+    "allikas": "memoriaal.ee",
+    "polv": [
+     4
+    ]
    }
   },
   {
@@ -644,7 +744,10 @@
     "grupp": "veimre",
     "isik": "Anna Luhasalu",
     "tekst": "suri asumisel",
-    "allikas": "memoriaal.ee"
+    "allikas": "memoriaal.ee",
+    "polv": [
+     4
+    ]
    }
   },
   {
@@ -663,7 +766,10 @@
     "grupp": "veimre",
     "isik": "Magda Veimre",
     "tekst": "vabastamise nimekiri (memoriaal.ee: vabastati 1957)",
-    "allikas": "ERAF.8SM.1.2729; memoriaal.ee"
+    "allikas": "ERAF.8SM.1.2729; memoriaal.ee",
+    "polv": [
+     3
+    ]
    }
   },
   {
@@ -682,7 +788,10 @@
     "grupp": "weiss",
     "isik": "Marie Weiss",
     "tekst": "suri; maeti Vana-Kaarli platsile VI-504",
-    "allikas": "ERA.5078.1.10585; TLA.1531.1.467"
+    "allikas": "ERA.5078.1.10585; TLA.1531.1.467",
+    "polv": [
+     4
+    ]
    }
   },
   {
@@ -701,7 +810,10 @@
     "grupp": "veimre",
     "isik": "Udo Veimre",
     "tekst": "tõenäoline kadumis- või langemiskoht: memoriaal.ee järgi teadmata kadunud idarindel 04.1944, mil rügement kaitses Pihkva järve kallast ja Kolpino saart. Tõendamata; 21.04.1944 oli ta nimekirjas veel kohal. Kui ta kadus hiljem, on teised võimalikud kohad Võõpsu–Leevaku lõik (august 1944) ja Emajõgi Kavastu–Kastre juures, kus rügement 17.09.1944 purustati",
-    "allikas": "memoriaal.ee; ERA.R-67.1.19; et.wikipedia „1. Eesti Piirikaitserügement“, „Emajõe forsseerimine Kastre suunal“"
+    "allikas": "memoriaal.ee; ERA.R-67.1.19; et.wikipedia „1. Eesti Piirikaitserügement“, „Emajõe forsseerimine Kastre suunal“",
+    "polv": [
+     2
+    ]
    }
   },
   {
@@ -720,7 +832,10 @@
     "grupp": "veimre",
     "isik": "Heli Tulp",
     "tekst": "otsis venda Udot ajalehes „Kodumaale Tagasipöördumise Eest“ (ka 2.11.1958); aadress juba Kuusikul",
-    "allikas": "Kodumaale Tagasipöördumise Eest 3.10.1958 lk 4; 2.11.1958 lk 3 (DIGAR)"
+    "allikas": "Kodumaale Tagasipöördumise Eest 3.10.1958 lk 4; 2.11.1958 lk 3 (DIGAR)",
+    "polv": [
+     2
+    ]
    }
   },
   {
@@ -739,7 +854,10 @@
     "grupp": "tulp",
     "isik": "Harry Tulp",
     "tekst": "suri kodus Kuusikul; maeti Rapla kalmistule",
-    "allikas": "ERA.5208.1.340"
+    "allikas": "ERA.5208.1.340",
+    "polv": [
+     2
+    ]
    }
   },
   {
@@ -752,7 +870,10 @@
     "grupp": "weiss",
     "isik": "Johann Jacob Weiss",
     "tekst": "suri; surmakirjet ei ole leitud (Pühavaimu 1866 läbi vaadatud)",
-    "allikas": "MyHeritage; TLA.238.1.100"
+    "allikas": "MyHeritage; TLA.238.1.100",
+    "polv": [
+     6
+    ]
    }
   },
   {
@@ -765,7 +886,10 @@
     "grupp": "tulp",
     "isik": "Harry Tulp",
     "tekst": "pärast haavatasaamist: pataljoni riismed murdsid 16./17.02.1944 kotist välja ja viidi kevadel Eestisse, kus pataljonist sai Eesti diviisi fusiljeeripataljon. Harry teenistus pataljonis kestis juunini 1944; kus ta ravil oli ja kus teenistus lõppes, teadmata",
-    "allikas": "memoriaal.ee; „Terasest tugevamad“; mälestused MT 3542:1 (Mahtra muuseum)"
+    "allikas": "memoriaal.ee; „Terasest tugevamad“; mälestused MT 3542:1 (Mahtra muuseum)",
+    "polv": [
+     2
+    ]
    }
   },
   {
@@ -778,7 +902,10 @@
     "grupp": "weiss",
     "isik": "Hermine Weiss",
     "tekst": "„teadmata kadunud 1944. a“",
-    "allikas": "ERA.5078.1.10585"
+    "allikas": "ERA.5078.1.10585",
+    "polv": [
+     3
+    ]
    }
   },
   {
@@ -791,7 +918,10 @@
     "grupp": "tulp",
     "isik": "Harry Tulp",
     "tekst": "Mahtra muuseumi käsikirja „Retk läbi punase udu“ kirjelduse järgi kestis tema Saksa teenistus 1945. aastani; väeosa pärast pataljoni Narva ja koht sõja lõpus on teadmata",
-    "allikas": "MT 3542:1 (kirjeldus; käsikiri lugemata)"
+    "allikas": "MT 3542:1 (kirjeldus; käsikiri lugemata)",
+    "polv": [
+     2
+    ]
    }
   }
  ]

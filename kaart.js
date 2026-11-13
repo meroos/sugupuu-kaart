@@ -106,7 +106,7 @@
     rinne: L.latLngBounds([47.3, 6.5], [60, 38.5])
   };
 
-  const olek = { aasta: LOPP, mangib: false, aken: null, grupid: { weiss: true, veimre: true, tulp: true } };
+  const olek = { aasta: LOPP, mangib: false, aken: null, polv: null, grupid: { weiss: true, veimre: true, tulp: true } };
 
   Promise.all(["kohad", "teekonnad", "sundmused"].map(n =>
     fetch("data/" + n + ".geojson", { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(n); return r.json(); })
@@ -354,7 +354,9 @@
       sildid.innerHTML = "";
       kirjed.forEach(k => {
         const p = aastaAsendiks(k.aasta);
+        // Ajaaken kitsendab loendit; teiste põlvkondade kirjed jäävad aknas tuhmiks taustaks
         k.aknas = !olek.aken || (k.aasta >= olek.aken[0] && k.aasta <= olek.aken[1]);
+        k.omaPolv = !olek.polv || (k.polv || []).includes(olek.polv);
         k.tikk.style.left = (p * 100) + "%";
       });
       AJASTUD.forEach(([a0, a1, , varv]) => {
@@ -385,14 +387,15 @@
     function piiridAknas() {
       const pts = [];
       kirjed.forEach(k => {
-        if (!k.aknas || !olek.grupid[k.grupp]) return;
+        if (!k.aknas || !k.omaPolv || !olek.grupid[k.grupp]) return;
         if (k.liik === "teekond") { pts.push(kohad[k.lahtekoht].latlng, kohad[k.sihtkoht].latlng); }
         else if (k.koht) pts.push(kohad[k.koht].latlng);
       });
       return pts.length ? L.latLngBounds(pts) : koikPiirid;
     }
-    function valiAken(aken, nupp) {
+    function valiAken(aken, nupp, polvNr) {
       peata();
+      olek.polv = polvNr || null;
       perioodidEl.querySelectorAll("button").forEach(b => b.classList.toggle("aktiivne", b === nupp));
       olek.aken = aken;
       joonistaRada();
@@ -408,7 +411,7 @@
       const b = document.createElement("button");
       b.title = g.nr + ". põlvkond (2 = vanavanemad): " + g.koik;
       b.innerHTML = "<b>" + esc(g.nimi) + "</b><span>" + g.nr + ". põlvkond · " + g.a0 + "–" + (g.a1 > 2001 ? 2001 : g.a1) + "</span>";
-      b.addEventListener("click", () => valiAken([g.a0, g.a1], b));
+      b.addEventListener("click", () => valiAken([g.a0, g.a1 + 0.99], b, g.nr));
       perioodidEl.appendChild(b);
     });
 
@@ -432,8 +435,10 @@
       kirjed.forEach(k => {
         const lubatud = olek.grupid[k.grupp];
         const naha = lubatud && k.aasta <= a;
-        k.tuhm = naha && k.aasta < a0;
+        k.tuhm = naha && (k.aasta < a0 || !k.omaPolv);
         k.li.classList.toggle("peidus", !lubatud || !k.aknas);
+        k.li.classList.toggle("teine-polv", !k.omaPolv);
+        k.tikk.classList.toggle("teine-polv", !k.omaPolv);
         k.li.classList.toggle("tulevik", k.aasta > a);
         k.li.classList.toggle("praegu", naha && a - k.aasta < 1);
         k.tikk.style.display = lubatud && k.aknas ? "" : "none";

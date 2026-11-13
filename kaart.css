@@ -188,3 +188,8 @@ html, body { margin: 0; height: 100%; background: var(--taust); color: var(--tek
   .leaflet-bottom.leaflet-left { bottom: 156px; }
   .leaflet-bottom.leaflet-right { bottom: 96px; }
 }
+
+/* Teise põlvkonna kirjed valitud põlvkonna aknas: tuhm taust */
+#loend li.teine-polv { opacity: 0.32; }
+#loend li.teine-polv:hover { opacity: 0.7; }
+.tikk.teine-polv { opacity: 0.25; }
