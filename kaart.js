@@ -51,14 +51,21 @@
   // ---------- Kaart ----------
   const kaart = L.map("kaart", { zoomControl: false, minZoom: 2, maxZoom: 13, worldCopyJump: false, zoomSnap: 0.25 });
   L.control.zoom({ position: "bottomleft" }).addTo(kaart);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png", {
-    subdomains: "abcd", maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-  }).addTo(kaart);
+  // Aluskaart: Esri tumehall lõuend (võtmeta). Kui see ei laadi, tume OpenStreetMap.
+  const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/";
+  const ESRI_ATTR = 'Aluskaart &copy; <a href="https://www.esri.com">Esri</a>, HERE, Garmin, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+  const alus = L.tileLayer(ESRI + "World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}", { maxZoom: 16, attribution: ESRI_ATTR }).addTo(kaart);
   kaart.createPane("sildid").style.zIndex = 450;
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png", {
-    subdomains: "abcd", maxZoom: 19, pane: "sildid", opacity: 0.45
-  }).addTo(kaart);
+  const alusSildid = L.tileLayer(ESRI + "World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}", { maxZoom: 16, pane: "sildid", opacity: 0.55 }).addTo(kaart);
+  let vigu = 0;
+  alus.on("tileerror", () => {
+    if (++vigu !== 6) return;
+    kaart.removeLayer(alus); kaart.removeLayer(alusSildid);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19, className: "osm-tume",
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(kaart);
+  });
   kaart.createPane("kaared").style.zIndex = 460;
   kaart.createPane("halod").style.zIndex = 455;
   kaart.createPane("solmed").style.zIndex = 620;

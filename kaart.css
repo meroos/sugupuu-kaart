@@ -109,6 +109,7 @@ html, body { margin: 0; height: 100%; background: var(--taust); color: var(--tek
 
 /* Kaardi elemendid */
 .leaflet-container { background: var(--taust); font-family: var(--sans); }
+.osm-tume { filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.9) saturate(.3); }
 .kaar-halo { filter: blur(3px); }
 .kaar-voog { animation: voog 1.6s linear infinite; }
 @keyframes voog { to { stroke-dashoffset: -26; } }

@@ -49,4 +49,4 @@ Teekonna kaar arvutatakse brauseris lähte- ja sihtkoha põhjal, joone kujul ei 
 
 Iga teekonna ja sündmuse juures on viide (Rahvusarhiiv, Tallinna Linnaarhiiv, memoriaal.ee, MyHeritage). Peamised: ERAF.8SM.1.2729 (Heli Veimre asumistoimik), ERA.5078.1.10585 (Marie Weissi pärimistoimik), ERAF.130SM.1.323-1 (Arnold Veimre uurimistoimik), ERAF.3-N.1.1809 (Tulpide küüditamistoimik), TLA.1359.2.21 (Kaarli koguduse personaalraamat).
 
-Aluskaart: © OpenStreetMap, © CARTO.
+Aluskaart: Esri World Dark Gray Canvas (© Esri, HERE, Garmin, © OpenStreetMap); varuvariant tume OpenStreetMap.
