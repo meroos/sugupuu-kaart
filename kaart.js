@@ -109,7 +109,7 @@
   const olek = { aasta: LOPP, mangib: false, aken: null, grupid: { weiss: true, veimre: true, tulp: true } };
 
   Promise.all(["kohad", "teekonnad", "sundmused"].map(n =>
-    fetch("data/" + n + ".geojson").then(r => { if (!r.ok) throw new Error(n); return r.json(); })
+    fetch("data/" + n + ".geojson", { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(n); return r.json(); })
   )).then(([kohad, teekonnad, sundmused]) => ehita(kohad, teekonnad, sundmused))
     .catch(err => {
       document.getElementById("loend").innerHTML =
