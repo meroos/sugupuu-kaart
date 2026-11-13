@@ -374,6 +374,54 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     24.9297,
+     59.0294
+    ]
+   },
+   "properties": {
+    "id": "helda",
+    "nimi": "Helda küla (Neo talu), Maidla vald",
+    "tapsus": "asula",
+    "markus": "Jüri Tulbi talu Neo asus Helda külas Maidla vallas, Juuru kihelkonnas (MyHeritage). Talu täpne asukoht tuvastamata; punkt on küla keskel."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.0144,
+     59.0878
+    ]
+   },
+   "properties": {
+    "id": "mahtra",
+    "nimi": "Mahtra mõis, Juuru kihelkond",
+    "tapsus": "asula",
+    "markus": "Mahtra mõis, kus 2.06.1858 puhkes talurahva ülestõus (Mahtra sõda). Punkt on Mahtra küla kohal."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.677,
+     59.387
+    ]
+   },
+   "properties": {
+    "id": "nomme",
+    "nimi": "Nõmme kalmistu, Tallinn",
+    "tapsus": "asula",
+    "markus": "August ja Aliide Tulbi matmiskoht (MyHeritage). Koordinaat on ligikaudne."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      27.725,
      59.3667
     ]

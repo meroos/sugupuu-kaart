@@ -299,14 +299,124 @@
    },
    "properties": {
     "koht": "maidla",
+    "aasta": 1806.5,
+    "kuupaev": "1806",
+    "grupp": "tulp",
+    "isik": "Jüri Tulp",
+    "tekst": "sündis Maidla vallas; isa Maddis Tulp (surn. 1843), ema Ann (surn. 1807)",
+    "allikas": "MyHeritage",
+    "polv": [
+     6
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.9297,
+     59.0294
+    ]
+   },
+   "properties": {
+    "koht": "helda",
+    "aasta": 1832.9,
+    "kuupaev": "1830.–1850. aastad",
+    "grupp": "tulp",
+    "isik": "Jüri Tulp",
+    "tekst": "talupidaja Neo talus Helda külas; tal oli kaks abielu ja vähemalt kümme last",
+    "allikas": "MyHeritage",
+    "polv": [
+     6
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.8833,
+     59.05
+    ]
+   },
+   "properties": {
+    "koht": "maidla",
     "aasta": 1836.5,
     "kuupaev": "9.07.1836",
     "grupp": "tulp",
     "isik": "Ado Tulp",
-    "tekst": "sündis Maidlas",
+    "tekst": "sündis Maidlas, Jüri Tulbi poeg",
     "allikas": "MyHeritage",
     "polv": [
      5
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.0144,
+     59.0878
+    ]
+   },
+   "properties": {
+    "koht": "mahtra",
+    "aasta": 1858.42,
+    "kuupaev": "2.06.1858",
+    "grupp": "tulp",
+    "isik": "Jüri Tulp",
+    "tekst": "suri Mahtra mõisas. Samal päeval puhkes Mahtra mõisas talurahva ülestõus (Mahtra sõda), millest võtsid osa enam kui kümne ümberkaudse mõisa talupojad. Kuupäeva ja koha järgi võis ta hukkuda selles kokkupõrkes; see vajab kontrolli Juuru koguduse 1858. a surmameetrikast ja Mahtra sõja dokumentidest",
+    "allikas": "MyHeritage; Eesti NSV TA Toimetised 1955/4; J. Kahk, „1858. aasta talurahvarahutused Eestis. Mahtra sõda“ (1958)",
+    "polv": [
+     6
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.9297,
+     59.0294
+    ]
+   },
+   "properties": {
+    "koht": "helda",
+    "aasta": 1861.2,
+    "kuupaev": "1861",
+    "grupp": "tulp",
+    "isik": "Ado ja Kai Tulp",
+    "tekst": "tütar Madli sündis Heldal",
+    "allikas": "MyHeritage",
+    "polv": [
+     5
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7569,
+     59.1667
+    ]
+   },
+   "properties": {
+    "koht": "kohila",
+    "aasta": 1875.9,
+    "kuupaev": "27.11.1875",
+    "grupp": "tulp",
+    "isik": "Liisa Maria Pesor",
+    "tekst": "sündis Kohilas; abiellus 1897 Jaan Tulbiga",
+    "allikas": "MyHeritage",
+    "polv": [
+     4
     ]
    }
   },
@@ -827,6 +937,72 @@
    },
    "properties": {
     "koht": "tallinn",
+    "aasta": 1898.81,
+    "kuupaev": "23.10.1898",
+    "grupp": "tulp",
+    "isik": "Kai Tulp (o.s. Piper), Ado naine",
+    "tekst": "suri Tallinnas",
+    "allikas": "MyHeritage",
+    "polv": [
+     5
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.677,
+     59.387
+    ]
+   },
+   "properties": {
+    "koht": "nomme",
+    "aasta": 1972.5,
+    "kuupaev": "1972",
+    "grupp": "tulp",
+    "isik": "Aliide Tulp",
+    "tekst": "suri; maeti Nõmme kalmistule",
+    "allikas": "MyHeritage",
+    "polv": [
+     3
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.677,
+     59.387
+    ]
+   },
+   "properties": {
+    "koht": "nomme",
+    "aasta": 1974.93,
+    "kuupaev": "6.12.1974",
+    "grupp": "tulp",
+    "isik": "August Tulp",
+    "tekst": "suri; maeti Nõmme kalmistule",
+    "allikas": "memoriaal.ee (rahvastikuregister); MyHeritage",
+    "polv": [
+     3
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
     "aasta": 1959.82,
     "kuupaev": "25.10.1959",
     "grupp": "weiss",
@@ -901,6 +1077,54 @@
     "allikas": "ERA.5208.1.340",
     "polv": [
      2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "koht": null,
+    "aasta": 1915.34,
+    "kuupaev": "4.05.1915",
+    "grupp": "tulp",
+    "isik": "Ado Tulp",
+    "tekst": "suri; surmakoht teadmata",
+    "allikas": "MyHeritage",
+    "polv": [
+     5
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "koht": null,
+    "aasta": 1923.19,
+    "kuupaev": "9.03.1923",
+    "grupp": "tulp",
+    "isik": "Liisa Maria Tulp (Liipa)",
+    "tekst": "suri; surmakoht teadmata. MyHeritage'is on tal 5.11.1917 teine abielu Jüri Liipaga, kuigi Jaan Tulp suri alles 1927; see vajab kontrolli",
+    "allikas": "MyHeritage",
+    "polv": [
+     4
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "koht": null,
+    "aasta": 1927.66,
+    "kuupaev": "28.08.1927",
+    "grupp": "tulp",
+    "isik": "Jaan Tulp",
+    "tekst": "suri; surmakoht teadmata",
+    "allikas": "MyHeritage",
+    "polv": [
+     4
     ]
    }
   },

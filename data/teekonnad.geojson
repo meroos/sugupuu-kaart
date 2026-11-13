@@ -311,7 +311,7 @@
     "aeg": "enne 1900",
     "aasta": 1899,
     "kindlus": "osaliselt",
-    "tekst": "Jaan sündis Maidlas 13.10.1863; poeg August sündis Kohilas 11.02.1900. Kolimise aeg on järeldus.",
+    "tekst": "Jaan sündis Maidlas 13.10.1863. Abiellus 27.04.1897 Kohilast pärit Liisa Maria Pesoriga (s. 27.11.1875 Kohilas); poeg August sündis Kohilas 11.02.1900. Kolimise aeg on järeldus.",
     "allikas": "MyHeritage",
     "liikumine": "kolimine",
     "lahtekoht": "maidla",
@@ -343,7 +343,7 @@
     "aeg": "hiljemalt 1923",
     "aasta": 1922,
     "kindlus": "osaliselt",
-    "tekst": "August abiellus Aliide Valpiga 24.02.1923; Harry sündis 22.04.1923 Tallinnas Raevalla 2, hiljem elati Tatari 48. August oli Tallinna elektrijaamas elektrik.",
+    "tekst": "August abiellus Aliide Valpiga 24.02.1923; Harry sündis 22.04.1923 Tallinnas Raevalla 2, hiljem elati Tatari 48. August oli Tallinna elektrijaamas elektrimontöör; Aliide oli koduperenaine.",
     "allikas": "MyHeritage",
     "liikumine": "kolimine",
     "lahtekoht": "kohila",
@@ -825,13 +825,45 @@
     "aeg": "1945",
     "aasta": 1945.9,
     "kindlus": "toendatud",
-    "tekst": "Arreteeriti 19.06.1945 Tallinnas, Õie 3-2 (kirjes „Õle 3-2“, ilmselt vanemate korter). Sõjatribunal mõistis 23.11.1945 §58-2 ja 58-11 alusel 10 aastat laagrit ja 5 aastat õiguste kaotust. Karistuskoht Krasnojarski krai; laager teadmata. Vabanes 26.11.1956, suri 12.01.2004.",
-    "allikas": "memoriaal.ee (Poliitilised arreteerimised Eestis, kd 1) [ük 11593]; rahvastikuregister",
+    "tekst": "Arreteeriti 19.06.1945 Tallinnas, Õie 3-2 (kirjes „Õle 3-2“, ilmselt vanemate korter). Sõjatribunal mõistis 23.11.1945 §58-2 ja 58-11 alusel 10 aastat laagrit ja 5 aastat õiguste kaotust. Karistuskoht Krasnojarski krai; laager teadmata. Vabanes 26.11.1956. Suri 2004 (rahvastikuregistri järgi 12.01., MyHeritage'is 1.12.; kuupäev vajab kontrolli) ja on maetud Audru kalmistule.",
+    "allikas": "memoriaal.ee (Poliitilised arreteerimised Eestis, kd 1) [ük 11593]; rahvastikuregister; MyHeritage",
     "liikumine": "arreteerimine",
     "lahtekoht": "tallinn",
     "sihtkoht": "krasnojarsk",
     "polv": [
      2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.8833,
+      59.05
+     ],
+     [
+      24.7536,
+      59.437
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T10",
+    "grupp": "tulp",
+    "isik": "Ado ja Kai Tulp",
+    "aeg": "hiljemalt 1898",
+    "aasta": 1890,
+    "kindlus": "oletus",
+    "tekst": "Ado abiellus Kai Piperiga 19.02.1861 Juuru koguduses; lapsed sündisid Heldal (Madli 1861) ja Maidlas (Jaan 1863, Kai 1872). Kai Tulp (o.s. Piper) suri 23.10.1898 Tallinnas ja tütar Kai abiellus 24.10.1899 Tallinna Kaarli koguduses Jüri Pusepiga. Et Ado kolis Tallinna, on järeldus; tema surmakoht (4.05.1915) on teadmata.",
+    "allikas": "MyHeritage",
+    "liikumine": "kolimine",
+    "lahtekoht": "maidla",
+    "sihtkoht": "tallinn",
+    "polv": [
+     5
     ]
    }
   },
