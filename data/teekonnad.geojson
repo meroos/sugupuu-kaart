@@ -339,11 +339,11 @@
     "id": "V1",
     "grupp": "veimre",
     "isik": "Arnold Weiss (Veimre)",
-    "aeg": "1921",
-    "aasta": 1921,
+    "aeg": "31.01.1921",
+    "aasta": 1921.08,
     "kindlus": "toendatud",
-    "tekst": "Läks 1921 Tartu Ülikooli: algul keemiaõpingud, seejärel arstiteaduskond. Elas Tartus Soola tänaval. Anatoomia instituudi grupifotol nr 53 „A. Weiss“.",
-    "allikas": "ÜAM F 287:3 F; MyHeritage",
+    "tekst": "Võeti 31.01.1921 Tartu Ülikooli matemaatika-loodusteaduskonda, eriala keemia (matrikli nr 1848). Avalduse järgi läks ta keemiasse, sest pärast jõule arstiteaduskonda enam vastu ei võetud. Juulis 1921 palus end arstiteaduskonda ümber kirjutada; õpiraamatus „1921. II sem. peale – medizin“. 1922 elas Tartus Soola tn 33-20.",
+    "allikas": "üliõpilastoimik EAA.2100.1.17928, kaadrid 4, 13, 30, 32; ÜAM F 287:3 F",
     "liikumine": "opingud",
     "lahtekoht": "tallinn",
     "sihtkoht": "tartu"
@@ -368,11 +368,11 @@
     "id": "V2",
     "grupp": "veimre",
     "isik": "Arnold Weiss (Veimre)",
-    "aeg": "hiljemalt 1931",
-    "aasta": 1930,
-    "kindlus": "osaliselt",
-    "tekst": "Tütar Heli sündis Tallinnas 18.01.1931; 1934 on aadress Suur-Tartu mnt 41-3. Tagasituleku aasta on järeldus.",
-    "allikas": "ERA.5078.1.10585; Hommikleht 19.06.1934",
+    "aeg": "detsember 1926",
+    "aasta": 1926.98,
+    "kindlus": "toendatud",
+    "tekst": "Pärast lõpetamist saatis ülikool dokumendid Tallinna, Lutheri tn 30-9 (vanemate kodu); arstivande andis ta 30.12.1926 Tallinnas. 1934 oli pere aadress Suur-Tartu mnt 41-3.",
+    "allikas": "üliõpilastoimik EAA.2100.1.17928, kaadrid 48–50; Hommikleht 19.06.1934",
     "liikumine": "kolimine",
     "lahtekoht": "tartu",
     "sihtkoht": "tallinn"
@@ -431,7 +431,7 @@
     "kindlus": "osaliselt",
     "tekst": "Abiellusid Tallinnas 1898. Hiljemalt 1936. a septembriks Keila valla elanikud; 22.12.1939 elasid Agjal kui omaniku äi ja ämm.",
     "allikas": "ERA.5201.2.65845; TLA.1361.3.731, kaadrid 223–224",
-    "liikumine": "kolimine",
+    "liikumine": "elukoht",
     "lahtekoht": "tallinn",
     "sihtkoht": "agja"
    }
@@ -460,7 +460,7 @@
     "kindlus": "osaliselt",
     "tekst": "Agja maa läks 1939–1940 Nõukogude Klooga lennuvälja alla. 1940 ostis Arnold Maantee külas u 191 ha talu, mida pidas Hans. 1949 elasid nad Kärneri-Ree talus.",
     "allikas": "ERAF.130SM.1.323-1, l 8; ERA.R-6.4.68 (tellimata); memoriaal.ee",
-    "liikumine": "kolimine",
+    "liikumine": "elukoht",
     "lahtekoht": "agja",
     "sihtkoht": "keila"
    }

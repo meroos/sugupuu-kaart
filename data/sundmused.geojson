@@ -443,6 +443,63 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     26.7322,
+     58.3781
+    ]
+   },
+   "properties": {
+    "koht": "tartu",
+    "aasta": 1921.56,
+    "kuupaev": "07.1921",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "avaldus: keemiast arstiteaduskonda; alates 1921. a II semestrist arstiteadus",
+    "allikas": "EAA.2100.1.17928, kaadrid 4 ja 32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     26.7322,
+     58.3781
+    ]
+   },
+   "properties": {
+    "koht": "tartu",
+    "aasta": 1926.97,
+    "kuupaev": "20.12.1926",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "lõpetas arstiteaduskonna: lõpueksam „cum laude“, tunnistati arsti astme vääriliseks; diplom otsustati välja anda 21.12.1926",
+    "allikas": "EAA.2100.1.17928, kaader 47 (ajutine tunnistus nr 10276, 22.12.1926)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1926.995,
+    "kuupaev": "30.12.1926",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "andis Tallinnas arstivande",
+    "allikas": "EAA.2100.1.17928, kaader 50"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      24.7536,
      59.437
     ]

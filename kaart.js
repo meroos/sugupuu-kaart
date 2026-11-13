@@ -10,6 +10,7 @@
   };
   // Liikumise liik: nimi, kuidas öelda sihtkohas ja lähtekohas, sõna kaare sildil
   const LIIK = {
+    elukoht:           { nimi: "elukoht",             siia: "elasid siin",              ara: "elasid hiljem",         silt: "elasid" },
     kolimine:          { nimi: "kolimine",            siia: "kolis siia",               ara: "kolis",                 silt: "" },
     valjaranne:        { nimi: "väljaränne",          siia: "saabus siia",              ara: "rändas välja",          silt: "" },
     teenistus:         { nimi: "sõjaväeteenistus",    siia: "tuli siia teenistusse",    ara: "läks teenistusse",      silt: "väeteenistus" },
@@ -27,7 +28,7 @@
   const HALO_ERAND = { keila: 9000, sondershausen: 40000, petseri: 20000 };
   const LUHINIMI = { kalisz: "Kalisz", sondershausen: "Schwarzburg-Sondershausen", janeda: "Jäneda", lehtse: "Lehtse",
                      alavere: "Alavere", kiivera: "Kiivera (Kõpu)",
-                     maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola tn)", agja: "Agja (Klooga)",
+                     maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola 33)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
                      sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku", petseri: "Pihkva järv, Kolpino saar" };
   const lyhi = id => LUHINIMI[id] || id;
@@ -251,7 +252,8 @@
       const varv = GRUPID[k.grupp].varv;
       if (k.liik === "teekond") {
         const l = LIIK[k.liikumine];
-        const suund = k.sihtkoht === koht.id ? esc(l.siia) + " (lähtekoht " + esc(lyhi(k.lahtekoht)) + ")"
+        const eel = k.liikumine === "elukoht" ? " (varem " : " (lähtekoht ";
+        const suund = k.sihtkoht === koht.id ? esc(l.siia) + eel + esc(lyhi(k.lahtekoht)) + ")"
                                               : esc(l.ara) + " → " + esc(lyhi(k.sihtkoht));
         return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.aeg) + '</span> <b>' + esc(k.isik) + '</b> ' + suund + '</li>';
       }
