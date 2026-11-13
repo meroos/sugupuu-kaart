@@ -22,15 +22,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     10.4,
-     51.2
+     10.867,
+     51.367
     ]
    },
    "properties": {
-    "id": "saksamaa",
-    "nimi": "Saksamaa (täpne koht teadmata)",
-    "tapsus": "riik",
-    "markus": "Perepärimuse järgi tulid Weissid Saksamaalt. Allikaga kinnitamata; punkt tähistab ainult riiki."
+    "id": "sondershausen",
+    "nimi": "Schwarzburg-Sondershausen (Tüüringi, Saksamaa)",
+    "tapsus": "rajoon",
+    "markus": "Johann Jacob Weissi sünnikoht MyHeritage'i puus: Schwarzburg-Sondershauseni vürstiriik. Punkt on vürstiriigi pealinnas Sondershausenis; vürstiriik koosnes kahest osast (Sondershausen ja Arnstadt). Eesti allikatest ei ole kohta seni leitud."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.7042,
+     59.2456
+    ]
+   },
+   "properties": {
+    "id": "janeda",
+    "nimi": "Jäneda (Jendel), Ambla kihelkond",
+    "tapsus": "asula",
+    "markus": "Mõisakõrts; Johann Jacobi laps sündis siin 1831."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.8231,
+     59.2494
+    ]
+   },
+   "properties": {
+    "id": "lehtse",
+    "nimi": "Lehtse (Lechts), Ambla kihelkond",
+    "tapsus": "asula",
+    "markus": "Mõisakõrts; Johann Jacobi laps sündis siin 1836."
    }
   },
   {
@@ -60,9 +92,9 @@
    },
    "properties": {
     "id": "kiivera",
-    "nimi": "Kiivera (Kiivra), Kõrgesaare vald, Hiiumaa",
+    "nimi": "Kiivera (Kõpu), Hiiumaa",
     "tapsus": "asula",
-    "markus": "Marie Weissi (o.s. Mardi) sünnikoht: majaraamatus Kõrgesaare vald, MyHeritage'is Kiivra."
+    "markus": "Marie Weissi (o.s. Mardi) sünnikoht: majaraamatus Kõrgesaare vald, MyHeritage'is Kiivra. Punkt on tänase Kiivera küla kohal."
    }
   },
   {
@@ -118,15 +150,15 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     26.7251,
-     58.3806
+     26.7322,
+     58.3781
     ]
    },
    "properties": {
     "id": "tartu",
-    "nimi": "Tartu",
+    "nimi": "Tartu, Soola tänav",
     "tapsus": "asula",
-    "markus": "Tartu Ülikool, arstiteaduskond."
+    "markus": "Arnoldi elukoht Tartus Soola tänaval (MyHeritage); maja number teadmata, punkt on tänava kohal ligikaudu."
    }
   },
   {

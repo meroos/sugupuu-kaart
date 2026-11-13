@@ -20,11 +20,12 @@
     "id": "W1",
     "grupp": "weiss",
     "isik": "Wojciech (Albertus) Majkowski",
-    "aeg": "enne 1840",
-    "aasta": 1838,
+    "aeg": "enne 1837",
+    "aasta": 1836,
     "kindlus": "osaliselt",
-    "tekst": "Kaliszi kubermangust pärit reamees teenis Tallinna garnisonipataljonis. Tütar Rosalie sündis Tallinnas 1840. Saabumise aeg on järeldus.",
-    "allikas": "Rosalie ristimine, katoliku kogudus TLA.1398.2.1, kaader 84, nr 20",
+    "tekst": "Kaliszi kubermangust pärit reamees teenis Tallinna garnisonipataljonis. Laulatati Tallinnas 1837; tütar Rosalie sündis 1840. Saabumise aeg on järeldus.",
+    "allikas": "laulatuseelne läbikuulamine TLA.1398.2.10, kaader 33, nr 24; Rosalie ristimine TLA.1398.2.1, kaader 84, nr 20",
+    "liikumine": "teenistus",
     "lahtekoht": "kalisz",
     "sihtkoht": "tallinn"
    }
@@ -35,8 +36,8 @@
     "type": "LineString",
     "coordinates": [
      [
-      10.4,
-      51.2
+      10.867,
+      51.367
      ],
      [
       25.3264,
@@ -47,14 +48,131 @@
    "properties": {
     "id": "W2",
     "grupp": "weiss",
-    "isik": "Jacob Weiss",
-    "aeg": "enne 1839",
-    "aasta": 1835,
-    "kindlus": "oletus",
-    "tekst": "Perepärimuse järgi olid Weissid baltisakslased, kes tulid Saksamaalt Alaverre. Lähtekoht ja aeg on kinnitamata.",
-    "allikas": "perepärimus; kontrollimata",
-    "lahtekoht": "saksamaa",
+    "isik": "Johann Jacob Weiss",
+    "aeg": "enne 1829",
+    "aasta": 1825,
+    "kindlus": "osaliselt",
+    "tekst": "Sündis 1799 Schwarzburg-Sondershausenis (MyHeritage). Abiellus Kose kihelkonnas u 1825 Madle Wiikmanniga; esimene teadaolev laps sündis Alaveres 1829. Johann Christiani ristimisel 1839 on ta mõisakõrtsmik (Krüger), sõna „ausländ[isch]“ lugemine ebakindel. Sünnikoht ei ole Eesti allikatega kinnitatud.",
+    "allikas": "MyHeritage; Kose ristimised 1839 nr 262; Kose laulatused 1824–1825 (osaliselt läbi vaadatud)",
+    "liikumine": "valjaranne",
+    "lahtekoht": "sondershausen",
     "sihtkoht": "alavere"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.3264,
+      59.2453
+     ],
+     [
+      25.7042,
+      59.2456
+     ]
+    ]
+   },
+   "properties": {
+    "id": "W2a",
+    "grupp": "weiss",
+    "isik": "Johann Jacob Weiss",
+    "aeg": "1829–1831",
+    "aasta": 1830,
+    "kindlus": "osaliselt",
+    "tekst": "Laste sünnikohad näitavad kõrtsist kõrtsi kolimist: Alavere 1829, Jäneda 1831. Mõisakõrtsmikud rentisid kõrtsi tavaliselt mõneks aastaks.",
+    "allikas": "laste sünnikirjed (MyHeritage, Kose ja Ambla meetrikad)",
+    "liikumine": "kolimine",
+    "lahtekoht": "alavere",
+    "sihtkoht": "janeda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.7042,
+      59.2456
+     ],
+     [
+      25.8231,
+      59.2494
+     ]
+    ]
+   },
+   "properties": {
+    "id": "W2b",
+    "grupp": "weiss",
+    "isik": "Johann Jacob Weiss",
+    "aeg": "1831–1836",
+    "aasta": 1834,
+    "kindlus": "osaliselt",
+    "tekst": "Laps sündis Lehtses 1836.",
+    "allikas": "laste sünnikirjed (MyHeritage, Ambla meetrikad)",
+    "liikumine": "kolimine",
+    "lahtekoht": "janeda",
+    "sihtkoht": "lehtse"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.8231,
+      59.2494
+     ],
+     [
+      25.3264,
+      59.2453
+     ]
+    ]
+   },
+   "properties": {
+    "id": "W2c",
+    "grupp": "weiss",
+    "isik": "Johann Jacob Weiss",
+    "aeg": "1836–1839",
+    "aasta": 1838,
+    "kindlus": "osaliselt",
+    "tekst": "Tagasi Alaveres: Johann Christian sündis 15.11.1839, järgmine laps 1842.",
+    "allikas": "Kose ristimised 1839 nr 262; MyHeritage",
+    "liikumine": "kolimine",
+    "lahtekoht": "lehtse",
+    "sihtkoht": "alavere"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.3264,
+      59.2453
+     ],
+     [
+      24.7536,
+      59.437
+     ]
+    ]
+   },
+   "properties": {
+    "id": "W2d",
+    "grupp": "weiss",
+    "isik": "Johann Jacob ja Madle Weiss",
+    "aeg": "u 1842–1850",
+    "aasta": 1846,
+    "kindlus": "oletus",
+    "tekst": "Kose personaalraamatus 1848–1869 ei ole Johann Jacobi enam Alaveres; pere oli tõenäoliselt Tallinnas. Johann Jacob suri 10.05.1866 (koht teadmata).",
+    "allikas": "EAA.1215.1.111, lk 46; MyHeritage",
+    "liikumine": "kolimine",
+    "lahtekoht": "alavere",
+    "sihtkoht": "tallinn"
    }
   },
   {
@@ -81,6 +199,7 @@
     "kindlus": "toendatud",
     "tekst": "Sündis Alaveres 15.11.1839, leeritati Tallinna Toomkirikus 9.04.1859, kingsepp. Laulatati Rosalie Maikowskyga 28.01.1866.",
     "allikas": "Kaarli kog. I pihtk. personaalraamat TLA.1359.2.21, lk 941",
+    "liikumine": "kolimine",
     "lahtekoht": "alavere",
     "sihtkoht": "tallinn"
    }
@@ -109,6 +228,7 @@
     "kindlus": "osaliselt",
     "tekst": "Sündis 21.07.1878 Hiiumaal Kõrgesaare vallas. Abiellus 1897 Aleksander-Georg Weissiga ja elas Lutheri-Vaestekooli 30. Kolimise aeg on järeldus abiellumise aastast.",
     "allikas": "majaraamat ja surmatunnistus, ERA.5078.1.10585",
+    "liikumine": "kolimine",
     "lahtekoht": "kiivera",
     "sihtkoht": "tallinn"
    }
@@ -137,6 +257,7 @@
     "kindlus": "osaliselt",
     "tekst": "Elas 1920–1927 Lutheri 30. Suri 30.03.1945, surm registreeriti Keila vallas. Millal ja miks ta Keila valda kolis, on lahtine.",
     "allikas": "TLA.1531.1.449 l 51p; projektidokument Agja_Klooga (6.11.2026)",
+    "liikumine": "kolimine",
     "lahtekoht": "tallinn",
     "sihtkoht": "keila"
    }
@@ -165,6 +286,7 @@
     "kindlus": "osaliselt",
     "tekst": "Jaan sündis Maidlas 13.10.1863; poeg August sündis Kohilas 11.02.1900. Kolimise aeg on järeldus.",
     "allikas": "MyHeritage",
+    "liikumine": "kolimine",
     "lahtekoht": "maidla",
     "sihtkoht": "kohila"
    }
@@ -193,6 +315,7 @@
     "kindlus": "osaliselt",
     "tekst": "August abiellus Aliide Valpiga 24.02.1923; Harry sündis 22.04.1923 Tallinnas Raevalla 2, hiljem elati Tatari 48. August oli Tallinna elektrijaamas elektrik.",
     "allikas": "MyHeritage",
+    "liikumine": "kolimine",
     "lahtekoht": "kohila",
     "sihtkoht": "tallinn"
    }
@@ -207,8 +330,8 @@
       59.437
      ],
      [
-      26.7251,
-      58.3806
+      26.7322,
+      58.3781
      ]
     ]
    },
@@ -219,8 +342,9 @@
     "aeg": "1921",
     "aasta": 1921,
     "kindlus": "toendatud",
-    "tekst": "Astus 1921 Tartu Ülikooli arstiteaduskonda; anatoomia instituudi grupifotol nr 53 „A. Weiss“.",
-    "allikas": "ÜAM F 287:3 F",
+    "tekst": "Läks 1921 Tartu Ülikooli: algul keemiaõpingud, seejärel arstiteaduskond. Elas Tartus Soola tänaval. Anatoomia instituudi grupifotol nr 53 „A. Weiss“.",
+    "allikas": "ÜAM F 287:3 F; MyHeritage",
+    "liikumine": "opingud",
     "lahtekoht": "tallinn",
     "sihtkoht": "tartu"
    }
@@ -231,8 +355,8 @@
     "type": "LineString",
     "coordinates": [
      [
-      26.7251,
-      58.3806
+      26.7322,
+      58.3781
      ],
      [
       24.7536,
@@ -249,6 +373,7 @@
     "kindlus": "osaliselt",
     "tekst": "Tütar Heli sündis Tallinnas 18.01.1931; 1934 on aadress Suur-Tartu mnt 41-3. Tagasituleku aasta on järeldus.",
     "allikas": "ERA.5078.1.10585; Hommikleht 19.06.1934",
+    "liikumine": "kolimine",
     "lahtekoht": "tartu",
     "sihtkoht": "tallinn"
    }
@@ -277,6 +402,7 @@
     "kindlus": "toendatud",
     "tekst": "Arnoldi enda sõnul oli tal talu aastast 1933: Agja, 36 ha, Klooga asundus. 1934 tegutses Klooga jaama lähedal tema lastesanatoorium (seos Agjaga tõendamata).",
     "allikas": "ülekuulamine 1941, ERAF.130SM.1.323-1; ERA.63.10.2726",
+    "liikumine": "kolimine",
     "lahtekoht": "tallinn",
     "sihtkoht": "agja"
    }
@@ -305,6 +431,7 @@
     "kindlus": "osaliselt",
     "tekst": "Abiellusid Tallinnas 1898. Hiljemalt 1936. a septembriks Keila valla elanikud; 22.12.1939 elasid Agjal kui omaniku äi ja ämm.",
     "allikas": "ERA.5201.2.65845; TLA.1361.3.731, kaadrid 223–224",
+    "liikumine": "kolimine",
     "lahtekoht": "tallinn",
     "sihtkoht": "agja"
    }
@@ -333,6 +460,7 @@
     "kindlus": "osaliselt",
     "tekst": "Agja maa läks 1939–1940 Nõukogude Klooga lennuvälja alla. 1940 ostis Arnold Maantee külas u 191 ha talu, mida pidas Hans. 1949 elasid nad Kärneri-Ree talus.",
     "allikas": "ERAF.130SM.1.323-1, l 8; ERA.R-6.4.68 (tellimata); memoriaal.ee",
+    "liikumine": "kolimine",
     "lahtekoht": "agja",
     "sihtkoht": "keila"
    }
@@ -361,6 +489,7 @@
     "kindlus": "toendatud",
     "tekst": "Arreteeriti 14.06.1941 ja saadeti Sevurallagi Šarõgino osakonda. Elas veel 1942. a jaanuaris. Suri 14.04.1942; surm kanti Turinski raamatusse 02.10.1943, kanne nr 489. Arreteerimise koht on kaardil Tallinn, kontrollimata.",
     "allikas": "ERAF.130SM.1.323-1; ERAF.130SM.2.2-5, kaadrid 273–274; ERA.5078.1.10585",
+    "liikumine": "arreteerimine",
     "lahtekoht": "tallinn",
     "sihtkoht": "turinsk"
    }
@@ -389,6 +518,7 @@
     "kindlus": "toendatud",
     "tekst": "Küüditati Tallinnast 25.03.1949 kulakupere nimekirja alusel (nr 67). Saabusid 9.04.1949 Polevoje külla, kolhoosi. Magda kohta käib see Heli toimiku järgi; Magda toimikut nr 1184 ei ole nähtud.",
     "allikas": "ERAF.8SM.1.2729",
+    "liikumine": "kuuditamine",
     "lahtekoht": "tallinn",
     "sihtkoht": "polevoje"
    }
@@ -417,6 +547,7 @@
     "kindlus": "toendatud",
     "tekst": "Küüditati Kärneri-Ree talust. Kulakuperede nimekirja märkuse järgi pidid nad minema Novosibirski oblastisse, memoriaal.ee järgi surid nad Krasnojarski krai Ordžonikidze rajoonis: Hans 30.11.1949, Anna 28.01.1951.",
     "allikas": "memoriaal.ee; ERAF.8SM.1.2729; isikutoimikud ERAF.8SM.1.1494–1495 (tellimata)",
+    "liikumine": "kuuditamine",
     "lahtekoht": "keila",
     "sihtkoht": "sarala"
    }
@@ -445,6 +576,7 @@
     "kindlus": "toendatud",
     "tekst": "1949. a juulis viidi kolhoosist kaevandusse ja tehasesse Saralinski rajooni, Hakassi AO (asula „п. ЦЗЗ“). 7.07.1949 allkiri rajoonist lahkumise keelu kohta.",
     "allikas": "ERAF.8SM.1.2729",
+    "liikumine": "sundumberpaigutus",
     "lahtekoht": "polevoje",
     "sihtkoht": "sarala"
    }
@@ -473,6 +605,7 @@
     "kindlus": "osaliselt",
     "tekst": "Küüditati 25.03.1949 Ülemiste jaamast koos Heli ja tema emaga. Väljasaatmine on toimikuga tõendatud; sihtkoht on järeldus Harry ja Heli abielukohast. Täpsustub asumistoimikutest.",
     "allikas": "ERAF.3-N.1.1809; ERAF.8SM.1.10839–10841 (tellimata)",
+    "liikumine": "kuuditamine",
     "lahtekoht": "tallinn",
     "sihtkoht": "priiskovoje"
    }
@@ -501,6 +634,7 @@
     "kindlus": "toendatud",
     "tekst": "Heli ja Harry abiellusid 24.12.1949 Priiskovõi asulanõukogus, akt nr 57; mõlemad said nimeks Tulp.",
     "allikas": "ERAF.8SM.1.2729; ERA.5078.1.10585",
+    "liikumine": "abiellumine",
     "lahtekoht": "sarala",
     "sihtkoht": "priiskovoje"
    }
@@ -529,6 +663,7 @@
     "kindlus": "osaliselt",
     "tekst": "Vabastati asumiselt 6.04.1956 (Ordžonikidze rajooni erikomandatuur). 11.04.1960 oli tema aadress Rapla rajoon, Kuusiku katsebaas. Teekond ja vahepealsed elukohad teadmata.",
     "allikas": "ERAF.8SM.1.2729; ERA.5078.1.10585",
+    "liikumine": "vabastamine",
     "lahtekoht": "sarala",
     "sihtkoht": "kuusiku"
    }
@@ -557,6 +692,7 @@
     "kindlus": "oletus",
     "tekst": "Harry tagasituleku aeg ja koht on teadmata. Tütar Riina sündis Eestis 1959, nii et pere oli tagasi enne seda. Harry suri 28.06.2001 kodus Kuusikul.",
     "allikas": "ERA.5208.1.340 (surmaaeg); MyHeritage",
+    "liikumine": "tagasitulek",
     "lahtekoht": "priiskovoje",
     "sihtkoht": "kuusiku"
    }

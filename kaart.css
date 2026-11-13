@@ -115,6 +115,12 @@ html, body { margin: 0; height: 100%; background: var(--taust); color: var(--tek
 @keyframes voog { to { stroke-dashoffset: -26; } }
 .kaar-peidus { display: none; }
 .nool { width: 0; height: 0; }
+.kaar-silt-ikoon { width: 0; height: 0; }
+.kaar-silt {
+  position: absolute; left: 0; top: 0; white-space: nowrap; font: 500 10.5px var(--sans);
+  text-shadow: 0 0 3px #0e1117, 0 0 6px #0e1117, 0 0 10px #0e1117; pointer-events: none;
+}
+.kaar-silt b { font-weight: 650; }
 .nool div {
   width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent;
   border-bottom: 11px solid currentColor; transform-origin: 50% 60%; margin: -6px 0 0 -6px;

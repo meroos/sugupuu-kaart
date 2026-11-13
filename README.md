@@ -1,6 +1,6 @@
-# Perekonna teekonnad 1835–2001
+# Perekonna teekonnad 1799–2001
 
-Interaktiivne kaart Weissi ja Maikowski liini, Veimrete ja Luhasalude ning Tulpide liikumistest: Kaliszist ja (perepärimuse järgi) Saksamaalt Tallinnasse, Klooga ja Keila valla taludesse, Arnold Veimre teekond Sevurallagi laagrisse ning 1949. aasta küüditamine Krasnojarski kraisse ja Hakassiasse.
+Interaktiivne kaart Weissi ja Maikowski liini, Veimrete ja Luhasalude ning Tulpide liikumistest: Kaliszist ja Schwarzburg-Sondershausenist (Tüüringi) Alavere, Jäneda ja Lehtse kõrtside kaudu Tallinnasse, Klooga ja Keila valla taludesse, Arnold Veimre teekond Sevurallagi laagrisse ning 1949. aasta küüditamine Krasnojarski kraisse ja Hakassiasse.
 
 Kaart on tavaline staatiline veebileht (Leaflet), mis loeb andmed kaustast `data/`.
 
@@ -29,9 +29,9 @@ Kõik andmed on kolmes GeoJSON-failis (WGS84). Neid saab muuta tekstiredaktoris 
 
 | Fail | Sisu | Väljad |
 |---|---|---|
-| `data/kohad.geojson` | 15 kohta (punktid) | `id`, `nimi`, `tapsus` (`aadress`, `asula`, `rajoon`, `riik`), `markus` |
-| `data/teekonnad.geojson` | 20 liikumist (jooned lähtekohast sihtkohta) | `id`, `grupp` (`weiss`, `veimre`, `tulp`), `isik`, `aeg` (kuvatav aeg), `aasta` (arv ajajoone jaoks), `kindlus` (`toendatud`, `osaliselt`, `oletus`), `tekst`, `allikas`, `lahtekoht`, `sihtkoht` |
-| `data/sundmused.geojson` | 41 sündmust (sünd, abielu, surm jm); `geometry: null` = koht teadmata | `koht`, `aasta`, `kuupaev`, `grupp`, `isik`, `tekst`, `allikas` |
+| `data/kohad.geojson` | 17 kohta (punktid) | `id`, `nimi`, `tapsus` (`aadress`, `asula`, `rajoon`, `riik`), `markus` |
+| `data/teekonnad.geojson` | 24 liikumist (jooned lähtekohast sihtkohta) | `id`, `grupp` (`weiss`, `veimre`, `tulp`), `liikumine` (`kolimine`, `valjaranne`, `teenistus`, `opingud`, `arreteerimine`, `kuuditamine`, `sundumberpaigutus`, `abiellumine`, `vabastamine`, `tagasitulek`), `isik`, `aeg` (kuvatav aeg), `aasta` (arv ajajoone jaoks), `kindlus` (`toendatud`, `osaliselt`, `oletus`), `tekst`, `allikas`, `lahtekoht`, `sihtkoht` |
+| `data/sundmused.geojson` | 48 sündmust (sünd, abielu, surm jm); `geometry: null` = koht teadmata | `koht`, `aasta`, `kuupaev`, `grupp`, `isik`, `tekst`, `allikas` |
 
 Teekonna kaar arvutatakse brauseris lähte- ja sihtkoha põhjal, joone kujul ei ole tähendust. Kui muudad koha koordinaate failis `kohad.geojson`, muuda samad koordinaadid ka `teekonnad.geojson` joonte otstes (kaart ise kasutab `kohad.geojson` koordinaate).
 
@@ -39,7 +39,7 @@ Teekonna kaar arvutatakse brauseris lähte- ja sihtkoha põhjal, joone kujul ei 
 
 - **rajoon**: teada on ainult piirkond. Polevoje küla, Saralinski rajooni asula „п. ЦЗЗ“, Šarõgino laagriosakond ja Keila valla talud ei ole tuvastatud; punkt on rajooni keskuses või üldkoordinaadil ja selle ümber on punktiirring.
 - **Priiskovõi** koordinaat on ligikaudne (Priiskovoje küla Hakassias, u 3 km Glavstanist).
-- **Saksamaa** tähistab ainult riiki; Weisside Saksamaalt tulek on perepärimus.
+- **Schwarzburg-Sondershausen** on vürstiriik; punkt on pealinnas Sondershausenis. Sünnikoht on MyHeritage'i puust, Eesti allikatega kinnitamata.
 
 ### Kuupäevad
 

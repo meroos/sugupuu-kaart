@@ -8,21 +8,37 @@
     veimre: { nimi: "Veimred ja Luhasalud",     varv: "#ff6f61", k: 0.26 },
     tulp:   { nimi: "Tulbid",                    varv: "#5ec8f2", k: 0.32 }
   };
+  // Liikumise liik: nimi, kuidas öelda sihtkohas ja lähtekohas, sõna kaare sildil
+  const LIIK = {
+    kolimine:          { nimi: "kolimine",            siia: "kolis siia",               ara: "kolis",                 silt: "" },
+    valjaranne:        { nimi: "väljaränne",          siia: "saabus siia",              ara: "rändas välja",          silt: "" },
+    teenistus:         { nimi: "sõjaväeteenistus",    siia: "tuli siia teenistusse",    ara: "läks teenistusse",      silt: "" },
+    opingud:           { nimi: "õpingud",             siia: "tuli siia õppima",         ara: "läks õppima",           silt: "õpingud" },
+    arreteerimine:     { nimi: "arreteerimine",       siia: "toodi siia arreteerituna", ara: "arreteeriti, viidi",    silt: "arreteeriti" },
+    kuuditamine:       { nimi: "küüditamine",         siia: "toodi siia küüditatuna",   ara: "küüditati, viidi",      silt: "küüditati" },
+    sundumberpaigutus: { nimi: "sundümberpaigutus asumisel", siia: "paigutati siia ümber", ara: "paigutati ümber", silt: "viidi" },
+    abiellumine:       { nimi: "abiellumine",         siia: "abiellus siin",            ara: "läks abielluma",        silt: "abiellus" },
+    vabastamine:       { nimi: "vabastamine asumiselt", siia: "naasis",                 ara: "vabastati, lahkus",     silt: "vabastati" },
+    tagasitulek:       { nimi: "tagasitulek",         siia: "naasis",                   ara: "lahkus",                silt: "tagasi" }
+  };
   const KINDLUS = { toendatud: "tõendatud", osaliselt: "osaliselt tõendatud", oletus: "oletus" };
   const TAPSUS = { aadress: "täpne koht", asula: "asula", rajoon: "ainult piirkond", riik: "ainult riik" };
   const HALO_M = { rajoon: 45000, riik: 380000 };
-  const HALO_ERAND = { keila: 9000 };
-  const LUHINIMI = { kalisz: "Kalisz", saksamaa: "Saksamaa?", alavere: "Alavere", kiivera: "Kiivera",
-                     maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu", agja: "Agja (Klooga)",
+  const HALO_ERAND = { keila: 9000, sondershausen: 40000 };
+  const LUHINIMI = { kalisz: "Kalisz", sondershausen: "Schwarzburg-Sondershausen", janeda: "Jäneda", lehtse: "Lehtse",
+                     alavere: "Alavere", kiivera: "Kiivera (Kõpu)",
+                     maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola tn)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
                      sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku" };
   const lyhi = id => LUHINIMI[id] || id;
   // Millisest suumist alates silt näha on
-  const SILDI_SUUM = { tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, saksamaa: 2.5, sarala: 4,
+  const SILDI_SUUM = { tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, sondershausen: 2.5, janeda: 8, lehtse: 7, sarala: 4,
                        tartu: 5, kiivera: 5, alavere: 6, priiskovoje: 4, kuusiku: 7,
                        kohila: 7, maidla: 7, keila: 8, agja: 8 };
   // Kaare kõverus üksikute teekondade kaupa (muidu grupi oma)
-  const K_ERAND = { V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5 };
+  const K_ERAND = { V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
+  // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel
+  const SILT_I = { V6: 46, V7: 44, V8: 22, T3: 32, V11: 36, T4: 28 };
 
   const AJASTUD = [
     [1700, 1918.15, "Vene keisririik, Eestimaa kubermang", "#3a3f4b"],
@@ -34,8 +50,8 @@
     [1991.63, 2100, "Eesti Vabariik", "#3d6b8f"]
   ];
   // Ajaskaala on mittelineaarne: 1930–1962 saab rohkem ruumi.
-  const LOIGUD = [[1835, 1930, 0, 0.28], [1930, 1962, 0.28, 0.86], [1962, 2002, 0.86, 1]];
-  const ALGUS = 1835, LOPP = 2002;
+  const LOIGUD = [[1795, 1930, 0, 0.3], [1930, 1962, 0.3, 0.86], [1962, 2002, 0.86, 1]];
+  const ALGUS = 1795, LOPP = 2002;
 
   function aastaAsendiks(a) {
     a = Math.max(ALGUS, Math.min(LOPP, a));
@@ -145,6 +161,16 @@
         icon: L.divIcon({ className: "nool", html: '<div style="color:' + varv + '"></div>', iconSize: [0, 0] })
       }).addTo(kiht);
       k.nool = nool; k.noolI = [i0, i1];
+      // Silt piki kaart: kes ja millal
+      const si = SILT_I[k.id] || 32;
+      const nimi = k.isik.replace(/\s*\(.*?\)/g, "");
+      k.silt = L.marker(pts[si], {
+        pane: "kaared", interactive: false,
+        icon: L.divIcon({ className: "kaar-silt-ikoon", iconSize: [0, 0],
+          html: '<div class="kaar-silt" style="color:' + varv + '"><b>' + esc(nimi) + '</b> · ' +
+                (LIIK[k.liikumine].silt ? esc(LIIK[k.liikumine].silt) + " " : "") + esc(k.aeg) + '</div>' })
+      }).addTo(kiht);
+      k.siltI = si;
       pohi.bindPopup(() => teekonnaPopup(k), { maxWidth: 340 });
       // Laiem nähtamatu joon klikkimiseks
       L.polyline(pts, { pane: "kaared", color: "#000", weight: 14, opacity: 0 }).bindPopup(() => teekonnaPopup(k), { maxWidth: 340 }).addTo(kiht);
@@ -152,12 +178,37 @@
     });
 
     function pooraNooled() {
+      const nahtavad = [];
       kirjed.forEach(k => {
         if (!k.nool) return;
         const a = kaart.latLngToLayerPoint(k.pts[k.noolI[0]]), b = kaart.latLngToLayerPoint(k.pts[k.noolI[1]]);
         const nurk = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI + 90;
         const el = k.nool.getElement();
         if (el) el.firstChild.style.transform = "rotate(" + nurk + "deg)";
+        const se = k.silt && k.silt.getElement();
+        if (se) {
+          const i = k.siltI, p0 = kaart.latLngToLayerPoint(k.pts[i - 2]), p1 = kaart.latLngToLayerPoint(k.pts[i + 2]);
+          let n = Math.atan2(p1.y - p0.y, p1.x - p0.x) * 180 / Math.PI;
+          const umber = n > 90 || n < -90;
+          if (umber) n += 180;
+          // Sildi pikkus vs kaare pikkus ekraanil
+          const pA = kaart.latLngToLayerPoint(k.pts[0]), pB = kaart.latLngToLayerPoint(k.pts[64]);
+          const pikk = Math.hypot(pB.x - pA.x, pB.y - pA.y);
+          const div = se.firstChild;
+          div.style.display = pikk > Math.max(130, div.textContent.length * 5.2) ? "" : "none";
+          if (!div.style.display && kaart.hasLayer(k.kiht)) nahtavad.push({ k, div });
+          // Silt kaare välisküljele
+          div.style.transform = "translate(-50%, -50%) rotate(" + n + "deg) translateY(" + (umber ? 9 : -9) + "px)";
+        }
+      });
+      // Kattuvad sildid peidetakse; eelistus: tõendatud enne, siis ajajärjekord
+      const jark = { toendatud: 0, osaliselt: 1, oletus: 2 };
+      nahtavad.sort((x, y) => jark[x.k.kindlus] - jark[y.k.kindlus] || x.k.aasta - y.k.aasta);
+      const voetud = [];
+      nahtavad.forEach(({ div }) => {
+        const r = div.getBoundingClientRect();
+        const kattub = voetud.some(q => r.left < q.right - 2 && r.right > q.left + 2 && r.top < q.bottom - 2 && r.bottom > q.top + 2);
+        if (kattub) div.style.display = "none"; else voetud.push(r);
       });
     }
     kaart.on("zoomend viewreset", pooraNooled);
@@ -189,8 +240,9 @@
     function kirjeRida(k, koht) {
       const varv = GRUPID[k.grupp].varv;
       if (k.liik === "teekond") {
-        const suund = k.sihtkoht === koht.id ? "saabus siia, lähtekoht " + esc(lyhi(k.lahtekoht))
-                                              : "lahkus, sihtkoht " + esc(lyhi(k.sihtkoht));
+        const l = LIIK[k.liikumine];
+        const suund = k.sihtkoht === koht.id ? esc(l.siia) + " (lähtekoht " + esc(lyhi(k.lahtekoht)) + ")"
+                                              : esc(l.ara) + " → " + esc(lyhi(k.sihtkoht));
         return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.aeg) + '</span> <b>' + esc(k.isik) + '</b> ' + suund + '</li>';
       }
       return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.kuupaev) + '</span> <b>' + esc(k.isik) + '</b> ' + esc(k.tekst) +
@@ -206,7 +258,7 @@
     function teekonnaPopup(k) {
       return '<div class="pp-pealkiri" style="color:' + GRUPID[k.grupp].varv + '">' + esc(k.isik) + '</div>' +
              '<div>' + esc(kohad[k.lahtekoht].nimi) + ' → ' + esc(kohad[k.sihtkoht].nimi) + '</div>' +
-             '<span class="pp-silt">' + esc(k.aeg) + '</span><span class="pp-silt ' + k.kindlus + '">' + esc(KINDLUS[k.kindlus]) + '</span>' +
+             '<span class="pp-silt">' + esc(LIIK[k.liikumine].nimi) + '</span><span class="pp-silt">' + esc(k.aeg) + '</span><span class="pp-silt ' + k.kindlus + '">' + esc(KINDLUS[k.kindlus]) + '</span>' +
              '<div>' + esc(k.tekst) + '</div><div class="pp-allikas">Allikas: ' + esc(k.allikas) + '</div>';
     }
 
@@ -229,7 +281,7 @@
       li.dataset.grupp = k.grupp;
       const kp = k.liik === "teekond" ? k.aeg : k.kuupaev;
       const kus = k.liik === "teekond"
-        ? esc(lyhi(k.lahtekoht)) + " → " + esc(lyhi(k.sihtkoht))
+        ? esc(LIIK[k.liikumine].nimi) + ": " + esc(lyhi(k.lahtekoht)) + " → " + esc(lyhi(k.sihtkoht))
         : (k.koht ? esc(lyhi(k.koht)) : "koht teadmata");
       const sisu = k.liik === "teekond" ? "" : " " + esc(k.tekst);
       li.innerHTML = '<span class="kp">' + esc(kp) + '</span><span><span class="isik">' + esc(k.isik) + '</span>' + sisu +
@@ -272,9 +324,9 @@
       rada.appendChild(r);
     });
     const sildid = document.getElementById("rada-sildid");
-    [1840, 1880, 1918, 1930, 1940, 1949, 1956, 1962, 1991].forEach(a => {
+    [1800, 1840, 1880, 1918, 1940, 1949, 1956, 1962, 1991].forEach(a => {
       const s = document.createElement("span");
-      if (![1840, 1918, 1949, 1991].includes(a)) s.className = "vaike"; s.style.left = aastaAsendiks(a) * 100 + "%"; s.textContent = a; sildid.appendChild(s);
+      if (![1800, 1918, 1949, 1991].includes(a)) s.className = "vaike"; s.style.left = aastaAsendiks(a) * 100 + "%"; s.textContent = a; sildid.appendChild(s);
     });
 
     const liugur = document.getElementById("liugur");
@@ -327,7 +379,7 @@
       const m = L.circleMarker(k.pts[0], { pane: "solmed", radius: 4.5, color: "#fff", weight: 1, fillColor: GRUPID[k.grupp].varv, fillOpacity: 1, interactive: false }).addTo(kaart);
       const kestus = 1400, t0 = performance.now();
       (function samm(t) {
-        const f = Math.min(1, (t - t0) / kestus), i = f * (k.pts.length - 1), i0 = Math.floor(i), i1 = Math.min(i0 + 1, k.pts.length - 1), r = i - i0;
+        const f = Math.max(0, Math.min(1, (t - t0) / kestus)), i = f * (k.pts.length - 1), i0 = Math.floor(i), i1 = Math.min(i0 + 1, k.pts.length - 1), r = i - i0;
         m.setLatLng(L.latLng(k.pts[i0].lat + (k.pts[i1].lat - k.pts[i0].lat) * r, k.pts[i0].lng + (k.pts[i1].lng - k.pts[i0].lng) * r));
         if (f < 1) requestAnimationFrame(samm); else kaart.removeLayer(m);
       })(t0);
@@ -343,7 +395,7 @@
       let eelmine = performance.now();
       (function samm(t) {
         if (!olek.mangib) return;
-        const dt = t - eelmine; eelmine = t;
+        const dt = Math.max(0, t - eelmine); eelmine = t;
         const p = Math.min(1, aastaAsendiks(olek.aasta) + dt / 40000);
         maaraAasta(asendAastaks(p), true);
         if (p >= 1) { peata(); return; }

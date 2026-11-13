@@ -63,6 +63,120 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.867,
+     51.367
+    ]
+   },
+   "properties": {
+    "koht": "sondershausen",
+    "aasta": 1799.5,
+    "kuupaev": "1799",
+    "grupp": "weiss",
+    "isik": "Johann Jacob Weiss",
+    "tekst": "sündis (MyHeritage'i puu järgi); Eesti allikates kinnitamata",
+    "allikas": "MyHeritage"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.3264,
+     59.2453
+    ]
+   },
+   "properties": {
+    "koht": "alavere",
+    "aasta": 1829.5,
+    "kuupaev": "1829",
+    "grupp": "weiss",
+    "isik": "Johann Jacob Weiss",
+    "tekst": "laps sündis Alaveres; isa mõisakõrtsmik",
+    "allikas": "MyHeritage; Kose meetrikad"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.7042,
+     59.2456
+    ]
+   },
+   "properties": {
+    "koht": "janeda",
+    "aasta": 1831.5,
+    "kuupaev": "1831",
+    "grupp": "weiss",
+    "isik": "Johann Jacob Weiss",
+    "tekst": "laps sündis Jänedal",
+    "allikas": "MyHeritage"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.8231,
+     59.2494
+    ]
+   },
+   "properties": {
+    "koht": "lehtse",
+    "aasta": 1836.5,
+    "kuupaev": "1836",
+    "grupp": "weiss",
+    "isik": "Johann Jacob Weiss",
+    "tekst": "laps sündis Lehtses",
+    "allikas": "MyHeritage"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1837.5,
+    "kuupaev": "1837",
+    "grupp": "weiss",
+    "isik": "Wojciech Majkowski ja Liza",
+    "tekst": "laulatati Tallinna katoliku koguduses",
+    "allikas": "TLA.1398.2.9, kaader 32, nr 24"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1866.05,
+    "kuupaev": "1866",
+    "grupp": "weiss",
+    "isik": "Rosalie Maikowsky",
+    "tekst": "oli enne abiellumist teenija raehärra Mayeri majapidamises („Magd beim Hr. Rathsh. Mayer“); Mayerid olid Suurgildi kaupmehesuguvõsa",
+    "allikas": "laulatuste nimekiri 1866 nr 5; TLA.238.2.20, lk 309"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      24.7536,
      59.437
     ]
@@ -282,7 +396,7 @@
     "kuupaev": "22.04.1923",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "sündis Tallinnas Raevalla 2",
+    "tekst": "sündis Tallinnas Raevalla 2. Aastatel 1923–1948 olid Suur-Raevalla (tänane Peterburi tee) ja Väike-Raevalla; kumb on mõeldud, vajab kontrolli",
     "allikas": "MyHeritage"
    }
   },
@@ -681,7 +795,7 @@
     "kuupaev": "11.04.1960",
     "grupp": "veimre",
     "isik": "Heli Tulp",
-    "tekst": "aadress Kuusiku katsebaas; pärimisavaldus koos Eda Piirsaluga",
+    "tekst": "aadress Kuusiku katsebaas",
     "allikas": "ERA.5078.1.10585"
    }
   },
@@ -702,6 +816,19 @@
     "isik": "Harry Tulp",
     "tekst": "suri kodus Kuusikul; maeti Rapla kalmistule (MyHeritage'i matmiskuupäev 7.03.2001 on vale)",
     "allikas": "ERA.5208.1.340"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "koht": null,
+    "aasta": 1866.36,
+    "kuupaev": "10.05.1866",
+    "grupp": "weiss",
+    "isik": "Johann Jacob Weiss",
+    "tekst": "suri; surmakirjet ei ole leitud (Pühavaimu 1866 läbi vaadatud)",
+    "allikas": "MyHeritage; TLA.238.1.100"
    }
   },
   {
