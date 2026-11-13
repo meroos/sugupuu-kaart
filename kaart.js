@@ -447,11 +447,12 @@
           if (naha && !kaardil) { k.kiht.addTo(kaart); if (animeeri && k.aasta > enne && !k.tuhm) komeet(k); }
           if (!naha && kaardil) kaart.removeLayer(k.kiht);
           // Varasemad teekonnad jäävad kaardile tuhmilt taustaks
-          if (naha) k.kiht.eachLayer(l => { const el = l.getElement && l.getElement(); if (el) el.classList.toggle("tuhm", k.tuhm); });
+          if (naha) k.kiht.eachLayer(l => { const el = l.getElement && l.getElement(); if (el) { el.classList.toggle("tuhm", k.tuhm); el.classList.toggle("teine-polv", k.tuhm && !k.omaPolv); } });
         }
       });
       Object.values(kohad).forEach(koht => {
-        const akt = koht.seotud.filter(k => olek.grupid[k.grupp] && k.aasta <= a);
+        // Põlvkonna vaates loevad kohta aktiivseks ainult selle põlvkonna kirjed
+        const akt = koht.seotud.filter(k => olek.grupid[k.grupp] && k.aasta <= a && k.omaPolv !== false);
         koht.aktiivne = akt.length > 0;
         const viimane = akt[akt.length - 1];
         koht.marker.setStyle(koht.aktiivne
