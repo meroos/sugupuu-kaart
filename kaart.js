@@ -60,8 +60,8 @@
   const POLVED = [
     { nr: 6, a0: 1799, a1: 1866, nimi: "Johann Jacob, Wojciech", koik: "Johann Jacob ja Madle Weiss, Wojciech ja Liza Majkowski" },
     { nr: 5, a0: 1836, a1: 1930, nimi: "Johann Christian, Rosalie", koik: "Johann Christian ja Rosalie Weiss, Ado Tulp" },
-    { nr: 4, a0: 1863, a1: 1959, nimi: "Aleksander-Georg, Marie", koik: "Aleksander-Georg ja Marie Weiss, Hans ja Anna Luhasalu, Jaan Tulp" },
-    { nr: 3, a0: 1899, a1: 1978, nimi: "Arnold, Magda, August", koik: "Arnold ja Magda Veimre, August ja Aliide Tulp" },
+    { nr: 4, a0: 1863, a1: 1959, nimi: "Aleksander-Georg, Marie", koik: "Aleksander-Georg ja Marie Weiss, Jaan Tulp" },
+    { nr: 3, a0: 1899, a1: 1978, nimi: "Arnold, Magda, August", koik: "Arnold ja Magda Veimre, August ja Aliide Tulp; Magda vanemad Hans ja Anna Luhasalu" },
     { nr: 2, a0: 1923, a1: 2002, nimi: "Heli, Harry, Udo", koik: "Heli ja Harry Tulp, Guido Tulp, Udo Veimre" }
   ];
   function aastaAsendiks(a) {
@@ -210,30 +210,60 @@
             for (const j of [k.siltI - d, k.siltI + d]) if (j >= 4 && j <= 60 && nahtav(j)) { i = j; break; }
           }
           if (i < 0) { se.firstChild.style.display = "none"; return; }
-          if (i !== k.siltNyyd) { k.siltNyyd = i; k.silt.setLatLng(k.pts[i]); }
-          se.firstChild.style.fontSize = Math.max(10.5, Math.min(14, 10.5 + (kaart.getZoom() - 4) * 0.7)) + "px";
-          const p0 = kaart.latLngToLayerPoint(k.pts[i - 2]), p1 = kaart.latLngToLayerPoint(k.pts[i + 2]);
-          let n = Math.atan2(p1.y - p0.y, p1.x - p0.x) * 180 / Math.PI;
-          const umber = n > 90 || n < -90;
-          if (umber) n += 180;
+          const div = se.firstChild;
+          // Paigutab sildi kaare punkti j juurde ja pöörab kaare suunas (välisküljele)
+          const paiguta = (j, sees) => {
+            if (j !== k.siltNyyd) { k.siltNyyd = j; k.silt.setLatLng(k.pts[j]); }
+            div.style.fontSize = Math.max(10.5, Math.min(14, 10.5 + (kaart.getZoom() - 4) * 0.7)) + "px";
+            const p0 = kaart.latLngToLayerPoint(k.pts[j - 2]), p1 = kaart.latLngToLayerPoint(k.pts[j + 2]);
+            let n = Math.atan2(p1.y - p0.y, p1.x - p0.x) * 180 / Math.PI;
+            const umber = n > 90 || n < -90;
+            if (umber) n += 180;
+            const nihe = (umber ? 9 : -9) * (sees ? -1 : 1);
+            div.style.transform = "translate(-50%, -50%) rotate(" + n + "deg) translateY(" + nihe + "px)";
+            // Sildi geomeetria ekraanil: keskjoone lõik ja kõrgus (pööratud ristküliku asemel)
+            const r = n * Math.PI / 180, ux = Math.cos(r), uy = Math.sin(r), c = kaart.latLngToContainerPoint(k.pts[j]);
+            const cx = c.x - uy * nihe, cy = c.y + ux * nihe, pw = div.offsetWidth / 2 + 4;
+            return { ax: cx - ux * pw, ay: cy - uy * pw, bx: cx + ux * pw, by: cy + uy * pw, h: div.offsetHeight + 2 };
+          };
+          paiguta(i);
           // Sildi pikkus vs kaare pikkus ekraanil
           const pA = kaart.latLngToLayerPoint(k.pts[0]), pB = kaart.latLngToLayerPoint(k.pts[64]);
           const pikk = Math.hypot(pB.x - pA.x, pB.y - pA.y);
-          const div = se.firstChild;
-          div.style.display = pikk > Math.max(130, div.textContent.length * 5.2) ? "" : "none";
-          if (!div.style.display && kaart.hasLayer(k.kiht) && !k.tuhm) nahtavad.push({ k, div });
-          // Silt kaare välisküljele
-          div.style.transform = "translate(-50%, -50%) rotate(" + n + "deg) translateY(" + (umber ? 9 : -9) + "px)";
+          div.style.display = pikk > Math.max(110, div.textContent.length * 4.6) ? "" : "none";
+          if (!div.style.display && kaart.hasLayer(k.kiht) && !k.tuhm) nahtavad.push({ k, div, i, paiguta, nahtav });
         }
       });
-      // Kattuvad sildid peidetakse; eelistus: tõendatud enne, siis ajajärjekord
+      // Kattuvad sildid: kõigepealt proovi silti kaarel nihutada, alles siis peida.
+      // Eelistus: tõendatud enne, siis ajajärjekord.
       const jark = { toendatud: 0, osaliselt: 1, oletus: 2 };
       nahtavad.sort((x, y) => jark[x.k.kindlus] - jark[y.k.kindlus] || x.k.aasta - y.k.aasta);
       const voetud = [];
-      nahtavad.forEach(({ div }) => {
-        const r = div.getBoundingClientRect();
-        const kattub = voetud.some(q => r.left < q.right - 2 && r.right > q.left + 2 && r.top < q.bottom - 2 && r.bottom > q.top + 2);
-        if (kattub) div.style.display = "none"; else voetud.push(r);
+      // Kahe lõigu vähim kaugus; sildid kattuvad, kui see on väiksem kui nende kõrgus
+      const pl = (px, py, ax, ay, bx, by) => { const dx = bx - ax, dy = by - ay, t = Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy || 1))); return Math.hypot(px - ax - t * dx, py - ay - t * dy); };
+      const ristub = (a, b) => { const o = (p, q, r) => Math.sign((q.x - p.x) * (r.y - p.y) - (q.y - p.y) * (r.x - p.x));
+        const A = { x: a.ax, y: a.ay }, B = { x: a.bx, y: a.by }, C = { x: b.ax, y: b.ay }, D = { x: b.bx, y: b.by };
+        return o(A, B, C) !== o(A, B, D) && o(C, D, A) !== o(C, D, B); };
+      const kaugus = (a, b) => ristub(a, b) ? 0 : Math.min(pl(a.ax, a.ay, b.ax, b.ay, b.bx, b.by), pl(a.bx, a.by, b.ax, b.ay, b.bx, b.by), pl(b.ax, b.ay, a.ax, a.ay, a.bx, a.by), pl(b.bx, b.by, a.ax, a.ay, a.bx, a.by));
+      const kattub = g => voetud.some(q => kaugus(g, q) < (g.h + q.h) / 2);
+      // Kohanimed on takistused, mida kaaresildid ei kata
+      const kast = kaart.getContainer().getBoundingClientRect();
+      document.querySelectorAll(".leaflet-tooltip.silt").forEach(el => {
+        if (el.style.display === "none" || !el.offsetParent) return;
+        const r = el.getBoundingClientRect(), y = (r.top + r.bottom) / 2 - kast.top;
+        voetud.push({ ax: r.left - kast.left, ay: y, bx: r.right - kast.left, by: y, h: r.height });
+      });
+      nahtavad.forEach(({ div, i, paiguta, nahtav }) => {
+        // Kandidaadid: eelistatud koht, siis nihked mööda kaart; mõlemad kaare küljed
+        const kandidaadid = [i];
+        for (let d = 4; d <= 44; d += 4) kandidaadid.push(i - d, i + d);
+        for (const sees of [false, true]) for (const j of kandidaadid) {
+          if (j < 10 || j > 54 || !nahtav(j)) continue;
+          const g = paiguta(j, sees);
+          if (!kattub(g)) { voetud.push(g); return; }
+        }
+        paiguta(i);
+        div.style.display = "none";
       });
     }
     kaart.on("zoomend viewreset moveend", pooraNooled);
