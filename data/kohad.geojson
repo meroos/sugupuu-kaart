@@ -284,9 +284,73 @@
    },
    "properties": {
     "id": "kuusiku",
-    "nimi": "Kuusiku katsebaas, Rapla rajoon",
+    "nimi": "Kuusiku, Roheline 6 (Rapla vald)",
     "tapsus": "asula",
-    "markus": "Heli aadress 1960. aastal; Harry suri Kuusikul 2001."
+    "markus": "Harry ja Heli Tulbi kodu. Aadress Roheline 6 on Riigi Teataja aktis Harri Tulbi juures. Punkt on Kuusiku asula kohal ligikaudu; maja täpset asukohta ei ole kaardile kantud."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.4114,
+     50.0515
+    ]
+   },
+   "properties": {
+    "id": "debica",
+    "nimi": "Dębica / Heidelager (Pustków), Poola",
+    "tapsus": "rajoon",
+    "markus": "SS-õppelaager Heidelager asus Pustkówis Dębica lähedal; siin õpetati välja Eesti Leegion. Punkt on Dębica linnas."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.5447,
+     49.7517
+    ]
+   },
+   "properties": {
+    "id": "neveklau",
+    "nimi": "Neveklau (Neveklov), Böömimaa",
+    "tapsus": "asula",
+    "markus": "Neveklovi ümbrus oli 1942–1945 Relva-SS-i õppeväljak (SS-Truppenübungsplatz Böhmen)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.26,
+     49.21
+    ]
+   },
+   "properties": {
+    "id": "izjum",
+    "nimi": "Izjum, Harkivi oblast (Ukraina)",
+    "tapsus": "rajoon",
+    "markus": "Pataljon Narva lahingupiirkond 1943. a suvel Izjumi ümbruses; täpsed positsioonid on kirjas pataljoni ajaloos."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     31.2,
+     49.2
+    ]
+   },
+   "properties": {
+    "id": "olsana",
+    "nimi": "Olšana (Vilšana), Tšerkassõ oblast (Ukraina)",
+    "tapsus": "asula",
+    "markus": "Korsun–Tšerkassõ koti lõunaserv; Wiking kaitses Olšanat 1944. a jaanuari lõpus ja veebruaris. Koordinaat on ligikaudne."
    }
   }
  ]

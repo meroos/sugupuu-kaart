@@ -30,14 +30,16 @@
                      alavere: "Alavere", kiivera: "Kiivera (Kõpu)",
                      maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola 33)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
-                     sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku", petseri: "Pihkva järv, Kolpino saar" };
+                     sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku (Roheline 6)", petseri: "Pihkva järv, Kolpino saar",
+                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana" };
   const lyhi = id => LUHINIMI[id] || id;
   // Millisest suumist alates silt näha on
   const SILDI_SUUM = { tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, sondershausen: 2.5, janeda: 8, lehtse: 7, sarala: 4,
                        tartu: 5, kiivera: 5, alavere: 6, priiskovoje: 4, kuusiku: 7,
-                       kohila: 7, maidla: 7, keila: 8, agja: 8, petseri: 5 };
+                       kohila: 7, maidla: 7, keila: 8, agja: 8, petseri: 5,
+                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3 };
   // Kaare kõverus üksikute teekondade kaupa (muidu grupi oma)
-  const K_ERAND = { V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
+  const K_ERAND = { T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
   // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel
   const SILT_I = { V6: 46, V7: 44, V8: 22, T3: 32, V11: 36, T4: 28 };
 
@@ -100,7 +102,8 @@
 
   const VAATED = {
     eesti: L.latLngBounds([57.9, 21.7], [59.7, 27.4]),
-    siber: L.latLngBounds([53.6, 56], [59.6, 94])
+    siber: L.latLngBounds([53.6, 56], [59.6, 94]),
+    rinne: L.latLngBounds([47.8, 13.5], [60, 38.5])
   };
 
   const olek = { aasta: LOPP, mangib: false, aken: null, grupid: { weiss: true, veimre: true, tulp: true } };
@@ -198,7 +201,18 @@
         if (el) el.firstChild.style.transform = "rotate(" + nurk + "deg)";
         const se = k.silt && k.silt.getElement();
         if (se) {
-          const i = k.siltI, p0 = kaart.latLngToLayerPoint(k.pts[i - 2]), p1 = kaart.latLngToLayerPoint(k.pts[i + 2]);
+          // Silt jääb nähtavale: kui eelistatud koht on vaatest väljas, otsi kaarel lähim nähtav punkt
+          const suurus = kaart.getSize(), lai = window.innerWidth > 760;
+          const x0 = 20, x1 = suurus.x - (lai ? 380 : 20), y0 = lai ? 130 : 120, y1 = suurus.y - 175;
+          const nahtav = j => { const c = kaart.latLngToContainerPoint(k.pts[j]); return c.x > x0 && c.x < x1 && c.y > y0 && c.y < y1; };
+          let i = -1;
+          for (let d = 0; d <= 60 && i < 0; d++) {
+            for (const j of [k.siltI - d, k.siltI + d]) if (j >= 4 && j <= 60 && nahtav(j)) { i = j; break; }
+          }
+          if (i < 0) { se.firstChild.style.display = "none"; return; }
+          if (i !== k.siltNyyd) { k.siltNyyd = i; k.silt.setLatLng(k.pts[i]); }
+          se.firstChild.style.fontSize = Math.max(10.5, Math.min(14, 10.5 + (kaart.getZoom() - 4) * 0.7)) + "px";
+          const p0 = kaart.latLngToLayerPoint(k.pts[i - 2]), p1 = kaart.latLngToLayerPoint(k.pts[i + 2]);
           let n = Math.atan2(p1.y - p0.y, p1.x - p0.x) * 180 / Math.PI;
           const umber = n > 90 || n < -90;
           if (umber) n += 180;
@@ -222,7 +236,7 @@
         if (kattub) div.style.display = "none"; else voetud.push(r);
       });
     }
-    kaart.on("zoomend viewreset", pooraNooled);
+    kaart.on("zoomend viewreset moveend", pooraNooled);
 
     // ---------- Sõlmed ----------
     Object.values(kohad).forEach(koht => {
@@ -252,8 +266,8 @@
       const varv = GRUPID[k.grupp].varv;
       if (k.liik === "teekond") {
         const l = LIIK[k.liikumine];
-        const eel = k.liikumine === "elukoht" ? " (varem " : " (lähtekoht ";
-        const suund = k.sihtkoht === koht.id ? esc(l.siia) + eel + esc(lyhi(k.lahtekoht)) + ")"
+        const suund = k.sihtkoht === koht.id
+          ? esc(l.siia) + (k.liikumine === "elukoht" ? " (varem " + esc(lyhi(k.lahtekoht)) + ")" : "")
                                               : esc(l.ara) + " → " + esc(lyhi(k.sihtkoht));
         return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.aeg) + '</span> <b>' + esc(k.isik) + '</b> ' + suund + '</li>';
       }

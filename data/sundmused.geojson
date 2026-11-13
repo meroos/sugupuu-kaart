@@ -472,7 +472,7 @@
     "kuupaev": "20.12.1926",
     "grupp": "veimre",
     "isik": "Arnold Weiss",
-    "tekst": "lõpetas arstiteaduskonna: lõpueksam „cum laude“, tunnistati arsti astme vääriliseks; diplom otsustati välja anda 21.12.1926",
+    "tekst": "lõpetas arstiteaduskonna: lõpueksam „cum laude“, tunnistati arsti astme vääriliseks; arstidiplom anti välja 21.12.1926 (ülikooli valitsuse otsus; ajutine tunnistus 22.12.1926)",
     "allikas": "EAA.2100.1.17928, kaader 47 (ajutine tunnistus nr 10276, 22.12.1926)"
    }
   },
@@ -620,12 +620,145 @@
    },
    "properties": {
     "koht": "tallinn",
-    "aasta": 1941.5,
-    "kuupaev": "1941",
+    "aasta": 1941.63,
+    "kuupaev": "19.08.1941",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "KGB grupitoimik (Hurma, Naarits, Silla vennad); arreteerimise kuupäev selgub toimikust",
-    "allikas": "ERAF.130SM.1.5509-1, -2"
+    "tekst": "arreteeriti Tallinnas Tatari 48-2 (keskharidusega registraator, skautide lippkond „Terassammur“). Grupitoimik koos Hurma, Naaritsa ja Silla vendadega. Pääses ära, kui vange viidi laevaga „Jaan Teär“ Venemaale",
+    "allikas": "memoriaal.ee (Poliitilised arreteerimised Eestis, kd 3); ERAF.130SM.1.5509-1, -2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1941.75,
+    "kuupaev": "2.10.1941",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "astus 39. politseipataljoni 4. kompaniisse ja teenis seal 12.08.1942-ni; kompanii asukoht teadmata",
+    "allikas": "memoriaal.ee (Eestlased Soome ja Saksa sõjaväes)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.4114,
+     50.0515
+    ]
+   },
+   "properties": {
+    "koht": "debica",
+    "aasta": 1942.71,
+    "kuupaev": "12.09.1942",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "Eesti Leegioni väljaõpe Heidelageris. Pataljonis oli ta motovirgats ja tulejuht",
+    "allikas": "memoriaal.ee"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.5447,
+     49.7517
+    ]
+   },
+   "properties": {
+    "koht": "neveklau",
+    "aasta": 1942.9,
+    "kuupaev": "1942–1943",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "lõpetas õppe Neveklaus (Relva-SS-i õppeväljak Böömimaal); kursuse liik ja aeg ei ole kirjas",
+    "allikas": "memoriaal.ee"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     37.26,
+     49.21
+    ]
+   },
+   "properties": {
+    "koht": "izjum",
+    "aasta": 1943.55,
+    "kuupaev": "07.–08.1943",
+    "grupp": "tulp",
+    "isik": "pataljon Narva",
+    "tekst": "lahingud Izjumi all diviisi Wiking koosseisus; Harry oli pataljonis",
+    "allikas": "memoriaal.ee; „Terasest tugevamad“; H. Ojalo, „Sõdalase tee“"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     31.2,
+     49.2
+    ]
+   },
+   "properties": {
+    "koht": "olsana",
+    "aasta": 1944.1,
+    "kuupaev": "5.02.1944",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "sai haavata Olšanas Korsun–Tšerkassõ kotis",
+    "allikas": "memoriaal.ee"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1949.22,
+    "kuupaev": "enne 25.03.1949",
+    "grupp": "tulp",
+    "isik": "August ja Aliide Tulp",
+    "tekst": "elasid Tallinnas Õie 3-2",
+    "allikas": "memoriaal.ee"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.332,
+     54.851
+    ]
+   },
+   "properties": {
+    "koht": "sarala",
+    "aasta": 1958.21,
+    "kuupaev": "17.03.1958",
+    "grupp": "tulp",
+    "isik": "Harry, August ja Aliide Tulp",
+    "tekst": "vabastati asumiselt",
+    "allikas": "memoriaal.ee"
    }
   },
   {
@@ -890,7 +1023,7 @@
     "kuupaev": "3.10.1958",
     "grupp": "veimre",
     "isik": "Heli Tulp",
-    "tekst": "otsis venda Udot ajalehes „Kodumaale Tagasipöördumise Eest“ (ka 2.11.1958); aadress juba Kuusiku katsebaas",
+    "tekst": "otsis venda Udot ajalehes „Kodumaale Tagasipöördumise Eest“ (ka 2.11.1958); aadress juba Kuusikul",
     "allikas": "Kodumaale Tagasipöördumise Eest 3.10.1958 lk 4; 2.11.1958 lk 3 (DIGAR)"
    }
   },
@@ -909,7 +1042,7 @@
     "kuupaev": "11.04.1960",
     "grupp": "veimre",
     "isik": "Heli Tulp",
-    "tekst": "aadress Kuusiku katsebaas",
+    "tekst": "elukoht Kuusikul",
     "allikas": "ERA.5078.1.10585"
    }
   },
@@ -928,7 +1061,7 @@
     "kuupaev": "28.06.2001",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "suri kodus Kuusikul; maeti Rapla kalmistule (MyHeritage'i matmiskuupäev 7.03.2001 on vale)",
+    "tekst": "suri kodus Kuusikul, Roheline 6; maeti Rapla kalmistule (MyHeritage'i matmiskuupäev 7.03.2001 on vale)",
     "allikas": "ERA.5208.1.340"
    }
   },
@@ -950,12 +1083,12 @@
    "geometry": null,
    "properties": {
     "koht": null,
-    "aasta": 1942.5,
-    "kuupaev": "1942–1945",
+    "aasta": 1944.3,
+    "kuupaev": "02.–06.1944",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "teenistus Saksa väeosades; väeosad ja kohad teadmata",
-    "allikas": "mälestused MT 3542:1 (Mahtra muuseum)"
+    "tekst": "pärast haavatasaamist: pataljoni riismed murdsid 16./17.02.1944 kotist välja ja viidi kevadel Eestisse, kus pataljonist sai Eesti diviisi fusiljeeripataljon. Harry teenistus pataljonis kestis juunini 1944; kus ta ravil oli ja kus teenistus lõppes, teadmata",
+    "allikas": "memoriaal.ee; „Terasest tugevamad“; mälestused MT 3542:1 (Mahtra muuseum)"
    }
   },
   {
@@ -976,11 +1109,11 @@
    "geometry": null,
    "properties": {
     "koht": null,
-    "aasta": 1945.5,
-    "kuupaev": "1945–1958",
+    "aasta": 1946.5,
+    "kuupaev": "1944–1949",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "Nõukogude vangimajad ja laagrid; kohad teadmata",
+    "tekst": "asukoht teadmata. Muuseumikirjelduste järgi oli ta Nõukogude vangimajades ja laagrites; kas see oli enne 1949. a küüditamist, vajab kontrolli",
     "allikas": "ERM KV 891:8/183-188; MT 3542:1"
    }
   }

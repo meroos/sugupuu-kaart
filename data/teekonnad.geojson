@@ -632,8 +632,8 @@
     "aeg": "25.03.1949",
     "aasta": 1949,
     "kindlus": "osaliselt",
-    "tekst": "Küüditati 25.03.1949 Ülemiste jaamast koos Heli ja tema emaga. Väljasaatmine on toimikuga tõendatud; sihtkoht on järeldus Harry ja Heli abielukohast. Täpsustub asumistoimikutest.",
-    "allikas": "ERAF.3-N.1.1809; ERAF.8SM.1.10839–10841 (tellimata)",
+    "tekst": "Küüditati 25.03.1949 Ülemiste jaamast koos Heli ja tema emaga; vanemad elasid enne seda Tallinnas Õie 3-2. memoriaal.ee järgi viidi nad Krasnojarski krai Saralinski (Ordžonikidze) rajooni. Priiskovõi asula on järeldus Harry ja Heli abielukohast.",
+    "allikas": "memoriaal.ee; ERAF.3-N.1.1809; ERAF.8SM.1.10839–10841 (tellimata)",
     "liikumine": "kuuditamine",
     "lahtekoht": "tallinn",
     "sihtkoht": "priiskovoje"
@@ -690,7 +690,7 @@
     "aeg": "6.04.1956 → hiljemalt 1958",
     "aasta": 1956.3,
     "kindlus": "osaliselt",
-    "tekst": "Vabastati asumiselt 6.04.1956 (Ordžonikidze rajooni erikomandatuur). Oktoobris 1958 oli tema aadress Rapla rajoon, Kuusiku katsebaas. Teekond ja vahepealsed elukohad teadmata.",
+    "tekst": "Vabastati asumiselt 6.04.1956 (Ordžonikidze rajooni erikomandatuur). Oktoobris 1958 elas ta Kuusikul (Rapla rajoon). Teekond ja vahepealsed elukohad teadmata.",
     "allikas": "ERAF.8SM.1.2729; Kodumaale Tagasipöördumise Eest 3.10.1958",
     "liikumine": "vabastamine",
     "lahtekoht": "sarala",
@@ -716,14 +716,101 @@
     "id": "T4",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "aeg": "enne 1959",
-    "aasta": 1956.5,
-    "kindlus": "oletus",
-    "tekst": "Harry tagasituleku aeg ja koht on teadmata. Tütar Riina sündis Eestis 1959, nii et pere oli tagasi enne seda. Harry suri 28.06.2001 kodus Kuusikul.",
-    "allikas": "ERA.5208.1.340 (surmaaeg); MyHeritage",
+    "aeg": "pärast 17.03.1958",
+    "aasta": 1958.25,
+    "kindlus": "osaliselt",
+    "tekst": "Vabastati asumiselt 17.03.1958 (ka August ja Aliide). Oktoobris 1958 oli Heli aadress juba Kuusikul, seega tuli pere tagasi 1958. aastal; teekond on teadmata. Harry elas Kuusikul Roheline 6 ja suri seal 28.06.2001.",
+    "allikas": "memoriaal.ee; Riigi Teataja; ERA.5208.1.340",
     "liikumine": "tagasitulek",
     "lahtekoht": "priiskovoje",
     "sihtkoht": "kuusiku"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7536,
+      59.437
+     ],
+     [
+      21.4114,
+      50.0515
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T5",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "12.09.1942",
+    "aasta": 1942.7,
+    "kindlus": "toendatud",
+    "tekst": "Pärast teenistust 39. politseipataljonis (2.10.1941–12.08.1942) astus Eesti Leegioni ja saadeti 12.09.1942 Dębicasse, kus leegion välja õpetati.",
+    "allikas": "memoriaal.ee (Eestlased Soome ja Saksa sõjaväes)",
+    "liikumine": "teenistus",
+    "lahtekoht": "tallinn",
+    "sihtkoht": "debica"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      21.4114,
+      50.0515
+     ],
+     [
+      37.26,
+      49.21
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T6",
+    "grupp": "tulp",
+    "isik": "Harry Tulp (pataljon Narva)",
+    "aeg": "kevad 1943",
+    "aasta": 1943.3,
+    "kindlus": "osaliselt",
+    "tekst": "Esimesed u 800 leegionäri moodustasid pataljoni Narva, mis saadeti 1943. a kevadel Ukrainasse diviisi Wiking koosseisu ja võitles juulis–augustis Izjumi all. Harry teenistus pataljonis on tõendatud; et ta oli just Izjumi lahingutes, on järeldus pataljoni teekonnast.",
+    "allikas": "memoriaal.ee; „Terasest tugevamad: pataljon Narva ajalugu“; H. Ojalo, „Sõdalase tee. Pataljon Narva 1943–1944“ (Ammukaar); en.wikipedia „Estonian Legion“",
+    "liikumine": "teenistus",
+    "lahtekoht": "debica",
+    "sihtkoht": "izjum"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      37.26,
+      49.21
+     ],
+     [
+      31.2,
+      49.2
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T7",
+    "grupp": "tulp",
+    "isik": "Harry Tulp (pataljon Narva)",
+    "aeg": "sügis 1943 → jaanuar 1944",
+    "aasta": 1943.75,
+    "kindlus": "osaliselt",
+    "tekst": "Pataljon taganes koos Wikingiga Dnepri taha ja jäi 1944. a jaanuari lõpus Korsun–Tšerkassõ kotti. Olšanasse jõudmine on tõendatud haavatasaamisega; vahepealne teekond on üldistus.",
+    "allikas": "memoriaal.ee; „Terasest tugevamad“; H. Ojalo, „Sõdalase tee“",
+    "liikumine": "teenistus",
+    "lahtekoht": "izjum",
+    "sihtkoht": "olsana"
    }
   }
  ]
