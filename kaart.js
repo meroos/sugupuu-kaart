@@ -53,12 +53,22 @@
   const LOIGUD = [[1795, 1930, 0, 0.3], [1930, 1962, 0.3, 0.86], [1962, 2002, 0.86, 1]];
   const ALGUS = 1795, LOPP = 2002;
 
+  // Põlvkonnad (loetud uurijast: 2 = vanavanemad). Sildil klõpsates kitseneb ajajoon nende aastatele.
+  const POLVED = [
+    { nr: 6, a0: 1799, a1: 1866, nimi: "Johann Jacob, Wojciech", koik: "Johann Jacob ja Madle Weiss, Wojciech ja Liza Majkowski" },
+    { nr: 5, a0: 1836, a1: 1930, nimi: "Johann Christian, Rosalie", koik: "Johann Christian ja Rosalie Weiss, Ado Tulp" },
+    { nr: 4, a0: 1863, a1: 1959, nimi: "Aleksander-Georg, Marie", koik: "Aleksander-Georg ja Marie Weiss, Hans ja Anna Luhasalu, Jaan Tulp" },
+    { nr: 3, a0: 1899, a1: 1978, nimi: "Arnold, Magda, August", koik: "Arnold ja Magda Veimre, August ja Aliide Tulp" },
+    { nr: 2, a0: 1923, a1: 2002, nimi: "Heli, Harry, Udo", koik: "Heli ja Harry Tulp, Udo Veimre" }
+  ];
   function aastaAsendiks(a) {
+    if (olek.aken) { const [b0, b1] = olek.aken; return Math.max(0, Math.min(1, (a - b0) / (b1 - b0))); }
     a = Math.max(ALGUS, Math.min(LOPP, a));
     for (const [y0, y1, p0, p1] of LOIGUD) if (a <= y1) return p0 + (a - y0) / (y1 - y0) * (p1 - p0);
     return 1;
   }
   function asendAastaks(p) {
+    if (olek.aken) { const [b0, b1] = olek.aken; return b0 + p * (b1 - b0); }
     for (const [y0, y1, p0, p1] of LOIGUD) if (p <= p1) return y0 + (p - p0) / (p1 - p0) * (y1 - y0);
     return LOPP;
   }
@@ -92,7 +102,7 @@
     siber: L.latLngBounds([53.6, 56], [59.6, 94])
   };
 
-  const olek = { aasta: LOPP, mangib: false, grupid: { weiss: true, veimre: true, tulp: true } };
+  const olek = { aasta: LOPP, mangib: false, aken: null, grupid: { weiss: true, veimre: true, tulp: true } };
 
   Promise.all(["kohad", "teekonnad", "sundmused"].map(n =>
     fetch("data/" + n + ".geojson").then(r => { if (!r.ok) throw new Error(n); return r.json(); })
@@ -196,7 +206,7 @@
           const pikk = Math.hypot(pB.x - pA.x, pB.y - pA.y);
           const div = se.firstChild;
           div.style.display = pikk > Math.max(130, div.textContent.length * 5.2) ? "" : "none";
-          if (!div.style.display && kaart.hasLayer(k.kiht)) nahtavad.push({ k, div });
+          if (!div.style.display && kaart.hasLayer(k.kiht) && !k.tuhm) nahtavad.push({ k, div });
           // Silt kaare välisküljele
           div.style.transform = "translate(-50%, -50%) rotate(" + n + "deg) translateY(" + (umber ? 9 : -9) + "px)";
         }
@@ -308,25 +318,82 @@
       e.currentTarget.setAttribute("aria-expanded", String(!p.classList.contains("peidetud")));
     });
 
+    const koikPiirid = L.latLngBounds(Object.values(kohad).map(k => k.latlng));
+    function polster() {
+      return window.innerWidth > 760 ? { paddingTopLeft: [40, 140], paddingBottomRight: [500, 170] }
+                                     : { paddingTopLeft: [30, 130], paddingBottomRight: [90, 180] };
+    }
+
     // ---------- Ajajoon ----------
     const tikid = document.getElementById("tikid"), rada = document.getElementById("rada");
+    const sildid = document.getElementById("rada-sildid");
     kirjed.forEach(k => {
       const t = document.createElement("div");
-      t.className = "tikk"; t.style.left = (aastaAsendiks(k.aasta) * 100) + "%"; t.style.background = GRUPID[k.grupp].varv;
+      t.className = "tikk"; t.style.background = GRUPID[k.grupp].varv;
       t.title = (k.liik === "teekond" ? k.aeg : k.kuupaev) + " · " + k.isik;
       k.tikk = t; tikid.appendChild(t);
     });
-    AJASTUD.forEach(([a0, a1, , varv]) => {
-      const p0 = aastaAsendiks(a0), p1 = aastaAsendiks(a1);
-      if (p1 <= p0) return;
-      const r = document.createElement("div");
-      r.className = "ajastu-riba"; r.style.left = p0 * 100 + "%"; r.style.width = (p1 - p0) * 100 + "%"; r.style.background = varv;
-      rada.appendChild(r);
-    });
-    const sildid = document.getElementById("rada-sildid");
-    [1800, 1840, 1880, 1918, 1940, 1949, 1956, 1962, 1991].forEach(a => {
-      const s = document.createElement("span");
-      if (![1800, 1918, 1949, 1991].includes(a)) s.className = "vaike"; s.style.left = aastaAsendiks(a) * 100 + "%"; s.textContent = a; sildid.appendChild(s);
+    function joonistaRada() {
+      rada.querySelectorAll(".ajastu-riba").forEach(e => e.remove());
+      sildid.innerHTML = "";
+      kirjed.forEach(k => {
+        const p = aastaAsendiks(k.aasta);
+        k.aknas = !olek.aken || (k.aasta >= olek.aken[0] && k.aasta <= olek.aken[1]);
+        k.tikk.style.left = (p * 100) + "%";
+      });
+      AJASTUD.forEach(([a0, a1, , varv]) => {
+        const p0 = aastaAsendiks(a0), p1 = aastaAsendiks(a1);
+        if (p1 <= p0) return;
+        const r = document.createElement("div");
+        r.className = "ajastu-riba"; r.style.left = p0 * 100 + "%"; r.style.width = (p1 - p0) * 100 + "%"; r.style.background = varv;
+        rada.appendChild(r);
+      });
+      let aastad, suured;
+      if (olek.aken) {
+        const [b0, b1] = olek.aken, samm = (b1 - b0) > 60 ? 20 : 10;
+        aastad = []; for (let y = Math.ceil(b0 / samm) * samm; y <= b1; y += samm) aastad.push(y);
+        suured = aastad.filter((y, i) => i % 2 === 0);
+      } else {
+        aastad = [1800, 1840, 1880, 1918, 1940, 1949, 1956, 1962, 1991]; suured = [1800, 1918, 1949, 1991];
+      }
+      aastad.forEach(a => {
+        const s = document.createElement("span");
+        if (!suured.includes(a)) s.className = "vaike";
+        s.style.left = aastaAsendiks(a) * 100 + "%"; s.textContent = a; sildid.appendChild(s);
+      });
+    }
+    joonistaRada();
+
+    // Põlvkondade sildid
+    const perioodidEl = document.getElementById("perioodid");
+    function piiridAknas() {
+      const pts = [];
+      kirjed.forEach(k => {
+        if (!k.aknas || !olek.grupid[k.grupp]) return;
+        if (k.liik === "teekond") { pts.push(kohad[k.lahtekoht].latlng, kohad[k.sihtkoht].latlng); }
+        else if (k.koht) pts.push(kohad[k.koht].latlng);
+      });
+      return pts.length ? L.latLngBounds(pts) : koikPiirid;
+    }
+    function valiAken(aken, nupp) {
+      peata();
+      perioodidEl.querySelectorAll("button").forEach(b => b.classList.toggle("aktiivne", b === nupp));
+      olek.aken = aken;
+      joonistaRada();
+      maaraAasta(aken ? aken[1] : LOPP);
+      const b = aken ? piiridAknas() : koikPiirid;
+      kaart.flyToBounds(b, { ...polster(), maxZoom: 7, duration: 1.2 });
+    }
+    const koikNupp = document.createElement("button");
+    koikNupp.className = "aktiivne"; koikNupp.innerHTML = "<b>Kõik</b><span>1799–2001</span>";
+    koikNupp.addEventListener("click", () => valiAken(null, koikNupp));
+    perioodidEl.appendChild(koikNupp);
+    POLVED.forEach(g => {
+      const b = document.createElement("button");
+      b.title = g.nr + ". põlvkond (2 = vanavanemad): " + g.koik;
+      b.innerHTML = "<b>" + esc(g.nimi) + "</b><span>" + g.nr + ". põlvkond · " + g.a0 + "–" + (g.a1 > 2001 ? 2001 : g.a1) + "</span>";
+      b.addEventListener("click", () => valiAken([g.a0, g.a1], b));
+      perioodidEl.appendChild(b);
     });
 
     const liugur = document.getElementById("liugur");
@@ -345,17 +412,21 @@
       const a = olek.aasta;
       document.getElementById("aasta").textContent = Math.floor(a >= LOPP - 0.01 ? 2001 : a);
       document.getElementById("ajastu").textContent = ajastu(a);
+      const a0 = olek.aken ? olek.aken[0] : -Infinity;
       kirjed.forEach(k => {
         const lubatud = olek.grupid[k.grupp];
         const naha = lubatud && k.aasta <= a;
-        k.li.classList.toggle("peidus", !lubatud);
+        k.tuhm = naha && k.aasta < a0;
+        k.li.classList.toggle("peidus", !lubatud || !k.aknas);
         k.li.classList.toggle("tulevik", k.aasta > a);
         k.li.classList.toggle("praegu", naha && a - k.aasta < 1);
-        k.tikk.style.display = lubatud ? "" : "none";
+        k.tikk.style.display = lubatud && k.aknas ? "" : "none";
         if (k.kiht) {
           const kaardil = kaart.hasLayer(k.kiht);
-          if (naha && !kaardil) { k.kiht.addTo(kaart); if (animeeri && k.aasta > enne) komeet(k); }
+          if (naha && !kaardil) { k.kiht.addTo(kaart); if (animeeri && k.aasta > enne && !k.tuhm) komeet(k); }
           if (!naha && kaardil) kaart.removeLayer(k.kiht);
+          // Varasemad teekonnad jäävad kaardile tuhmilt taustaks
+          if (naha) k.kiht.eachLayer(l => { const el = l.getElement && l.getElement(); if (el) el.classList.toggle("tuhm", k.tuhm); });
         }
       });
       Object.values(kohad).forEach(koht => {
@@ -390,13 +461,13 @@
     const nupp = document.getElementById("mangi");
     function peata() { olek.mangib = false; nupp.textContent = "▶"; nupp.setAttribute("aria-label", "Mängi"); if (taimer) cancelAnimationFrame(taimer); taimer = null; }
     function mangi() {
-      if (aastaAsendiks(olek.aasta) >= 0.999) maaraAasta(ALGUS);
+      if (aastaAsendiks(olek.aasta) >= 0.999) maaraAasta(asendAastaks(0));
       olek.mangib = true; nupp.textContent = "❚❚"; nupp.setAttribute("aria-label", "Peata");
       let eelmine = performance.now();
       (function samm(t) {
         if (!olek.mangib) return;
         const dt = Math.max(0, t - eelmine); eelmine = t;
-        const p = Math.min(1, aastaAsendiks(olek.aasta) + dt / 40000);
+        const p = Math.min(1, aastaAsendiks(olek.aasta) + dt / (olek.aken ? 30000 : 40000));
         maaraAasta(asendAastaks(p), true);
         if (p >= 1) { peata(); return; }
         taimer = requestAnimationFrame(samm);
@@ -405,11 +476,6 @@
     nupp.addEventListener("click", () => olek.mangib ? peata() : mangi());
 
     // Vaated
-    const koikPiirid = L.latLngBounds(Object.values(kohad).map(k => k.latlng));
-    function polster() {
-      return window.innerWidth > 760 ? { paddingTopLeft: [40, 140], paddingBottomRight: [500, 120] }
-                                     : { paddingTopLeft: [30, 130], paddingBottomRight: [90, 130] };
-    }
     document.querySelectorAll("#vaated button").forEach(b => b.addEventListener("click", () => {
       document.querySelectorAll("#vaated button").forEach(x => x.classList.toggle("aktiivne", x === b));
       const v = b.dataset.vaade;

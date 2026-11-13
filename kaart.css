@@ -85,6 +85,23 @@ html, body { margin: 0; height: 100%; background: var(--taust); color: var(--tek
 #loend li[data-grupp="tulp"] { border-left-color: var(--tulp); }
 #loend li.peidus { display: none; }
 
+/* Põlvkondade sildid */
+#perioodid {
+  position: absolute; left: 16px; right: 360px; bottom: 108px; z-index: 800;
+  display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: thin;
+}
+#perioodid button {
+  flex: none; display: flex; flex-direction: column; align-items: flex-start; gap: 1px;
+  font: 500 12px var(--sans); color: var(--tekst); background: var(--paneel);
+  border: 1px solid var(--joon); border-radius: 10px; padding: 5px 11px; cursor: pointer; text-align: left;
+}
+#perioodid button b { font-weight: 600; font-size: 12px; }
+#perioodid button span { font-size: 10.5px; color: var(--tuhm); font-variant-numeric: tabular-nums; }
+#perioodid button:hover { border-color: rgba(255,255,255,.45); }
+#perioodid button.aktiivne { border-color: rgba(255,255,255,.75); background: rgba(40,46,58,.95); }
+.tuhm { opacity: .22 !important; }
+.kaar-silt-ikoon.tuhm, .nool.tuhm { display: none; }
+
 /* Ajajoon */
 #ajajoon {
   position: absolute; left: 16px; right: 16px; bottom: 16px; z-index: 800; height: 84px;
@@ -149,7 +166,7 @@ html, body { margin: 0; height: 100%; background: var(--taust); color: var(--tek
 .pp-sundmused { list-style: none; padding: 0; margin: 6px 0 0; max-height: 260px; overflow-y: auto; }
 .pp-sundmused li { padding: 5px 0 5px 9px; border-left: 2px solid; margin-bottom: 4px; }
 .pp-sundmused .kp { color: var(--tuhm); font-variant-numeric: tabular-nums; }
-.leaflet-bottom.leaflet-left { bottom: 104px; }
+.leaflet-bottom.leaflet-left { bottom: 160px; }
 .leaflet-control-attribution { background: rgba(14,17,23,.7) !important; color: var(--tuhm) !important; }
 .leaflet-control-attribution a { color: var(--tuhm) !important; }
 
@@ -165,6 +182,9 @@ html, body { margin: 0; height: 100%; background: var(--taust); color: var(--tek
   #pealkiri p { font-size: 12px; }
   #vaated { top: 84px; }
   #rada-sildid span.vaike { display: none; }
-  .leaflet-bottom.leaflet-left { bottom: 104px; }
+  #perioodid { left: 8px; right: 8px; bottom: 102px; }
+  #perioodid button b { font-size: 11px; max-width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #paneel { bottom: 156px; }
+  .leaflet-bottom.leaflet-left { bottom: 156px; }
   .leaflet-bottom.leaflet-right { bottom: 96px; }
 }
