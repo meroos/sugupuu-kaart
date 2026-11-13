@@ -1,0 +1,565 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      18.091,
+      51.7611
+     ],
+     [
+      24.7536,
+      59.437
+     ]
+    ]
+   },
+   "properties": {
+    "id": "W1",
+    "grupp": "weiss",
+    "isik": "Wojciech (Albertus) Majkowski",
+    "aeg": "enne 1840",
+    "aasta": 1838,
+    "kindlus": "osaliselt",
+    "tekst": "Kaliszi kubermangust pärit reamees teenis Tallinna garnisonipataljonis. Tütar Rosalie sündis Tallinnas 1840. Saabumise aeg on järeldus.",
+    "allikas": "Rosalie ristimine, katoliku kogudus TLA.1398.2.1, kaader 84, nr 20",
+    "lahtekoht": "kalisz",
+    "sihtkoht": "tallinn"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      10.4,
+      51.2
+     ],
+     [
+      25.3264,
+      59.2453
+     ]
+    ]
+   },
+   "properties": {
+    "id": "W2",
+    "grupp": "weiss",
+    "isik": "Jacob Weiss",
+    "aeg": "enne 1839",
+    "aasta": 1835,
+    "kindlus": "oletus",
+    "tekst": "Perepärimuse järgi olid Weissid baltisakslased, kes tulid Saksamaalt Alaverre. Lähtekoht ja aeg on kinnitamata.",
+    "allikas": "perepärimus; kontrollimata",
+    "lahtekoht": "saksamaa",
+    "sihtkoht": "alavere"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.3264,
+      59.2453
+     ],
+     [
+      24.7536,
+      59.437
+     ]
+    ]
+   },
+   "properties": {
+    "id": "W3",
+    "grupp": "weiss",
+    "isik": "Johann Christian Weiss",
+    "aeg": "hiljemalt 1859",
+    "aasta": 1859,
+    "kindlus": "toendatud",
+    "tekst": "Sündis Alaveres 15.11.1839, leeritati Tallinna Toomkirikus 9.04.1859, kingsepp. Laulatati Rosalie Maikowskyga 28.01.1866.",
+    "allikas": "Kaarli kog. I pihtk. personaalraamat TLA.1359.2.21, lk 941",
+    "lahtekoht": "alavere",
+    "sihtkoht": "tallinn"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      22.4625,
+      58.9053
+     ],
+     [
+      24.7536,
+      59.437
+     ]
+    ]
+   },
+   "properties": {
+    "id": "W4",
+    "grupp": "weiss",
+    "isik": "Marie Weiss (o.s. Mardi)",
+    "aeg": "hiljemalt 1897",
+    "aasta": 1897,
+    "kindlus": "osaliselt",
+    "tekst": "Sündis 21.07.1878 Hiiumaal Kõrgesaare vallas. Abiellus 1897 Aleksander-Georg Weissiga ja elas Lutheri-Vaestekooli 30. Kolimise aeg on järeldus abiellumise aastast.",
+    "allikas": "majaraamat ja surmatunnistus, ERA.5078.1.10585",
+    "lahtekoht": "kiivera",
+    "sihtkoht": "tallinn"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7536,
+      59.437
+     ],
+     [
+      24.4131,
+      59.3036
+     ]
+    ]
+   },
+   "properties": {
+    "id": "W5",
+    "grupp": "weiss",
+    "isik": "Aleksander-Georg Weiss",
+    "aeg": "1927–1945 vahel",
+    "aasta": 1940,
+    "kindlus": "osaliselt",
+    "tekst": "Elas 1920–1927 Lutheri 30. Suri 30.03.1945, surm registreeriti Keila vallas. Millal ja miks ta Keila valda kolis, on lahtine.",
+    "allikas": "TLA.1531.1.449 l 51p; projektidokument Agja_Klooga (6.11.2026)",
+    "lahtekoht": "tallinn",
+    "sihtkoht": "keila"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.8833,
+      59.05
+     ],
+     [
+      24.7569,
+      59.1667
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T1",
+    "grupp": "tulp",
+    "isik": "Jaan Tulp",
+    "aeg": "enne 1900",
+    "aasta": 1899,
+    "kindlus": "osaliselt",
+    "tekst": "Jaan sündis Maidlas 13.10.1863; poeg August sündis Kohilas 11.02.1900. Kolimise aeg on järeldus.",
+    "allikas": "MyHeritage",
+    "lahtekoht": "maidla",
+    "sihtkoht": "kohila"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7569,
+      59.1667
+     ],
+     [
+      24.7536,
+      59.437
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T2",
+    "grupp": "tulp",
+    "isik": "August ja Aliide Tulp",
+    "aeg": "hiljemalt 1923",
+    "aasta": 1922,
+    "kindlus": "osaliselt",
+    "tekst": "August abiellus Aliide Valpiga 24.02.1923; Harry sündis 22.04.1923 Tallinnas Raevalla 2, hiljem elati Tatari 48. August oli Tallinna elektrijaamas elektrik.",
+    "allikas": "MyHeritage",
+    "lahtekoht": "kohila",
+    "sihtkoht": "tallinn"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7536,
+      59.437
+     ],
+     [
+      26.7251,
+      58.3806
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V1",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss (Veimre)",
+    "aeg": "1921",
+    "aasta": 1921,
+    "kindlus": "toendatud",
+    "tekst": "Astus 1921 Tartu Ülikooli arstiteaduskonda; anatoomia instituudi grupifotol nr 53 „A. Weiss“.",
+    "allikas": "ÜAM F 287:3 F",
+    "lahtekoht": "tallinn",
+    "sihtkoht": "tartu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      26.7251,
+      58.3806
+     ],
+     [
+      24.7536,
+      59.437
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V2",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss (Veimre)",
+    "aeg": "hiljemalt 1931",
+    "aasta": 1930,
+    "kindlus": "osaliselt",
+    "tekst": "Tütar Heli sündis Tallinnas 18.01.1931; 1934 on aadress Suur-Tartu mnt 41-3. Tagasituleku aasta on järeldus.",
+    "allikas": "ERA.5078.1.10585; Hommikleht 19.06.1934",
+    "lahtekoht": "tartu",
+    "sihtkoht": "tallinn"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7536,
+      59.437
+     ],
+     [
+      24.2725,
+      59.3216
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V3",
+    "grupp": "veimre",
+    "isik": "Arnold Veimre",
+    "aeg": "1933",
+    "aasta": 1933,
+    "kindlus": "toendatud",
+    "tekst": "Arnoldi enda sõnul oli tal talu aastast 1933: Agja, 36 ha, Klooga asundus. 1934 tegutses Klooga jaama lähedal tema lastesanatoorium (seos Agjaga tõendamata).",
+    "allikas": "ülekuulamine 1941, ERAF.130SM.1.323-1; ERA.63.10.2726",
+    "lahtekoht": "tallinn",
+    "sihtkoht": "agja"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7536,
+      59.437
+     ],
+     [
+      24.2725,
+      59.3216
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V4",
+    "grupp": "veimre",
+    "isik": "Hans ja Anna Luhasalu (Lustberg)",
+    "aeg": "1933–1936",
+    "aasta": 1934,
+    "kindlus": "osaliselt",
+    "tekst": "Abiellusid Tallinnas 1898. Hiljemalt 1936. a septembriks Keila valla elanikud; 22.12.1939 elasid Agjal kui omaniku äi ja ämm.",
+    "allikas": "ERA.5201.2.65845; TLA.1361.3.731, kaadrid 223–224",
+    "lahtekoht": "tallinn",
+    "sihtkoht": "agja"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.2725,
+      59.3216
+     ],
+     [
+      24.4131,
+      59.3036
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V5",
+    "grupp": "veimre",
+    "isik": "Hans ja Anna Luhasalu",
+    "aeg": "1940",
+    "aasta": 1940,
+    "kindlus": "osaliselt",
+    "tekst": "Agja maa läks 1939–1940 Nõukogude Klooga lennuvälja alla. 1940 ostis Arnold Maantee külas u 191 ha talu, mida pidas Hans. 1949 elasid nad Kärneri-Ree talus.",
+    "allikas": "ERAF.130SM.1.323-1, l 8; ERA.R-6.4.68 (tellimata); memoriaal.ee",
+    "lahtekoht": "agja",
+    "sihtkoht": "keila"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7536,
+      59.437
+     ],
+     [
+      63.6909,
+      58.0525
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V6",
+    "grupp": "veimre",
+    "isik": "Arnold Veimre",
+    "aeg": "14.06.1941",
+    "aasta": 1941,
+    "kindlus": "toendatud",
+    "tekst": "Arreteeriti 14.06.1941 ja saadeti Sevurallagi Šarõgino osakonda. Elas veel 1942. a jaanuaris. Suri 14.04.1942; surm kanti Turinski raamatusse 02.10.1943, kanne nr 489. Arreteerimise koht on kaardil Tallinn, kontrollimata.",
+    "allikas": "ERAF.130SM.1.323-1; ERAF.130SM.2.2-5, kaadrid 273–274; ERA.5078.1.10585",
+    "lahtekoht": "tallinn",
+    "sihtkoht": "turinsk"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7536,
+      59.437
+     ],
+     [
+      90.6617,
+      56.8978
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V7",
+    "grupp": "veimre",
+    "isik": "Magda ja Heli Veimre",
+    "aeg": "25.03.1949",
+    "aasta": 1949,
+    "kindlus": "toendatud",
+    "tekst": "Küüditati Tallinnast 25.03.1949 kulakupere nimekirja alusel (nr 67). Saabusid 9.04.1949 Polevoje külla, kolhoosi. Magda kohta käib see Heli toimiku järgi; Magda toimikut nr 1184 ei ole nähtud.",
+    "allikas": "ERAF.8SM.1.2729",
+    "lahtekoht": "tallinn",
+    "sihtkoht": "polevoje"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.4131,
+      59.3036
+     ],
+     [
+      88.332,
+      54.851
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V8",
+    "grupp": "veimre",
+    "isik": "Hans ja Anna Luhasalu",
+    "aeg": "25.03.1949",
+    "aasta": 1949,
+    "kindlus": "toendatud",
+    "tekst": "Küüditati Kärneri-Ree talust. Kulakuperede nimekirja märkuse järgi pidid nad minema Novosibirski oblastisse, memoriaal.ee järgi surid nad Krasnojarski krai Ordžonikidze rajoonis: Hans 30.11.1949, Anna 28.01.1951.",
+    "allikas": "memoriaal.ee; ERAF.8SM.1.2729; isikutoimikud ERAF.8SM.1.1494–1495 (tellimata)",
+    "lahtekoht": "keila",
+    "sihtkoht": "sarala"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      90.6617,
+      56.8978
+     ],
+     [
+      88.332,
+      54.851
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V9",
+    "grupp": "veimre",
+    "isik": "Heli Veimre",
+    "aeg": "07.1949",
+    "aasta": 1949.5,
+    "kindlus": "toendatud",
+    "tekst": "1949. a juulis viidi kolhoosist kaevandusse ja tehasesse Saralinski rajooni, Hakassi AO (asula „п. ЦЗЗ“). 7.07.1949 allkiri rajoonist lahkumise keelu kohta.",
+    "allikas": "ERAF.8SM.1.2729",
+    "lahtekoht": "polevoje",
+    "sihtkoht": "sarala"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7536,
+      59.437
+     ],
+     [
+      88.73,
+      54.66
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T3",
+    "grupp": "tulp",
+    "isik": "Harry, August ja Aliide Tulp",
+    "aeg": "25.03.1949",
+    "aasta": 1949,
+    "kindlus": "osaliselt",
+    "tekst": "Küüditati 25.03.1949 Ülemiste jaamast koos Heli ja tema emaga. Väljasaatmine on toimikuga tõendatud; sihtkoht on järeldus Harry ja Heli abielukohast. Täpsustub asumistoimikutest.",
+    "allikas": "ERAF.3-N.1.1809; ERAF.8SM.1.10839–10841 (tellimata)",
+    "lahtekoht": "tallinn",
+    "sihtkoht": "priiskovoje"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.332,
+      54.851
+     ],
+     [
+      88.73,
+      54.66
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V10",
+    "grupp": "veimre",
+    "isik": "Heli Tulp",
+    "aeg": "24.12.1949",
+    "aasta": 1949.95,
+    "kindlus": "toendatud",
+    "tekst": "Heli ja Harry abiellusid 24.12.1949 Priiskovõi asulanõukogus, akt nr 57; mõlemad said nimeks Tulp.",
+    "allikas": "ERAF.8SM.1.2729; ERA.5078.1.10585",
+    "lahtekoht": "sarala",
+    "sihtkoht": "priiskovoje"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.332,
+      54.851
+     ],
+     [
+      24.7289,
+      58.9722
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V11",
+    "grupp": "veimre",
+    "isik": "Heli Tulp",
+    "aeg": "6.04.1956 → 1960",
+    "aasta": 1956.3,
+    "kindlus": "osaliselt",
+    "tekst": "Vabastati asumiselt 6.04.1956 (Ordžonikidze rajooni erikomandatuur). 11.04.1960 oli tema aadress Rapla rajoon, Kuusiku katsebaas. Teekond ja vahepealsed elukohad teadmata.",
+    "allikas": "ERAF.8SM.1.2729; ERA.5078.1.10585",
+    "lahtekoht": "sarala",
+    "sihtkoht": "kuusiku"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.73,
+      54.66
+     ],
+     [
+      24.7289,
+      58.9722
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T4",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "enne 1959",
+    "aasta": 1956.5,
+    "kindlus": "oletus",
+    "tekst": "Harry tagasituleku aeg ja koht on teadmata. Tütar Riina sündis Eestis 1959, nii et pere oli tagasi enne seda. Harry suri 28.06.2001 kodus Kuusikul.",
+    "allikas": "ERA.5208.1.340 (surmaaeg); MyHeritage",
+    "lahtekoht": "priiskovoje",
+    "sihtkoht": "kuusiku"
+   }
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perekonna teekonnad 1835–2001</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="kaart.css">
+</head>
+<body>
+<div id="kaart" aria-label="Kaart"></div>
+
+<header id="pealkiri">
+  <h1>Perekonna teekonnad</h1>
+  <p>Weissid, Maikowskyd, Veimred, Luhasalud ja Tulbid, 1835–2001</p>
+</header>
+
+<nav id="vaated" aria-label="Kaardivaated">
+  <button data-vaade="koik" class="aktiivne">Kogu teekond</button>
+  <button data-vaade="eesti">Eesti</button>
+  <button data-vaade="siber">Uural ja Siber</button>
+</nav>
+
+<aside id="paneel">
+  <button id="paneel-lyliti" aria-expanded="true" aria-controls="paneel-sisu" title="Peida või näita paneeli">☰</button>
+  <div id="paneel-sisu">
+    <section>
+      <h2>Liinid</h2>
+      <div id="grupid"></div>
+    </section>
+    <section id="legend">
+      <h2>Tähised</h2>
+      <div class="leg-rida"><svg width="46" height="10"><line x1="2" y1="5" x2="44" y2="5" class="leg-joon toendatud"/></svg><span>allikaga tõendatud</span></div>
+      <div class="leg-rida"><svg width="46" height="10"><line x1="2" y1="5" x2="44" y2="5" class="leg-joon osaliselt"/></svg><span>osaliselt tõendatud, aeg või koht järeldus</span></div>
+      <div class="leg-rida"><svg width="46" height="10"><line x1="2" y1="5" x2="44" y2="5" class="leg-joon oletus"/></svg><span>oletus või perepärimus</span></div>
+      <div class="leg-rida"><svg width="46" height="18"><circle cx="23" cy="9" r="8" class="leg-halo"/><circle cx="23" cy="9" r="3" class="leg-punkt"/></svg><span>teada ainult piirkond (punkt ei ole täpne)</span></div>
+    </section>
+    <section>
+      <h2>Ajajoon</h2>
+      <ol id="loend"></ol>
+    </section>
+  </div>
+</aside>
+
+<footer id="ajajoon">
+  <button id="mangi" title="Mängi ajajoont" aria-label="Mängi">▶</button>
+  <div id="aeg">
+    <div id="aasta">1835</div>
+    <div id="ajastu"></div>
+  </div>
+  <div id="rada">
+    <div id="tikid"></div>
+    <input id="liugur" type="range" min="0" max="1000" step="1" value="1000" aria-label="Aasta">
+    <div id="rada-sildid"></div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="kaart.js"></script>
+</body>
+</html>

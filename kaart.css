@@ -1,0 +1,163 @@
+:root {
+  --taust: #0e1117;
+  --paneel: rgba(17, 21, 29, 0.92);
+  --joon: rgba(255, 255, 255, 0.08);
+  --tekst: #e7e3da;
+  --tuhm: #8c8a84;
+  --weiss: #f2b84b;
+  --veimre: #ff6f61;
+  --tulp: #5ec8f2;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--taust); color: var(--tekst); font-family: var(--sans); }
+#kaart { position: absolute; inset: 0; background: var(--taust); }
+
+/* Pealkiri */
+#pealkiri {
+  position: absolute; top: 16px; left: 16px; z-index: 800; pointer-events: none;
+  max-width: min(460px, calc(100vw - 32px));
+}
+#pealkiri h1 {
+  margin: 0; font-family: var(--serif); font-weight: 600; font-size: 28px; letter-spacing: .01em;
+  text-shadow: 0 2px 12px rgba(0,0,0,.8);
+}
+#pealkiri p { margin: 4px 0 0; color: var(--tuhm); font-size: 13px; text-shadow: 0 1px 8px rgba(0,0,0,.9); }
+
+#vaated { position: absolute; top: 88px; left: 16px; z-index: 800; display: flex; gap: 6px; flex-wrap: wrap; }
+#vaated button, #mangi {
+  font: 500 12px var(--sans); color: var(--tekst); background: var(--paneel);
+  border: 1px solid var(--joon); border-radius: 999px; padding: 6px 12px; cursor: pointer;
+}
+#vaated button.aktiivne { border-color: rgba(255,255,255,.35); }
+#vaated button:hover, #mangi:hover { border-color: rgba(255,255,255,.5); }
+
+/* Paneel */
+#paneel {
+  position: absolute; top: 16px; right: 16px; bottom: 112px; z-index: 800;
+  width: 330px; display: flex; flex-direction: column;
+  background: var(--paneel); border: 1px solid var(--joon); border-radius: 12px;
+  backdrop-filter: blur(6px); overflow: hidden;
+}
+#paneel.peidetud { width: 44px; bottom: auto; }
+#paneel.peidetud #paneel-sisu { display: none; }
+#paneel-lyliti {
+  align-self: flex-end; margin: 6px; width: 32px; height: 32px; border-radius: 8px;
+  background: transparent; color: var(--tekst); border: 1px solid var(--joon); cursor: pointer; font-size: 15px;
+}
+#paneel-sisu { overflow-y: auto; padding: 0 16px 16px; }
+#paneel h2 {
+  font: 600 11px var(--sans); text-transform: uppercase; letter-spacing: .12em; color: var(--tuhm);
+  margin: 14px 0 8px;
+}
+.grupp {
+  display: flex; align-items: center; gap: 10px; padding: 6px 0; cursor: pointer; font-size: 13.5px;
+}
+.grupp input { display: none; }
+.grupp .mark { width: 14px; height: 14px; border-radius: 50%; border: 2px solid currentColor; flex: none; }
+.grupp input:checked + .mark { background: currentColor; box-shadow: 0 0 10px currentColor; }
+.grupp .nimi { color: var(--tekst); }
+.grupp .arv { margin-left: auto; color: var(--tuhm); font-size: 12px; }
+.grupp.valjas .nimi { color: var(--tuhm); text-decoration: line-through; }
+
+.leg-rida { display: flex; align-items: center; gap: 10px; font-size: 12.5px; color: var(--tuhm); margin: 5px 0; }
+.leg-joon { stroke: var(--tekst); stroke-width: 2.5; stroke-linecap: round; }
+.leg-joon.osaliselt { stroke-dasharray: 7 5; }
+.leg-joon.oletus { stroke-dasharray: 1 6; opacity: .8; }
+.leg-halo { fill: rgba(231,227,218,.08); stroke: rgba(231,227,218,.45); stroke-dasharray: 2 3; }
+.leg-punkt { fill: var(--tekst); }
+
+#loend { list-style: none; margin: 0; padding: 0; }
+#loend li {
+  display: grid; grid-template-columns: 72px 1fr; gap: 8px; padding: 7px 6px; border-radius: 6px;
+  font-size: 12.5px; line-height: 1.35; cursor: pointer; border-left: 2px solid transparent;
+}
+#loend li:hover { background: rgba(255,255,255,.05); }
+#loend li .kp { color: var(--tuhm); font-variant-numeric: tabular-nums; }
+#loend li .isik { font-weight: 600; }
+#loend li .liik { color: var(--tuhm); font-size: 11px; }
+#loend li.tulevik { opacity: .28; }
+#loend li.praegu { background: rgba(255,255,255,.07); }
+#loend li[data-grupp="weiss"] { border-left-color: var(--weiss); }
+#loend li[data-grupp="veimre"] { border-left-color: var(--veimre); }
+#loend li[data-grupp="tulp"] { border-left-color: var(--tulp); }
+#loend li.peidus { display: none; }
+
+/* Ajajoon */
+#ajajoon {
+  position: absolute; left: 16px; right: 16px; bottom: 16px; z-index: 800; height: 84px;
+  display: flex; align-items: center; gap: 18px; padding: 10px 20px;
+  background: var(--paneel); border: 1px solid var(--joon); border-radius: 12px; backdrop-filter: blur(6px);
+}
+#mangi { width: 42px; height: 42px; padding: 0; font-size: 15px; flex: none; }
+#aeg { width: 150px; flex: none; }
+#aasta { font: 600 34px/1 var(--serif); font-variant-numeric: tabular-nums; }
+#ajastu { font-size: 11px; color: var(--tuhm); margin-top: 4px; min-height: 14px; }
+#rada { position: relative; flex: 1; height: 50px; }
+#tikid { position: absolute; left: 0; right: 0; top: 6px; height: 14px; }
+.tikk { position: absolute; top: 0; width: 3px; height: 14px; margin-left: -1.5px; border-radius: 2px; opacity: .85; }
+.ajastu-riba { position: absolute; top: 24px; height: 3px; border-radius: 2px; }
+#liugur { position: absolute; left: 0; right: 0; top: 16px; width: 100%; margin: 0; appearance: none; -webkit-appearance: none; background: transparent; height: 20px; cursor: pointer; }
+#liugur::-webkit-slider-runnable-track { height: 3px; background: rgba(255,255,255,.12); border-radius: 2px; }
+#liugur::-moz-range-track { height: 3px; background: rgba(255,255,255,.12); border-radius: 2px; }
+#liugur::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; margin-top: -6.5px; border-radius: 50%; background: var(--tekst); box-shadow: 0 0 12px rgba(255,255,255,.6); }
+#liugur::-moz-range-thumb { width: 16px; height: 16px; border: none; border-radius: 50%; background: var(--tekst); }
+#rada-sildid { position: absolute; left: 0; right: 0; top: 36px; height: 14px; font-size: 10.5px; color: var(--tuhm); }
+#rada-sildid span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+
+/* Kaardi elemendid */
+.leaflet-container { background: var(--taust); font-family: var(--sans); }
+.kaar-halo { filter: blur(3px); }
+.kaar-voog { animation: voog 1.6s linear infinite; }
+@keyframes voog { to { stroke-dashoffset: -26; } }
+.kaar-peidus { display: none; }
+.nool { width: 0; height: 0; }
+.nool div {
+  width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent;
+  border-bottom: 11px solid currentColor; transform-origin: 50% 60%; margin: -6px 0 0 -6px;
+  filter: drop-shadow(0 0 4px currentColor);
+}
+.silt.leaflet-tooltip {
+  background: transparent; border: none; box-shadow: none; color: var(--tekst);
+  font: 500 11.5px var(--sans); text-shadow: 0 0 4px #000, 0 0 8px #000; padding: 0 4px;
+}
+.silt.leaflet-tooltip::before { display: none; }
+.silt.tuhm { color: var(--tuhm); }
+
+.leaflet-popup-content-wrapper {
+  background: #161b24; color: var(--tekst); border: 1px solid rgba(255,255,255,.12); border-radius: 10px;
+}
+.leaflet-popup-tip { background: #161b24; }
+.leaflet-popup-content { margin: 14px 16px; font-size: 13px; line-height: 1.45; min-width: 240px; }
+.leaflet-container a.leaflet-popup-close-button { color: var(--tuhm); }
+.pp-pealkiri { font: 600 16px var(--serif); margin-bottom: 4px; }
+.pp-silt { display: inline-block; font-size: 10.5px; text-transform: uppercase; letter-spacing: .08em; padding: 2px 7px; border-radius: 999px; border: 1px solid rgba(255,255,255,.2); color: var(--tuhm); margin: 2px 4px 6px 0; }
+.pp-silt.toendatud { color: #9fe0a8; border-color: rgba(159,224,168,.4); }
+.pp-silt.osaliselt { color: #f2d28b; border-color: rgba(242,210,139,.4); }
+.pp-silt.oletus { color: #f3a2a2; border-color: rgba(243,162,162,.4); }
+.pp-markus { color: var(--tuhm); font-size: 12px; margin: 4px 0 8px; }
+.pp-allikas { color: var(--tuhm); font-size: 11.5px; margin-top: 6px; }
+.pp-sundmused { list-style: none; padding: 0; margin: 6px 0 0; max-height: 260px; overflow-y: auto; }
+.pp-sundmused li { padding: 5px 0 5px 9px; border-left: 2px solid; margin-bottom: 4px; }
+.pp-sundmused .kp { color: var(--tuhm); font-variant-numeric: tabular-nums; }
+.leaflet-bottom.leaflet-left { bottom: 104px; }
+.leaflet-control-attribution { background: rgba(14,17,23,.7) !important; color: var(--tuhm) !important; }
+.leaflet-control-attribution a { color: var(--tuhm) !important; }
+
+@media (max-width: 760px) {
+  #pealkiri h1 { font-size: 21px; }
+  #vaated { top: 70px; }
+  #paneel { top: auto; right: 8px; left: 8px; bottom: 104px; width: auto; max-height: 45vh; }
+  #paneel.peidetud { left: auto; width: 44px; }
+  #ajajoon { left: 8px; right: 8px; bottom: 8px; gap: 10px; padding: 8px 12px; height: 88px; }
+  #aeg { width: 82px; }
+  #aasta { font-size: 26px; }
+  #ajastu { font-size: 9.5px; }
+  #pealkiri p { font-size: 12px; }
+  #vaated { top: 84px; }
+  #rada-sildid span.vaike { display: none; }
+  .leaflet-bottom.leaflet-left { bottom: 104px; }
+  .leaflet-bottom.leaflet-right { bottom: 96px; }
+}

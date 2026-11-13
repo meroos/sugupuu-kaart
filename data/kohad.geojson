@@ -1,0 +1,245 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.091,
+     51.7611
+    ]
+   },
+   "properties": {
+    "id": "kalisz",
+    "nimi": "Kalisz (Kaliszi kubermang, Poola)",
+    "tapsus": "asula",
+    "markus": "Wojciech (Albertus) Majkowski päritolukoht kubermangu tasandil; täpne küla teadmata."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4,
+     51.2
+    ]
+   },
+   "properties": {
+    "id": "saksamaa",
+    "nimi": "Saksamaa (täpne koht teadmata)",
+    "tapsus": "riik",
+    "markus": "Perepärimuse järgi tulid Weissid Saksamaalt. Allikaga kinnitamata; punkt tähistab ainult riiki."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.3264,
+     59.2453
+    ]
+   },
+   "properties": {
+    "id": "alavere",
+    "nimi": "Alavere (Allafer), Kose kihelkond",
+    "tapsus": "asula",
+    "markus": "Johann Christian Weissi sünnikoht personaalraamatu järgi."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.4625,
+     58.9053
+    ]
+   },
+   "properties": {
+    "id": "kiivera",
+    "nimi": "Kiivera (Kiivra), Kõrgesaare vald, Hiiumaa",
+    "tapsus": "asula",
+    "markus": "Marie Weissi (o.s. Mardi) sünnikoht: majaraamatus Kõrgesaare vald, MyHeritage'is Kiivra."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.8833,
+     59.05
+    ]
+   },
+   "properties": {
+    "id": "maidla",
+    "nimi": "Maidla, Juuru kihelkond",
+    "tapsus": "asula",
+    "markus": "Ado ja Jaan Tulbi sünnikoht (MyHeritage)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7569,
+     59.1667
+    ]
+   },
+   "properties": {
+    "id": "kohila",
+    "nimi": "Kohila",
+    "tapsus": "asula",
+    "markus": "August Tulbi sünnikoht (MyHeritage)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "id": "tallinn",
+    "nimi": "Tallinn",
+    "tapsus": "asula",
+    "markus": "Linna-aadressid on toodud sündmuste juures: Lutheri-Vaestekooli 30 (hiljem Lastekodu 30), Suur-Tartu mnt 41-3, Raevalla 2, Tatari 48, Ülemiste jaam, Vana-Kaarli kalmistu."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     26.7251,
+     58.3806
+    ]
+   },
+   "properties": {
+    "id": "tartu",
+    "nimi": "Tartu",
+    "tapsus": "asula",
+    "markus": "Tartu Ülikool, arstiteaduskond."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.2725,
+     59.3216
+    ]
+   },
+   "properties": {
+    "id": "agja",
+    "nimi": "Agja talu nr 111, Klooga asundus",
+    "tapsus": "aadress",
+    "markus": "Hoone „Agja“ Klooga alevikus (projektidokument Agja_Klooga, 6.11.2026). Talu maa oli mitmes tükis."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.4131,
+     59.3036
+    ]
+   },
+   "properties": {
+    "id": "keila",
+    "nimi": "Keila vald (Maantee küla, Kärneri-Ree talu)",
+    "tapsus": "rajoon",
+    "markus": "Talude täpne asukoht tuvastamata; punkt tähistab Keila ümbrust. Kas Kärneri-Ree on sama talu, mis 1940. a Maantee küla talu, ei ole kindel."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     63.6909,
+     58.0525
+    ]
+   },
+   "properties": {
+    "id": "turinsk",
+    "nimi": "Turinsk / Sevurallag, Šarõgino osakond (Sverdlovski obl.)",
+    "tapsus": "rajoon",
+    "markus": "Surm registreeriti Turinski perekonnaseisubüroos. Laagriosakonna keskus Fabritšnõi (praegu Fabritšnoje) asub Turinski linnaringkonnas; punkt on Turinski linnas."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     90.6617,
+     56.8978
+    ]
+   },
+   "properties": {
+    "id": "polevoje",
+    "nimi": "Polevoje küla, Birjussa rajoon (Krasnojarski krai)",
+    "tapsus": "rajoon",
+    "markus": "Küla täpne asukoht tuvastamata; punkt on Birjussa rajooni keskuses Novobirilüssõs."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.332,
+     54.851
+    ]
+   },
+   "properties": {
+    "id": "sarala",
+    "nimi": "Saralinski / Ordžonikidze rajoon, Hakassi AO",
+    "tapsus": "rajoon",
+    "markus": "Saralinski MVD rajooniosakond asus Ordžonikidzevski asulas (komandandi raport 17.01.1950), seega on tegemist sama alaga. Asula „п. ЦЗЗ“ asukoht tuvastamata; punkt on rajooni üldkoordinaat."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.73,
+     54.66
+    ]
+   },
+   "properties": {
+    "id": "priiskovoje",
+    "nimi": "Priiskovõi (Приисковый), Hakassia",
+    "tapsus": "asula",
+    "markus": "Kullakaevanduse asula. Koordinaat on ligikaudne (Priiskovoje küla, u 3 km Glavstanist)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7289,
+     58.9722
+    ]
+   },
+   "properties": {
+    "id": "kuusiku",
+    "nimi": "Kuusiku katsebaas, Rapla rajoon",
+    "tapsus": "asula",
+    "markus": "Heli aadress 1960. aastal; Harry suri Kuusikul 2001."
+   }
+  }
+ ]
+}

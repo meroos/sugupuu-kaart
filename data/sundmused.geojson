@@ -1,0 +1,760 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1840.4,
+    "kuupaev": "28.05.1840",
+    "grupp": "weiss",
+    "isik": "Rosalie Maikowsky",
+    "tekst": "sündis Tallinnas (katoliku ristimisraamatus 13.05.1840 vkj)",
+    "allikas": "TLA.1398.2.1, kaader 84, nr 20; TLA.1359.2.21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.3264,
+     59.2453
+    ]
+   },
+   "properties": {
+    "koht": "alavere",
+    "aasta": 1839.9,
+    "kuupaev": "15.11.1839",
+    "grupp": "weiss",
+    "isik": "Johann Christian Weiss",
+    "tekst": "sündis Alaveres, isa Jacob",
+    "allikas": "TLA.1359.2.21, lk 941"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1855.6,
+    "kuupaev": "22.07.1855",
+    "grupp": "weiss",
+    "isik": "Wojciech Majkowski",
+    "tekst": "suri; maeti tõenäoliselt Tallinna katoliku kalmistule (hävinud)",
+    "allikas": "katoliku kog. surmameetrika"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1866.1,
+    "kuupaev": "28.01.1866",
+    "grupp": "weiss",
+    "isik": "Johann Christian ja Rosalie Weiss",
+    "tekst": "laulatati; lapsed Woldemar Johannes (1866), Carl Reinhold (1869), Alexander Georg (1873)",
+    "allikas": "TLA.1359.2.21, lk 941"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1875.5,
+    "kuupaev": "1875",
+    "grupp": "weiss",
+    "isik": "Rosalie Weiss",
+    "tekst": "ehitas puumaja Lutheri-Vaestekooli 30 (hiljem Lastekodu 30)",
+    "allikas": "EAA.33.3.958"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1882.8,
+    "kuupaev": "24.10.1882",
+    "grupp": "weiss",
+    "isik": "Johann Christian Weiss",
+    "tekst": "suri Tallinnas majaomanikuna",
+    "allikas": "TLA.1359.2.6, kaader 309, nr 212"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.4625,
+     58.9053
+    ]
+   },
+   "properties": {
+    "koht": "kiivera",
+    "aasta": 1878.55,
+    "kuupaev": "21.07.1878",
+    "grupp": "weiss",
+    "isik": "Marie Mardi",
+    "tekst": "sündis Kõrgesaare vallas",
+    "allikas": "ERA.5078.1.10585"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1897.5,
+    "kuupaev": "1897",
+    "grupp": "weiss",
+    "isik": "Aleksander-Georg ja Marie Weiss",
+    "tekst": "abiellusid, elasid Lutheri 30",
+    "allikas": "projektidokument Agja_Klooga"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1899.15,
+    "kuupaev": "17.02.1899 vkj",
+    "grupp": "veimre",
+    "isik": "Arnold-Voldemar Weiss",
+    "tekst": "sündis Tallinnas",
+    "allikas": "ERA.5078.1.10585"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1907.5,
+    "kuupaev": "5.07.1907",
+    "grupp": "weiss",
+    "isik": "Woldemar Johannes Weiss",
+    "tekst": "suri",
+    "allikas": "TLA.1359.2.59, nr 68"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1920.55,
+    "kuupaev": "27.07.1920",
+    "grupp": "weiss",
+    "isik": "Rosalie → Marie Weiss",
+    "tekst": "kinkeakt: Lutheri 30 majavaldus Mariele eluaegse ülalpidamise eest",
+    "allikas": "ERA.891.2.22374"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.8833,
+     59.05
+    ]
+   },
+   "properties": {
+    "koht": "maidla",
+    "aasta": 1836.5,
+    "kuupaev": "9.07.1836",
+    "grupp": "tulp",
+    "isik": "Ado Tulp",
+    "tekst": "sündis Maidlas",
+    "allikas": "MyHeritage"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.8833,
+     59.05
+    ]
+   },
+   "properties": {
+    "koht": "maidla",
+    "aasta": 1863.8,
+    "kuupaev": "13.10.1863",
+    "grupp": "tulp",
+    "isik": "Jaan Tulp",
+    "tekst": "sündis Maidlas",
+    "allikas": "MyHeritage"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7569,
+     59.1667
+    ]
+   },
+   "properties": {
+    "koht": "kohila",
+    "aasta": 1900.1,
+    "kuupaev": "11.02.1900",
+    "grupp": "tulp",
+    "isik": "August Tulp",
+    "tekst": "sündis Kohilas",
+    "allikas": "MyHeritage"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1923.3,
+    "kuupaev": "22.04.1923",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "sündis Tallinnas Raevalla 2",
+    "allikas": "MyHeritage"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1930.2,
+    "kuupaev": "10.03.1930",
+    "grupp": "weiss",
+    "isik": "Rosalie Weiss",
+    "tekst": "suri; maeti 12.03.1930 Vana-Kaarli kalmistule",
+    "allikas": "ELK.143.0.34, nr 36"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1931.05,
+    "kuupaev": "18.01.1931",
+    "grupp": "veimre",
+    "isik": "Heli Veimre",
+    "tekst": "sündis Tallinnas",
+    "allikas": "ERA.5078.1.10585; ERAF.8SM.1.2729"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1936.3,
+    "kuupaev": "21.04.1936",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "perekonnanimi Veimre",
+    "allikas": "ERA.5078.1.10585; ERA.5201.2.36094"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.4131,
+     59.3036
+    ]
+   },
+   "properties": {
+    "koht": "keila",
+    "aasta": 1936.7,
+    "kuupaev": "1936",
+    "grupp": "veimre",
+    "isik": "Hans ja Anna Lustberg",
+    "tekst": "nimi Luhasalu, avaldus Keila vallavalitsuse kaudu",
+    "allikas": "ERA.5201.2.65845"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.2725,
+     59.3216
+    ]
+   },
+   "properties": {
+    "koht": "agja",
+    "aasta": 1939.97,
+    "kuupaev": "22.12.1939",
+    "grupp": "veimre",
+    "isik": "Agja talu",
+    "tekst": "elanike nimekiri: omanik Arnold Veimre, talus Hans ja Anna Luhasalu ning töölised",
+    "allikas": "TLA.1361.3.731, kaadrid 223–224"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.2725,
+     59.3216
+    ]
+   },
+   "properties": {
+    "koht": "agja",
+    "aasta": 1939.9,
+    "kuupaev": "21.11.1939",
+    "grupp": "veimre",
+    "isik": "Agja talu",
+    "tekst": "valitsus eraldas Klooga maa NSV Liidu õhujõududele; Agja läks lennuvälja alla",
+    "allikas": "ERR (T. Türk); ERA.R-6.4.68"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1941.45,
+    "kuupaev": "14.06.1941",
+    "grupp": "veimre",
+    "isik": "Arnold Veimre",
+    "tekst": "arreteeriti",
+    "allikas": "ERAF.130SM.1.323-1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1941.5,
+    "kuupaev": "1941",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "KGB grupitoimik (Hurma, Naarits, Silla vennad); arreteerimise kuupäev selgub toimikust",
+    "allikas": "ERAF.130SM.1.5509-1, -2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     63.6909,
+     58.0525
+    ]
+   },
+   "properties": {
+    "koht": "turinsk",
+    "aasta": 1942.28,
+    "kuupaev": "14.04.1942",
+    "grupp": "veimre",
+    "isik": "Arnold Veimre",
+    "tekst": "suri laagris; surma põhjus surmatunnistusel „südamehalvatus“, uurimistoimikus „pole kindlaks tehtud“",
+    "allikas": "ERAF.130SM.2.2-5; ERA.5078.1.10585"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.4131,
+     59.3036
+    ]
+   },
+   "properties": {
+    "koht": "keila",
+    "aasta": 1945.25,
+    "kuupaev": "30.03.1945",
+    "grupp": "weiss",
+    "isik": "Aleksander-Georg Weiss",
+    "tekst": "suri; maeti 5.04.1945 Vana-Kaarli platsile VI-504",
+    "allikas": "TLA.1531.1.449, l 51p"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1949.23,
+    "kuupaev": "25.03.1949",
+    "grupp": "veimre",
+    "isik": "Magda, Heli, Harry, August, Aliide",
+    "tekst": "küüditamine; Tulbid Ülemiste jaamast",
+    "allikas": "ERAF.8SM.1.2729; ERAF.3-N.1.1809"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.4131,
+     59.3036
+    ]
+   },
+   "properties": {
+    "koht": "keila",
+    "aasta": 1949.23,
+    "kuupaev": "25.03.1949",
+    "grupp": "veimre",
+    "isik": "Hans ja Anna Luhasalu",
+    "tekst": "küüditati Kärneri-Ree talust",
+    "allikas": "memoriaal.ee"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     90.6617,
+     56.8978
+    ]
+   },
+   "properties": {
+    "koht": "polevoje",
+    "aasta": 1949.27,
+    "kuupaev": "9.04.1949",
+    "grupp": "veimre",
+    "isik": "Magda ja Heli Veimre",
+    "tekst": "saabusid asumiskohta, kolhoos",
+    "allikas": "ERAF.8SM.1.2729"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.332,
+     54.851
+    ]
+   },
+   "properties": {
+    "koht": "sarala",
+    "aasta": 1949.5,
+    "kuupaev": "07.1949",
+    "grupp": "veimre",
+    "isik": "Heli Veimre",
+    "tekst": "kaevandusse ja tehasesse",
+    "allikas": "ERAF.8SM.1.2729"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.332,
+     54.851
+    ]
+   },
+   "properties": {
+    "koht": "sarala",
+    "aasta": 1949.9,
+    "kuupaev": "30.11.1949",
+    "grupp": "veimre",
+    "isik": "Hans Luhasalu",
+    "tekst": "suri asumisel",
+    "allikas": "memoriaal.ee"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.73,
+     54.66
+    ]
+   },
+   "properties": {
+    "koht": "priiskovoje",
+    "aasta": 1949.98,
+    "kuupaev": "24.12.1949",
+    "grupp": "tulp",
+    "isik": "Harry Tulp ja Heli Veimre",
+    "tekst": "abiellusid, akt nr 57",
+    "allikas": "ERAF.8SM.1.2729"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.332,
+     54.851
+    ]
+   },
+   "properties": {
+    "koht": "sarala",
+    "aasta": 1951.08,
+    "kuupaev": "28.01.1951",
+    "grupp": "veimre",
+    "isik": "Anna Luhasalu",
+    "tekst": "suri asumisel",
+    "allikas": "memoriaal.ee"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.332,
+     54.851
+    ]
+   },
+   "properties": {
+    "koht": "sarala",
+    "aasta": 1956.13,
+    "kuupaev": "16.02.1956",
+    "grupp": "veimre",
+    "isik": "Magda Veimre",
+    "tekst": "vabastamise nimekiri (memoriaal.ee: vabastati 1957)",
+    "allikas": "ERAF.8SM.1.2729; memoriaal.ee"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.332,
+     54.851
+    ]
+   },
+   "properties": {
+    "koht": "sarala",
+    "aasta": 1956.27,
+    "kuupaev": "6.04.1956",
+    "grupp": "veimre",
+    "isik": "Heli Tulp",
+    "tekst": "vabastati asumiselt",
+    "allikas": "ERAF.8SM.1.2729"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1959.82,
+    "kuupaev": "25.10.1959",
+    "grupp": "weiss",
+    "isik": "Marie Weiss",
+    "tekst": "suri; maeti Vana-Kaarli platsile VI-504",
+    "allikas": "ERA.5078.1.10585; TLA.1531.1.467"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7289,
+     58.9722
+    ]
+   },
+   "properties": {
+    "koht": "kuusiku",
+    "aasta": 1960.28,
+    "kuupaev": "11.04.1960",
+    "grupp": "veimre",
+    "isik": "Heli Tulp",
+    "tekst": "aadress Kuusiku katsebaas; pärimisavaldus koos Eda Piirsaluga",
+    "allikas": "ERA.5078.1.10585"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7289,
+     58.9722
+    ]
+   },
+   "properties": {
+    "koht": "kuusiku",
+    "aasta": 2001.49,
+    "kuupaev": "28.06.2001",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "suri kodus Kuusikul; maeti Rapla kalmistule (MyHeritage'i matmiskuupäev 7.03.2001 on vale)",
+    "allikas": "ERA.5208.1.340"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "koht": null,
+    "aasta": 1942.5,
+    "kuupaev": "1942–1945",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "teenistus Saksa väeosades; väeosad ja kohad teadmata",
+    "allikas": "mälestused MT 3542:1 (Mahtra muuseum)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "koht": null,
+    "aasta": 1943.5,
+    "kuupaev": "1943",
+    "grupp": "veimre",
+    "isik": "Udo Veimre",
+    "tekst": "„teadmata kadunud 1943. a“",
+    "allikas": "ERA.5078.1.10585"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "koht": null,
+    "aasta": 1944.5,
+    "kuupaev": "1944",
+    "grupp": "weiss",
+    "isik": "Hermine Weiss",
+    "tekst": "„teadmata kadunud 1944. a“",
+    "allikas": "ERA.5078.1.10585"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "koht": null,
+    "aasta": 1945.5,
+    "kuupaev": "1945–1958",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "Nõukogude vangimajad ja laagrid; kohad teadmata",
+    "allikas": "ERM KV 891:8/183-188; MT 3542:1"
+   }
+  }
+ ]
+}
