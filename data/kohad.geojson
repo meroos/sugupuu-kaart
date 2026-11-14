@@ -518,6 +518,22 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     18.0686,
+     59.3293
+    ]
+   },
+   "properties": {
+    "id": "stockholm",
+    "nimi": "Stockholm, Rootsi",
+    "tapsus": "asula",
+    "markus": "Hermine ja Johannes Klesmenti pagulaspõlve esimene peatus 1944–1952."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      27.725,
      59.3667
     ]

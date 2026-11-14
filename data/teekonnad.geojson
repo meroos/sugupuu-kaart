@@ -976,6 +976,38 @@
       59.437
      ],
      [
+      18.0686,
+      59.3293
+     ]
+    ]
+   },
+   "properties": {
+    "id": "H1",
+    "grupp": "weiss",
+    "isik": "Hermine Klesment (o.s. Weiss)",
+    "aeg": "20.09.1944",
+    "aasta": 1944.72,
+    "kindlus": "toendatud",
+    "tekst": "Arnoldi õde Hermine põgenes 20.09.1944 koos abikaasa Johannes Klesmentiga Rootsi. Klesment oli Otto Tiefi valitsuse kohtuminister ja 1945–1953 eksiilvalitsuse justiitsminister. 1952 kolisid nad USA-sse; Johannes Klesment suri 1967 Washingtonis. Lesena naasis Hermine 1980. aastatel Eestisse oma poja juurde ja suri 1988 Tallinnas. Marie pärimistoimikus (1960) on ta märgitud „teadmata kadunud 1944. a“ ja pärijate hulgas teda ei ole.",
+    "allikas": "ERM A 1051:31–36 (kirje); ERM Ak 19:66/2; ERA.5078.1.10585; en.wikipedia „Johannes Klesment“",
+    "liikumine": "pogenemine",
+    "lahtekoht": "tallinn",
+    "sihtkoht": "stockholm",
+    "polv": [
+     3
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7536,
+      59.437
+     ],
+     [
       21.4114,
       50.0515
      ]

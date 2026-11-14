@@ -403,6 +403,52 @@
    },
    "properties": {
     "koht": "tallinn",
+    "aasta": 1902.66,
+    "kuupaev": "30.08.1902",
+    "grupp": "weiss",
+    "isik": "Hermine-Lisbeth Weiss",
+    "tekst": "sündis Tallinnas, Aleksander-Georgi ja Marie tütar, Arnoldi õde",
+    "allikas": "Kaarli koguduse perekonnaraamat 1919–1938",
+    "polv": [
+     3
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1988.5,
+    "kuupaev": "1988",
+    "grupp": "weiss",
+    "isik": "Hermine Klesment (o.s. Weiss)",
+    "tekst": "suri Tallinnas; maeti Rahumäe kalmistule (Sahlmanni plats)",
+    "allikas": "projektidokument Uurimissaali_plaan; MyHeritage",
+    "polv": [
+     3
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
     "aasta": 1907.5,
     "kuupaev": "5.07.1907",
     "grupp": "weiss",
@@ -1088,8 +1134,8 @@
     "kuupaev": "26.07.–10.08.1944",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "pere andmetel osales Sinimägede lahingutes. Dokumendiga seni tõendamata: memoriaal.ee kirje järgi lõppes tema teenistus pataljonis Narwa juunis 1944, Mahtra käsikirja kirjelduse järgi kestis Saksa teenistus 1945. aastani. Väeosa selgub käsikirjast või veteranitoimikust",
-    "allikas": "pere andmed; kontrollida MT 3542:1, ERA.5208.1.340",
+    "tekst": "Sinimägede lahing (Tannenbergi liin): Saksa väed taandusid Narvast 16 km läände Sinimägedele, kus 20. Eesti diviis koos teiste üksustega pidas kaitselahinguid kuni 10.08.1944. Pataljon Narwa riismetest moodustati mais 1944 selle diviisi fusiljeeripataljon. Pere andmetel oli Harry Sinimägedel. Memoriaal.ee kirje järgi lõppes tema teenistus pataljonis Narwa juunis 1944; Mahtra muuseumi käsikirja kirjelduse järgi kestis tema Saksa teenistus 1945. aastani",
+    "allikas": "pere andmed; memoriaal.ee; en.wikipedia „Battle of Tannenberg Line“, „20th Waffen Grenadier Division of the SS“; MT 3542:1",
     "polv": [
      2
     ],
@@ -1495,22 +1541,6 @@
     "allikas": "memoriaal.ee; „Terasest tugevamad“; mälestused MT 3542:1 (Mahtra muuseum)",
     "polv": [
      2
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": null,
-   "properties": {
-    "koht": null,
-    "aasta": 1944.5,
-    "kuupaev": "1944",
-    "grupp": "weiss",
-    "isik": "Hermine Weiss",
-    "tekst": "„teadmata kadunud 1944. a“",
-    "allikas": "ERA.5078.1.10585",
-    "polv": [
-     3
     ]
    }
   },
