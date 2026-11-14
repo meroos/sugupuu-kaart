@@ -20,7 +20,7 @@
     arreteerimine:     { nimi: "arreteerimine",       siia: "toodi siia arreteerituna", ara: "arreteeriti, viidi",    silt: "arreteeriti" },
     kuuditamine:       { nimi: "küüditamine",         siia: "toodi siia küüditatuna",   ara: "küüditati, viidi",      silt: "küüditati" },
     sundumberpaigutus: { nimi: "sundümberpaigutus asumisel", siia: "paigutati siia ümber", ara: "paigutati ümber", silt: "viidi" },
-    abiellumine:       { nimi: "abiellumine",         siia: "abiellus siin",            ara: "läks abielluma",        silt: "abiellus" },
+    abiellumine:       { nimi: "abiellumine",         siia: "abiellus siin",            ara: "abiellus, abielu registreeriti", silt: "abiellusid" },
     vabastamine:       { nimi: "vabastamine asumiselt", siia: "tuli asumiselt tagasi", ara: "vabastati, tuli tagasi", silt: "vabastati" },
     tagasitulek:       { nimi: "tagasitulek asumiselt", siia: "tuli asumiselt tagasi", ara: "tuli tagasi Eestisse",  silt: "tulid tagasi" }
   };
