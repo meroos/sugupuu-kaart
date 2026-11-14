@@ -511,6 +511,56 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1930.7,
+    "kuupaev": "sügis 1930",
+    "grupp": "tulp",
+    "isik": "August, Aliide ja Harry Tulp",
+    "tekst": "August müüs Lasnamäe maja ja pere kolis üürile Tatari 48 Lillbockide majja; Harry astus septembris Tallinna V Algkooli (Veerenni 2)",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 11–12",
+    "polv": [
+     3,
+     2
+    ],
+    "lingid": [],
+    "suhe": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.9,
+     59.083
+    ]
+   },
+   "properties": {
+    "koht": "vankse",
+    "aasta": 1935.5,
+    "kuupaev": "1930. aastad",
+    "grupp": "tulp",
+    "isik": "August, Aliide ja Harry Tulp",
+    "tekst": "pühapäeviti sõideti Lagedile, Kohilasse või Juurusse; Juurusse minnes tuli Hagudi jaama vastu vanker, mis viis pere Aliide sugulaste Uustalude juurde Vanksele. Seal veedeti ka mitu suve Augusti puhkuse ajal. Samadel maadel on Väljaotsa talu, mida pere taastab 1998. aastast",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 15",
+    "polv": [
+     3,
+     2
+    ],
+    "lingid": [],
+    "suhe": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      24.8833,
      59.05
     ]
@@ -1872,8 +1922,8 @@
     "kuupaev": "06.1944–1945",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "Mahtra muuseumi käsikirja „Retk läbi punase udu“ kirjelduse järgi kestis tema Saksa teenistus 1945. aastani; väeosa pärast pataljoni Narwa ja koht sõja lõpus on teadmata",
-    "allikas": "MT 3542:1 (kirjeldus; käsikiri lugemata)",
+    "tekst": "raamatu „Retk läbi punase udu“ sisukorra järgi: Kehra–Narva–Neweklau, Eesti sõjakool Neweklaus, ohvitserina väeosas; sõja lõpus põgenemine läbi Tšehhi ja tagasitulek Eestisse. Peatükke ei ole veel loetud",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), sisukord",
     "polv": [
      2
     ],

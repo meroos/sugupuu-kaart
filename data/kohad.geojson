@@ -118,6 +118,22 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     24.9,
+     59.083
+    ]
+   },
+   "properties": {
+    "id": "vankse",
+    "nimi": "Vankse, Juuru kihelkond",
+    "tapsus": "asula",
+    "markus": "Aliide sugulaste Uustalude talu; küla koordinaat."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      24.7569,
      59.1667
     ]
