@@ -713,16 +713,17 @@
    "properties": {
     "id": "V9",
     "grupp": "veimre",
-    "isik": "Heli Veimre",
+    "isik": "Magda ja Heli Veimre",
     "aeg": "07.1949",
     "aasta": 1949.5,
     "kindlus": "toendatud",
-    "tekst": "1949. a juulis viidi kolhoosist kaevandusse ja tehasesse Saralinski rajooni, Hakassi AO (asula „п. ЦЗЗ“). 7.07.1949 allkiri rajoonist lahkumise keelu kohta.",
-    "allikas": "ERAF.8SM.1.2729",
+    "tekst": "24.06.1949 kästi eestlastel poolteise tunniga asjad pakkida; aiamaad ja muretsetud koduloomad jäid maha. Mootorpargasel sõideti 28.06-ni, siis Atšinskist 195 km Konjevo jaamani ja sealt autodega umbes 100 km mägedesse. Polevoje ja Biriljuski küüditatuid toodi siia kokku 160. Magda kirja järgi (10.07.1949) saadeti nad Priiskovõi asulasse kullakaevandusse: Heli määrati tehasesse, Magda kraavi kaevama. 7.07.1949 allkiri rajoonist lahkumise keelu kohta.",
+    "allikas": "ERAF.8SM.1.2729; Nädaline 26.03.2011, lk 5 (Magda Veimre kirjad 1949)",
     "liikumine": "sundumberpaigutus",
     "lahtekoht": "polevoje",
     "sihtkoht": "sarala",
     "polv": [
+     3,
      2
     ]
    }
@@ -782,9 +783,9 @@
     "isik": "Harry, August ja Aliide Tulp",
     "aeg": "25.03.1949",
     "aasta": 1949,
-    "kindlus": "osaliselt",
-    "tekst": "Küüditati 25.03.1949 Ülemiste jaamast koos Heli ja tema emaga; vanemad elasid enne seda Tallinnas Õie 3-2. memoriaal.ee järgi viidi nad Krasnojarski krai Saralinski (Ordžonikidze) rajooni. Priiskovõi asula on järeldus Harry ja Heli abielukohast.",
-    "allikas": "memoriaal.ee; ERAF.3-N.1.1809; ERAF.8SM.1.10839–10841 (tellimata)",
+    "kindlus": "toendatud",
+    "tekst": "Küüditati 25.03.1949 Ülemiste jaamast koos Heli ja tema emaga; vanemad elasid enne seda Tallinnas Õie 3-2. Nad sõitsid eraldi rongis, kuid Molotovi jaamast alates koos Heli ja Magdaga. Magda kirja järgi (10.07.1949) jõudsid nad juulis Priiskovõi kullakaevanduse asulasse; Harryt taheti kaevandusse, kuid arst saatis ta komisjoni ette ja ta määrati tehasesse.",
+    "allikas": "memoriaal.ee; ERAF.3-N.1.1809; Nädaline 26.03.2011, lk 5 (Magda Veimre kirjad 1949); ERAF.8SM.1.10839–10841 (tellimata)",
     "liikumine": "kuuditamine",
     "lahtekoht": "tallinn",
     "sihtkoht": "priiskovoje",
@@ -845,17 +846,50 @@
     "id": "T4",
     "grupp": "tulp",
     "isik": "Harry ja Heli Tulp",
-    "aeg": "1958",
-    "aasta": 1958.25,
-    "kindlus": "osaliselt",
-    "tekst": "Harry vabastati asumiselt 17.03.1958 (koos August ja Aliidega). Heli oli vabastatud juba 6.04.1956, kuid jäi tõenäoliselt mehe juurde, sest Harry ei tohtinud asumiskohast enne lahkuda. Oktoobris 1958 elasid nad Kuusikul. Et nad tulid koos, on järeldus; teekond on teadmata. Harry suri Kuusikul 28.06.2001.",
-    "allikas": "memoriaal.ee; ERAF.8SM.1.2729; Kodumaale Tagasipöördumise Eest 3.10.1958; ERA.5208.1.340",
+    "aeg": "27.05.1958",
+    "aasta": 1958.4,
+    "kindlus": "toendatud",
+    "tekst": "Harry vabastati asumiselt 17.03.1958 koos August ja Aliidega. Heli oli vabastatud juba 6.04.1956, kuid jäi mehe juurde. Kodumaale jõudsid Heli, Harry, August ja Aliide koos 27.05.1958. Oktoobris 1958 elasid Heli ja Harry Kuusikul; teekond on teadmata. Harry suri Kuusikul 28.06.2001.",
+    "allikas": "memoriaal.ee; ERAF.8SM.1.2729; Nädaline 26.03.2011, lk 5; Kodumaale Tagasipöördumise Eest 3.10.1958; ERA.5208.1.340",
     "liikumine": "tagasitulek",
     "lahtekoht": "priiskovoje",
     "sihtkoht": "kuusiku",
     "polv": [
      2
     ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.73,
+      54.66
+     ],
+     [
+      24.7289,
+      58.9722
+     ]
+    ]
+   },
+   "properties": {
+    "id": "V13",
+    "grupp": "veimre",
+    "isik": "Magda Veimre",
+    "aeg": "1960",
+    "aasta": 1960.5,
+    "kindlus": "osaliselt",
+    "tekst": "Vabastamisteade tuli 1957, kuid Magda jäi Priiskovõisse ja töötas kullakaevanduse lasteaias kasvatajana kuni pensionini. Eestisse naasis ta 1960. Suri 1978 Kuusikul. Et ta elas pärast tagasitulekut Kuusikul Heli pere juures, on järeldus surmakohast; teekond on teadmata.",
+    "allikas": "Nädaline 26.03.2011, lk 5",
+    "liikumine": "tagasitulek",
+    "lahtekoht": "priiskovoje",
+    "sihtkoht": "kuusiku",
+    "polv": [
+     3
+    ],
+    "suhe": "Heli ema"
    }
   },
   {

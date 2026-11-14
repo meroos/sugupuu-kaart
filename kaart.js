@@ -22,7 +22,7 @@
     sundumberpaigutus: { nimi: "sundümberpaigutus asumisel", siia: "paigutati siia ümber", ara: "paigutati ümber", silt: "viidi" },
     abiellumine:       { nimi: "abiellumine",         siia: "abiellus siin",            ara: "abiellus, abielu registreeriti", silt: "abiellusid" },
     vabastamine:       { nimi: "vabastamine asumiselt", siia: "tuli asumiselt tagasi", ara: "vabastati, tuli tagasi", silt: "vabastati" },
-    tagasitulek:       { nimi: "tagasitulek asumiselt", siia: "tuli asumiselt tagasi", ara: "tuli tagasi Eestisse",  silt: "tulid tagasi" }
+    tagasitulek:       { nimi: "tagasitulek asumiselt", siia: "tuli asumiselt tagasi", ara: "tuli tagasi Eestisse",  silt: "tagasi Eestisse" }
   };
   const KINDLUS = { toendatud: "tõendatud", osaliselt: "osaliselt tõendatud", oletus: "oletus" };
   const TAPSUS = { aadress: "täpne koht", asula: "asula", rajoon: "ainult piirkond", riik: "ainult riik" };
@@ -41,9 +41,9 @@
                        kohila: 7, maidla: 7, keila: 8, agja: 8, petseri: 5,
                        debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3, sinimaed: 6, amsterdam: 3, stockholm: 3, lutheri30: 12, suurtartu41: 13, rummu: 8, emumae: 7, reid: 9, kadriorg: 10, helda: 8, mahtra: 8, nomme: 9 };
   // Kaare kõverus üksikute teekondade kaupa (muidu grupi oma)
-  const K_ERAND = { T11: 0.35, T8: 0.18, T9: 0.22, T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
+  const K_ERAND = { T11: 0.35, T8: 0.18, T9: 0.22, T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, V13: 0.08, W2c: 0.35, W2d: 0.3 };
   // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel
-  const SILT_I = { V6: 46, V7: 44, V8: 22, T3: 32, V11: 36, T4: 30 };
+  const SILT_I = { V6: 46, V7: 44, V8: 22, T3: 32, V11: 36, T4: 30, V13: 40 };
 
   // Riigikorrad: algus, lõpp, pikk nimi (aasta all), lühinimi (ribal), värv.
   // Värvid: Venemaa/NSVL punakad, Saksamaa pruunid, Eesti sinised.
