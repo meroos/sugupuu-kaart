@@ -43,15 +43,22 @@
   // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel
   const SILT_I = { V6: 46, V7: 44, V8: 22, T3: 32, V11: 36, T4: 30 };
 
+  // Riigikorrad: algus, lõpp, pikk nimi (aasta all), lühinimi (ribal), värv.
+  // Värvid: Venemaa/NSVL punakad, Saksamaa pruunid, Eesti sinised.
   const AJASTUD = [
-    [1700, 1918.15, "Vene keisririik, Eestimaa kubermang", "#3a3f4b"],
-    [1918.15, 1918.9, "Saksa okupatsioon, Vabadussõja algus", "#5b4a3a"],
-    [1918.9, 1940.46, "Eesti Vabariik", "#3d6b8f"],
-    [1940.46, 1941.55, "Nõukogude okupatsioon", "#8f3d3d"],
-    [1941.55, 1944.72, "Saksa okupatsioon", "#6b5a3a"],
-    [1944.72, 1991.63, "Nõukogude okupatsioon, Eesti NSV", "#8f3d3d"],
-    [1991.63, 2100, "Eesti Vabariik", "#3d6b8f"]
+    [1700, 1918.15, "Vene keisririik, Eestimaa kubermang", "Vene keisririik", "#5a4652"],
+    [1918.15, 1918.86, "Saksa okupatsioon (veebr–nov 1918)", "Saksa okup.", "#8a6a3a"],
+    [1918.86, 1920.09, "Eesti Vabariik, Vabadussõda (Tartu rahu 2.02.1920)", "Vabadussõda", "#2f6f9f"],
+    [1920.09, 1940.46, "Eesti Vabariik", "Eesti Vabariik", "#3d7fb0"],
+    [1940.46, 1941.66, "Nõukogude okupatsioon (juuni 1940 – aug 1941)", "NSVL okup.", "#a33a3a"],
+    [1941.66, 1944.72, "Saksa okupatsioon (aug 1941 – sept 1944)", "Saksa okup.", "#8a6a3a"],
+    [1944.72, 1991.63, "Nõukogude okupatsioon, Eesti NSV", "NSVL okupatsioon (Eesti NSV)", "#a33a3a"],
+    [1991.63, 2100, "Eesti Vabariik (taastatud 20.08.1991)", "Eesti Vabariik", "#3d7fb0"]
   ];
+  // Riigikorra menüü tekstid (samas järjekorras kui AJASTUD)
+  const MENUU = ["Vene keisririik (kuni 1918)", "Saksa okupatsioon (veebr–nov 1918)", "Vabadussõda (1918–1920)",
+    "Eesti Vabariik (1920–1940)", "Nõukogude okupatsioon (1940–1941)", "Saksa okupatsioon (1941–1944)",
+    "Nõukogude okupatsioon, Eesti NSV (1944–1991)", "Eesti Vabariik (alates 1991)"];
   // Ajaskaala on mittelineaarne: 1930–1962 saab rohkem ruumi.
   const LOIGUD = [[1795, 1930, 0, 0.3], [1930, 1962, 0.3, 0.86], [1962, 2002, 0.86, 1]];
   const ALGUS = 1795, LOPP = 2002;
@@ -103,7 +110,7 @@
   const VAATED = {
     eesti: L.latLngBounds([57.9, 21.7], [59.7, 27.4]),
     siber: L.latLngBounds([53.6, 56], [59.6, 94]),
-    rinne: L.latLngBounds([47.3, 6.5], [60, 38.5])
+    rinne: L.latLngBounds([47.3, 6.5], [60, 38.5])  // (vana vaade, nupp asendatud ajaaknaga 1918–1960)
   };
 
   const olek = { aasta: LOPP, mangib: false, aken: null, polv: null, grupid: { weiss: true, veimre: true, tulp: true } };
@@ -389,16 +396,20 @@
         k.omaPolv = !olek.polv || (k.polv || []).includes(olek.polv);
         k.tikk.style.left = (p * 100) + "%";
       });
-      AJASTUD.forEach(([a0, a1, , varv]) => {
+      const radaLai = rada.getBoundingClientRect().width || 800;
+      AJASTUD.forEach(([a0, a1, nimi, luhi, varv]) => {
         const p0 = aastaAsendiks(a0), p1 = aastaAsendiks(a1);
         if (p1 <= p0) return;
         const r = document.createElement("div");
         r.className = "ajastu-riba"; r.style.left = p0 * 100 + "%"; r.style.width = (p1 - p0) * 100 + "%"; r.style.background = varv;
+        r.title = nimi + " (" + Math.floor(a0 < ALGUS ? ALGUS : a0) + "–" + (a1 > 2002 ? "" : Math.floor(a1)) + ")";
+        r.textContent = luhi;
+        if ((p1 - p0) * radaLai < luhi.length * 5.6 + 8) r.classList.add("kitsas");
         rada.appendChild(r);
       });
       let aastad, suured;
       if (olek.aken) {
-        const [b0, b1] = olek.aken, samm = (b1 - b0) > 60 ? 20 : 10;
+        const [b0, b1] = olek.aken, ulatus = b1 - b0, samm = ulatus > 60 ? 20 : ulatus > 15 ? 10 : ulatus > 6 ? 2 : 1;
         aastad = []; for (let y = Math.ceil(b0 / samm) * samm; y <= b1; y += samm) aastad.push(y);
         suured = aastad.filter((y, i) => i % 2 === 0);
       } else {
@@ -411,6 +422,7 @@
       });
     }
     joonistaRada();
+    window.addEventListener("resize", () => joonistaRada());
 
     // Põlvkondade sildid
     const perioodidEl = document.getElementById("perioodid");
@@ -441,7 +453,7 @@
       const b = document.createElement("button");
       b.title = g.nr + ". põlvkond (2 = vanavanemad): " + g.koik;
       b.innerHTML = "<b>" + esc(g.nimi) + "</b><span>" + g.nr + ". põlvkond · " + g.a0 + "–" + (g.a1 > 2001 ? 2001 : g.a1) + "</span>";
-      b.addEventListener("click", () => valiAken([g.a0, g.a1 + 0.99], b, g.nr));
+      b.addEventListener("click", () => { const rk = document.getElementById("riigikord"); rk.value = ""; rk.classList.remove("aktiivne"); valiAken([g.a0, g.a1 + 0.99], b, g.nr); });
       perioodidEl.appendChild(b);
     });
 
@@ -530,9 +542,34 @@
     // Vaated
     document.querySelectorAll("#vaated button").forEach(b => b.addEventListener("click", () => {
       document.querySelectorAll("#vaated button").forEach(x => x.classList.toggle("aktiivne", x === b));
+      const rk = document.getElementById("riigikord"); rk.value = ""; rk.classList.remove("aktiivne");
       const v = b.dataset.vaade;
+      if (b.dataset.aken) {
+        // Ajaaken (nt 1918–1960): kitsendab ajajoont, riigikorra ribad venivad laiaks ja saavad nimed
+        const [a0, a1] = b.dataset.aken.split("-").map(Number);
+        valiAken([a0, a1 + 0.99], null);
+        return;
+      }
+      if (olek.aken && v === "koik") valiAken(null, perioodidEl.querySelector("button"));
       kaart.flyToBounds(v === "koik" ? koikPiirid : VAATED[v], { ...polster(), duration: 1.2 });
     }));
+
+    // Riigikorra valik: kitsendab ajajoone selle perioodi peale (lühikesed perioodid saavad pool aastat varu)
+    const rkEl = document.getElementById("riigikord");
+    AJASTUD.forEach(([a0, a1, nimi], i) => {
+      const o = document.createElement("option");
+      o.value = i; o.textContent = MENUU[i];
+      rkEl.appendChild(o);
+    });
+    rkEl.addEventListener("change", () => {
+      document.querySelectorAll("#vaated button").forEach(x => x.classList.remove("aktiivne"));
+      if (rkEl.value === "") { valiAken(null, perioodidEl.querySelector("button")); rkEl.classList.remove("aktiivne"); return; }
+      const [a0, a1] = AJASTUD[+rkEl.value];
+      const lyhike = a1 - a0 < 3;
+      valiAken([Math.max(ALGUS, lyhike ? a0 - 0.5 : a0), Math.min(LOPP, lyhike ? a1 + 0.5 : a1)], null);
+      maaraAasta(Math.min(LOPP, a1 - 0.01));  // liugur perioodi lõppu, et riigikorra nimi oleks õige
+      rkEl.classList.add("aktiivne");
+    });
 
     if (window.innerWidth <= 760) document.getElementById("paneel").classList.add("peidetud");
     kaart.fitBounds(koikPiirid, polster());
