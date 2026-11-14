@@ -31,15 +31,15 @@
                      maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola 33)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
                      sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku", petseri: "Pihkva järv, Kolpino saar",
-                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", sinimaed: "Sinimäed", helda: "Helda (Neo talu)", mahtra: "Mahtra mõis", nomme: "Nõmme kalmistu", krasnojarsk: "Krasnojarski krai" };
+                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", sinimaed: "Sinimäed", reid: "„Jaen Teär“ reidil", kadriorg: "Kadrioru rand", helda: "Helda (Neo talu)", mahtra: "Mahtra mõis", nomme: "Nõmme kalmistu", krasnojarsk: "Krasnojarski krai" };
   const lyhi = id => LUHINIMI[id] || id;
   // Millisest suumist alates silt näha on
   const SILDI_SUUM = { tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, sondershausen: 2.5, janeda: 8, lehtse: 7, sarala: 4,
                        tartu: 5, kiivera: 5, alavere: 6, priiskovoje: 4, kuusiku: 7,
                        kohila: 7, maidla: 7, keila: 8, agja: 8, petseri: 5,
-                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3, sinimaed: 6, helda: 8, mahtra: 8, nomme: 9 };
+                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3, sinimaed: 6, reid: 9, kadriorg: 10, helda: 8, mahtra: 8, nomme: 9 };
   // Kaare kõverus üksikute teekondade kaupa (muidu grupi oma)
-  const K_ERAND = { T8: 0.18, T9: 0.22, T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
+  const K_ERAND = { T11: 0.35, T8: 0.18, T9: 0.22, T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
   // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel
   const SILT_I = { V6: 46, V7: 44, V8: 22, T3: 32, V11: 36, T4: 30 };
 
@@ -54,6 +54,34 @@
     [1941.66, 1944.72, "Saksa okupatsioon (aug 1941 – sept 1944)", "Saksa okup.", "#8a6a3a"],
     [1944.72, 1991.63, "Nõukogude okupatsioon, Eesti NSV", "NSVL okupatsioon (Eesti NSV)", "#a33a3a"],
     [1991.63, 2100, "Eesti Vabariik (taastatud 20.08.1991)", "Eesti Vabariik", "#3d7fb0"]
+  ];
+  // Ajaloolised sündmused (taust): aasta, kuupäev, tekst. Joonistatakse ainult ajajoonele, mitte kaardile.
+  const AJALUGU = [
+    [1816.44, "8.06.1816", "Pärisorjuse kaotamine Eestimaa kubermangus (Liivimaal 1819)"],
+    [1834.5, "1834–1835", "Eestimaa talupojad said perekonnanimed (Liivimaal 1822–1826); ka Tulbid Maidlas"],
+    [1854.0, "1853–1856", "Krimmi sõda"],
+    [1858.42, "2.06.1858", "Mahtra sõda Juuru kihelkonnas"],
+    [1863.52, "1863", "Passiseadus: talupojad said vabamalt kolida, ka linna"],
+    [1870.7, "1870", "Balti raudtee Paldiski–Tallinn–Peterburi; Tallinn hakkab kiiresti kasvama"],
+    [1904.1, "1904–1905", "Vene–Jaapani sõda"],
+    [1905.9, "1905", "1905. aasta revolutsioon, mõisapõletamised"],
+    [1914.58, "1914–1918", "Esimene maailmasõda"],
+    [1918.15, "24.02.1918", "Eesti iseseisvusmanifest"],
+    [1919.78, "10.10.1919", "Maaseadus: mõisamaad võõrandati, baltisaksa mõisnike aeg lõppes"],
+    [1920.09, "2.02.1920", "Tartu rahu"],
+    [1939.64, "23.08.1939", "Molotovi–Ribbentropi pakt ja salaprotokoll"],
+    [1939.67, "1.09.1939", "Teine maailmasõda algab"],
+    [1939.74, "28.09.1939", "Baaside leping: Nõukogude sõjaväebaasid Eestisse (Klooga, Agja)"],
+    [1939.8, "okt 1939", "Baltisakslaste ümberasumine Saksamaale"],
+    [1940.46, "17.06.1940", "Punaarmee okupeerib Eesti"],
+    [1941.45, "14.06.1941", "Juuniküüditamine"],
+    [1941.47, "22.06.1941", "Saksamaa ründab NSV Liitu"],
+    [1941.66, "28.08.1941", "Saksa väed jõuavad Tallinna"],
+    [1944.72, "22.09.1944", "Punaarmee Tallinnas; suur põgenemine läände"],
+    [1945.35, "8.05.1945", "Sõja lõpp Euroopas"],
+    [1949.23, "25.03.1949", "Märtsiküüditamine"],
+    [1953.18, "5.03.1953", "Stalini surm; hiljem algavad vabastamised asumiselt"],
+    [1991.63, "20.08.1991", "Eesti iseseisvuse taastamine"]
   ];
   // Riigikorra menüü tekstid (samas järjekorras kui AJASTUD)
   const MENUU = ["Vene keisririik (kuni 1918)", "Saksa okupatsioon (veebr–nov 1918)", "Vabadussõda (1918–1920)",
@@ -309,7 +337,12 @@
         return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.aeg) + '</span> <b>' + esc(k.isik) + '</b> ' + suund + '</li>';
       }
       return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.kuupaev) + '</span> <b>' + esc(k.isik) + '</b> ' + esc(k.tekst) +
-             '<div class="pp-allikas">' + esc(k.allikas) + '</div></li>';
+             '<div class="pp-allikas">' + esc(k.allikas) + '</div>' + lingid(k) + '</li>';
+    }
+    // Lisalingid (ainult https, avanevad uues aknas)
+    function lingid(k) {
+      const l = (k.lingid || []).filter(([, u]) => /^https:\/\//.test(u));
+      return l.length ? '<div class="pp-lingid">' + l.map(([t, u]) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(t) + ' ↗</a>').join("") + '</div>' : "";
     }
     function kohaPopup(koht) {
       const read = koht.seotud.filter(k => olek.grupid[k.grupp]).map(k => kirjeRida(k, koht)).join("");
@@ -407,6 +440,24 @@
         if ((p1 - p0) * radaLai < luhi.length * 5.6 + 8) r.classList.add("kitsas");
         rada.appendChild(r);
       });
+      // Ajaloosündmuste märgid riba all; klõps näitab teksti
+      rada.querySelectorAll(".ajalugu-mark").forEach(e => e.remove());
+      // Lähedased sündmused (alla 12 px) koondatakse üheks märgiks, mille tekstis on kõik
+      const grupid = [];
+      AJALUGU.forEach(([a, kp, tekst]) => {
+        if (olek.aken && (a < olek.aken[0] || a > olek.aken[1])) return;
+        const x = aastaAsendiks(a) * radaLai, viimane = grupid[grupid.length - 1];
+        if (viimane && x - viimane.x0 < 12) viimane.read.push([kp, tekst]);
+        else grupid.push({ x0: x, p: aastaAsendiks(a), read: [[kp, tekst]] });
+      });
+      grupid.forEach(g => {
+        const m = document.createElement("button");
+        m.className = "ajalugu-mark" + (g.read.length > 1 ? " mitu" : ""); m.style.left = g.p * 100 + "%";
+        const t = g.read.map(([kp, tk]) => kp + " " + tk).join("\n");
+        m.title = t; m.setAttribute("aria-label", t);
+        m.addEventListener("click", e => { e.stopPropagation(); naitaAjalugu(m, g.read); });
+        rada.appendChild(m);
+      });
       let aastad, suured;
       if (olek.aken) {
         const [b0, b1] = olek.aken, ulatus = b1 - b0, samm = ulatus > 60 ? 20 : ulatus > 15 ? 10 : ulatus > 6 ? 2 : 1;
@@ -421,6 +472,15 @@
         s.style.left = aastaAsendiks(a) * 100 + "%"; s.textContent = a; sildid.appendChild(s);
       });
     }
+    function naitaAjalugu(m, read) {
+      const k = document.getElementById("ajaloo-info");
+      k.innerHTML = read.map(([kp, tekst]) => "<div><b>" + esc(kp) + "</b> " + esc(tekst) + "</div>").join("");
+      const r = m.getBoundingClientRect();
+      k.style.left = Math.max(12, Math.min(window.innerWidth - 332, r.left - 150)) + "px";
+      k.hidden = false;
+      clearTimeout(k._t); k._t = setTimeout(() => { k.hidden = true; }, 8000);
+    }
+    document.addEventListener("click", () => { const k = document.getElementById("ajaloo-info"); if (k) k.hidden = true; });
     joonistaRada();
     window.addEventListener("resize", () => joonistaRada());
 

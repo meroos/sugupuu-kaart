@@ -422,6 +422,38 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     24.73,
+     59.525
+    ]
+   },
+   "properties": {
+    "id": "reid",
+    "nimi": "Tallinna reid (Paljassaare ja Aegna vahel)",
+    "tapsus": "rajoon",
+    "markus": "Siin jäeti laev „Jaen Teär“ 1941. a augusti lõpus koos umbes 500 vangiga hulpima. Punkt on ligikaudu Paljassaare ja Aegna vahel."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.788,
+     59.442
+    ]
+   },
+   "properties": {
+    "id": "kadriorg",
+    "nimi": "Kadrioru rand, Tallinn",
+    "tapsus": "asula",
+    "markus": "Siin jooksis vangidega laev „Jaen Teär“ 28.08.1941 õhtul madalale."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      27.725,
      59.3667
     ]

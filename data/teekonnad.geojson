@@ -877,6 +877,38 @@
       59.437
      ],
      [
+      24.73,
+      59.525
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T11",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "19.08.1941",
+    "aasta": 1941.63,
+    "kindlus": "toendatud",
+    "tekst": "Arreteeriti 19.08.1941 Tallinnas, Tatari 48-2. Nõukogude vägede taganemisel pandi umbes 500 vangi mootorkuunarile „Jaen Teär“, et viia nad Venemaale. Meeskond ja päev hiljem ka valvurid põgenesid ning laev jäeti Paljassaare ja Aegna vahele hulpima. Vangid juhtisid laeva Kadrioru ranna poole, kus see 28.08.1941 õhtul madalale jooksis.",
+    "allikas": "memoriaal.ee (Poliitilised arreteerimised Eestis, kd 3); et.wikipedia „Jaen Teär (laev)“",
+    "liikumine": "arreteerimine",
+    "lahtekoht": "tallinn",
+    "sihtkoht": "reid",
+    "polv": [
+     2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.7536,
+      59.437
+     ],
+     [
       21.4114,
       50.0515
      ]

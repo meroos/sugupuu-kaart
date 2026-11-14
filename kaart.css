@@ -193,7 +193,7 @@ html, body { margin: 0; height: 100%; background: var(--taust); color: var(--tek
   #perioodid button b { font-size: 11px; max-width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   #paneel { bottom: 168px; }
   .leaflet-bottom.leaflet-left { bottom: 168px; }
-  .leaflet-bottom.leaflet-right { bottom: 108px; }
+  .leaflet-bottom.leaflet-right { bottom: 158px; }
 }
 
 /* Teise põlvkonna kirjed valitud põlvkonna aknas: tuhm taust */
@@ -202,3 +202,17 @@ html, body { margin: 0; height: 100%; background: var(--taust); color: var(--tek
 .tikk.teine-polv { opacity: 0.25; }
 /* Teise põlvkonna kaared põlvkonna vaates: veel tuhmimad kui sama põlvkonna varasemad */
 .leaflet-pane .teine-polv { opacity: .09 !important; }
+.pp-lingid { margin-top: 4px; display: flex; flex-direction: column; gap: 2px; }
+.pp-lingid a { color: #9fd3f2; font-size: 11.5px; text-decoration: none; }
+.pp-lingid a:hover { text-decoration: underline; }
+
+/* Ajaloosündmused: väikesed valged rombid riigikorra riba alaservas */
+.ajalugu-mark { position: absolute; top: 37px; width: 9px; height: 9px; margin-left: -4.5px; padding: 0; border: 1px solid #0e1117;
+  background: #e7e3da; transform: rotate(45deg); border-radius: 1px; cursor: pointer; z-index: 3; opacity: .9; }
+.ajalugu-mark:hover, .ajalugu-mark:focus { background: #fff; opacity: 1; outline: none; box-shadow: 0 0 6px rgba(255,255,255,.8); }
+#ajaloo-info { position: absolute; bottom: 124px; width: 300px; z-index: 900; padding: 8px 10px; font-size: 12px; line-height: 1.35;
+  background: var(--paneel); border: 1px solid rgba(255,255,255,.3); border-radius: 8px; color: var(--tekst); backdrop-filter: blur(6px); }
+#ajaloo-info[hidden] { display: none; }
+@media (max-width: 760px) { #ajaloo-info { bottom: 114px; width: 260px; } }
+.ajalugu-mark.mitu { width: 11px; height: 11px; margin-left: -5.5px; top: 36px; background: #ffd27a; }
+#ajaloo-info div + div { margin-top: 4px; }
