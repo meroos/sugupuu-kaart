@@ -15,6 +15,7 @@
     valjaranne:        { nimi: "väljaränne",          siia: "saabus siia",              ara: "rändas välja",          silt: "" },
     teenistus:         { nimi: "sõjaväeteenistus",    siia: "tuli siia teenistusse",    ara: "läks teenistusse",      silt: "väeteenistus" },
     opingud:           { nimi: "õpingud",             siia: "tuli siia õppima",         ara: "läks õppima",           silt: "õpingud" },
+    lopetamine:        { nimi: "õpingute lõpp",       siia: "tuli pärast ülikooli lõpetamist tagasi", ara: "lõpetas ülikooli, tuli tagasi", silt: "lõpetas ülikooli" },
     arreteerimine:     { nimi: "arreteerimine",       siia: "toodi siia arreteerituna", ara: "arreteeriti, viidi",    silt: "arreteeriti" },
     kuuditamine:       { nimi: "küüditamine",         siia: "toodi siia küüditatuna",   ara: "küüditati, viidi",      silt: "küüditati" },
     sundumberpaigutus: { nimi: "sundümberpaigutus asumisel", siia: "paigutati siia ümber", ara: "paigutati ümber", silt: "viidi" },
