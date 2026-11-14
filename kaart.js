@@ -379,10 +379,10 @@
       const kp = k.liik === "teekond" ? k.aeg : k.kuupaev;
       const kus = k.liik === "teekond"
         ? esc(LIIK[k.liikumine].nimi) + ": " + esc(lyhi(k.lahtekoht)) + " → " + esc(lyhi(k.sihtkoht))
-        : (k.koht ? esc(lyhi(k.koht)) : "koht teadmata");
+        : (k.koht ? esc(lyhi(k.koht)) : "");
       const sisu = k.liik === "teekond" ? "" : " " + esc(k.tekst);
       li.innerHTML = '<span class="kp">' + esc(kp) + '</span><span><span class="isik">' + esc(k.isik) + '</span>' + sisu +
-                     '<br><span class="liik">' + kus + '</span></span>';
+                     (kus ? '<br><span class="liik">' + kus + '</span>' : '') + '</span>';
       li.addEventListener("click", () => {
         if (olek.aasta < k.aasta) maaraAasta(k.aasta + 0.01);
         peata();
