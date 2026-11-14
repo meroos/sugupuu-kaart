@@ -634,12 +634,58 @@
    },
    "properties": {
     "koht": "tallinn",
-    "aasta": 1904.91,
-    "kuupaev": "29.11.1904",
+    "aasta": 1903.0,
+    "kuupaev": "1900–1906",
     "grupp": "veimre",
-    "isik": "Magda-Marianne Lustberg",
-    "tekst": "sündis Tallinnas, Hansu ja Anna tütar (hiljem Arnold Veimre naine, Heli ema)",
-    "allikas": "memoriaal.ee (pereregister)",
+    "isik": "Hans ja Anna Lustberg",
+    "tekst": "lapsed sündisid Tallinnas: Ernst (surn. 1907), Agathe (1900), Magda-Marianne (29.11.1904; hiljem Arnold Veimre naine ja Heli ema) ja Hugo Emil (1906). Pere kuulus Kaarli koguduse II pihtkonda",
+    "allikas": "TLA.1359.2.60, lk 54; memoriaal.ee (pereregister)",
+    "polv": [
+     3
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.15,
+     59.43
+    ]
+   },
+   "properties": {
+    "koht": "rummu",
+    "aasta": 1871.13,
+    "kuupaev": "21.02.1871",
+    "grupp": "veimre",
+    "isik": "Hans Lustberg",
+    "tekst": "sündis Rummus Jõelähtme kihelkonnas (9.02 vkj); leeritati 1888 Jõelähtmes",
+    "allikas": "Jõelähtme koguduse meetrikad; TLA.1359.2.60",
+    "polv": [
+     3
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     26.32,
+     59.05
+    ]
+   },
+   "properties": {
+    "koht": "emumae",
+    "aasta": 1874.66,
+    "kuupaev": "28.08.1874",
+    "grupp": "veimre",
+    "isik": "Anna Maria Klaaser",
+    "tekst": "sündis Emumäel (16.08 vkj); pereregistri järgi Salla vald, Virumaa",
+    "allikas": "memoriaal.ee (pereregister); Kaarli koguduse laulatused 1898",
     "polv": [
      3
     ],
