@@ -611,6 +611,52 @@
    },
    "properties": {
     "koht": "tallinn",
+    "aasta": 1898.33,
+    "kuupaev": "3.05.1898",
+    "grupp": "veimre",
+    "isik": "Hans Lustberg ja Anna Maria Klaaser",
+    "tekst": "laulatati Tallinna Kaarli kirikus; Magda Veimre (o.s. Lustberg) vanemad",
+    "allikas": "Kaarli koguduse laulatused 1898",
+    "polv": [
+     3
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1904.91,
+    "kuupaev": "29.11.1904",
+    "grupp": "veimre",
+    "isik": "Magda-Marianne Lustberg",
+    "tekst": "sündis Tallinnas, Hansu ja Anna tütar (hiljem Arnold Veimre naine, Heli ema)",
+    "allikas": "memoriaal.ee (pereregister)",
+    "polv": [
+     3
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
     "aasta": 1931.05,
     "kuupaev": "18.01.1931",
     "grupp": "veimre",

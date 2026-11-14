@@ -32,13 +32,13 @@
                      maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola 33)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
                      sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku", petseri: "Pihkva järv, Kolpino saar",
-                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", sinimaed: "Sinimäed", reid: "„Jaen Teär“ reidil", kadriorg: "Kadrioru rand", helda: "Helda (Neo talu)", mahtra: "Mahtra mõis", nomme: "Nõmme kalmistu", krasnojarsk: "Krasnojarski krai" };
+                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", sinimaed: "Sinimäed", rummu: "Rummu", emumae: "Emumäe", reid: "„Jaen Teär“ reidil", kadriorg: "Kadrioru rand", helda: "Helda (Neo talu)", mahtra: "Mahtra mõis", nomme: "Nõmme kalmistu", krasnojarsk: "Krasnojarski krai" };
   const lyhi = id => LUHINIMI[id] || id;
   // Millisest suumist alates silt näha on
   const SILDI_SUUM = { tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, sondershausen: 2.5, janeda: 8, lehtse: 7, sarala: 4,
                        tartu: 5, kiivera: 5, alavere: 6, priiskovoje: 4, kuusiku: 7,
                        kohila: 7, maidla: 7, keila: 8, agja: 8, petseri: 5,
-                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3, sinimaed: 6, reid: 9, kadriorg: 10, helda: 8, mahtra: 8, nomme: 9 };
+                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3, sinimaed: 6, rummu: 8, emumae: 7, reid: 9, kadriorg: 10, helda: 8, mahtra: 8, nomme: 9 };
   // Kaare kõverus üksikute teekondade kaupa (muidu grupi oma)
   const K_ERAND = { T11: 0.35, T8: 0.18, T9: 0.22, T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
   // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel
@@ -97,7 +97,7 @@
     { nr: 6, a0: 1799, a1: 1866, nimi: "Johann Jacob, Wojciech", koik: "Johann Jacob ja Madle Weiss, Wojciech ja Liza Majkowski, Jüri Tulp" },
     { nr: 5, a0: 1836, a1: 1930, nimi: "Johann Christian, Rosalie", koik: "Johann Christian ja Rosalie Weiss, Ado ja Kai Tulp" },
     { nr: 4, a0: 1863, a1: 1959, nimi: "Aleksander-Georg, Marie", koik: "Aleksander-Georg ja Marie Weiss, Jaan ja Liisa Maria Tulp" },
-    { nr: 3, a0: 1899, a1: 1978, nimi: "Arnold, Magda, August", koik: "Arnold ja Magda Veimre, August ja Aliide Tulp; Magda vanemad Hans ja Anna Luhasalu" },
+    { nr: 3, a0: 1871, a1: 1978, nimi: "Arnold, Magda, August", koik: "Arnold ja Magda Veimre, August ja Aliide Tulp; Magda vanemad Hans ja Anna Luhasalu" },
     { nr: 2, a0: 1923, a1: 2002, nimi: "Heli, Harry, Udo", koik: "Heli ja Harry Tulp, Guido Tulp, Udo Veimre" }
   ];
   function aastaAsendiks(a) {

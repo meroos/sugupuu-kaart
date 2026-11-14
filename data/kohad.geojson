@@ -454,6 +454,38 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     25.15,
+     59.43
+    ]
+   },
+   "properties": {
+    "id": "rummu",
+    "nimi": "Rummu, Jõelähtme kihelkond",
+    "tapsus": "rajoon",
+    "markus": "Hans Lustbergi sünnikoht (Rummu mõisa maad, tänapäeval Jõelähtme vald). Punkt on ligikaudne."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     26.32,
+     59.05
+    ]
+   },
+   "properties": {
+    "id": "emumae",
+    "nimi": "Emumäe, Salla vald (Virumaa)",
+    "tapsus": "rajoon",
+    "markus": "Anna Maria Klaaseri sünnikoht. Punkt on Emumäe ümbruses ligikaudu."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      27.725,
      59.3667
     ]

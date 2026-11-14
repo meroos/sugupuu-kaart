@@ -471,11 +471,75 @@
     "aeg": "1933–1936",
     "aasta": 1934,
     "kindlus": "osaliselt",
-    "tekst": "Abiellusid Tallinnas 1898. Hiljemalt 1936. a septembriks Keila valla elanikud; 22.12.1939 elasid Agjal kui omaniku äi ja ämm.",
-    "allikas": "ERA.5201.2.65845; TLA.1361.3.731, kaadrid 223–224",
-    "liikumine": "elukoht",
+    "tekst": "Elasid Tallinnas vähemalt 1898. aastast 1930. aastateni: laulatati 3.05.1898 Tallinna Kaarli kirikus, lapsed Ernst, Agathe (1900), Magda (1904) ja Hugo (1906) sündisid Tallinnas ning pere kuulus Kaarli koguduse II pihtkonda. Arnoldil oli Agja talu aastast 1933 ja hiljemalt 1936. a septembriks olid Hans ja Anna Keila valla elanikud, seega kolisid nad Tallinnast Agjale 1933–1936. 22.12.1939 elasid nad Agjal kui omaniku äi ja ämm.",
+    "allikas": "TLA.1359.2.60, lk 54; ERA.5201.2.65845; ERAF.130SM.1.323-1; TLA.1361.3.731, kaadrid 223–224",
+    "liikumine": "kolimine",
     "lahtekoht": "tallinn",
     "sihtkoht": "agja",
+    "polv": [
+     3
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.15,
+      59.43
+     ],
+     [
+      24.7536,
+      59.437
+     ]
+    ]
+   },
+   "properties": {
+    "id": "L1",
+    "grupp": "veimre",
+    "isik": "Hans Lustberg",
+    "aeg": "hiljemalt 1898",
+    "aasta": 1890,
+    "kindlus": "osaliselt",
+    "tekst": "Sündis 21.02.1871 (9.02 vkj) Rummus Jõelähtme kihelkonnas ja leeritati Jõelähtmes 1888. Laulatati 1898 Tallinnas; kolimise aeg on järeldus.",
+    "allikas": "Kaarli koguduse laulatused 1898; TLA.1359.2.60",
+    "liikumine": "kolimine",
+    "lahtekoht": "rummu",
+    "sihtkoht": "tallinn",
+    "polv": [
+     3
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      26.32,
+      59.05
+     ],
+     [
+      24.7536,
+      59.437
+     ]
+    ]
+   },
+   "properties": {
+    "id": "L2",
+    "grupp": "veimre",
+    "isik": "Anna Maria Klaaser",
+    "aeg": "hiljemalt 1898",
+    "aasta": 1893,
+    "kindlus": "osaliselt",
+    "tekst": "Sündis 28.08.1874 (16.08 vkj) Emumäel (pereregistri järgi Salla vald, Virumaa). Laulatati 1898 Tallinnas Hans Lustbergiga; kolimise aeg on järeldus.",
+    "allikas": "Kaarli koguduse laulatused 1898; memoriaal.ee (pereregister)",
+    "liikumine": "kolimine",
+    "lahtekoht": "emumae",
+    "sihtkoht": "tallinn",
     "polv": [
      3
     ]
