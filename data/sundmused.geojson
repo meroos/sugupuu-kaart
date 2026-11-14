@@ -21,7 +21,8 @@
     "polv": [
      5
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanaema"
    }
   },
   {
@@ -44,7 +45,8 @@
     "polv": [
      5
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanaisa"
    }
   },
   {
@@ -67,7 +69,8 @@
     "polv": [
      6
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanavanavanaisa"
    }
   },
   {
@@ -90,7 +93,8 @@
     "polv": [
      6
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanavanavanaisa"
    }
   },
   {
@@ -113,7 +117,8 @@
     "polv": [
      6
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanavanavanemad"
    }
   },
   {
@@ -136,7 +141,8 @@
     "polv": [
      5
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanaema"
    }
   },
   {
@@ -159,7 +165,8 @@
     "polv": [
      5
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanavanemad"
    }
   },
   {
@@ -182,7 +189,8 @@
     "polv": [
      5
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanaema"
    }
   },
   {
@@ -205,7 +213,8 @@
     "polv": [
      4
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanaisa"
    }
   },
   {
@@ -228,7 +237,8 @@
     "polv": [
      4
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanemad"
    }
   },
   {
@@ -251,7 +261,8 @@
     "polv": [
      4
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanaema"
    }
   },
   {
@@ -274,7 +285,8 @@
     "polv": [
      4
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanaisa"
    }
   },
   {
@@ -297,7 +309,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli tädi"
    }
   },
   {
@@ -320,7 +333,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli tädi"
    }
   },
   {
@@ -343,7 +357,8 @@
     "polv": [
      5
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanaisa"
    }
   },
   {
@@ -366,7 +381,8 @@
     "polv": [
      4
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanaema"
    }
   },
   {
@@ -389,7 +405,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli isa"
    }
   },
   {
@@ -412,7 +429,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli tädi"
    }
   },
   {
@@ -435,7 +453,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli tädi"
    }
   },
   {
@@ -458,7 +477,8 @@
     "polv": [
      4
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanaisa vend"
    }
   },
   {
@@ -482,7 +502,8 @@
      5,
      4
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanaema ja vanaema"
    }
   },
   {
@@ -505,7 +526,8 @@
     "polv": [
      6
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Harry vanavanavanaisa"
    }
   },
   {
@@ -528,7 +550,8 @@
     "polv": [
      6
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Harry vanavanavanaisa"
    }
   },
   {
@@ -551,7 +574,8 @@
     "polv": [
      5
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Harry vanavanaisa"
    }
   },
   {
@@ -574,7 +598,8 @@
     "polv": [
      6
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Harry vanavanavanaisa"
    }
   },
   {
@@ -597,7 +622,8 @@
     "polv": [
      5
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Harry vanavanavanemad"
    }
   },
   {
@@ -620,7 +646,8 @@
     "polv": [
      4
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Harry vanaema"
    }
   },
   {
@@ -643,7 +670,8 @@
     "polv": [
      4
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Harry vanaisa"
    }
   },
   {
@@ -666,7 +694,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Harry isa"
    }
   },
   {
@@ -689,7 +718,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -712,7 +742,8 @@
     "polv": [
      5
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanaema"
    }
   },
   {
@@ -735,7 +766,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vend"
    }
   },
   {
@@ -758,7 +790,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli isa"
    }
   },
   {
@@ -781,7 +814,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli isa"
    }
   },
   {
@@ -804,7 +838,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanemad"
    }
   },
   {
@@ -827,7 +862,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanemad"
    }
   },
   {
@@ -850,7 +886,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanaisa"
    }
   },
   {
@@ -873,7 +910,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanaema"
    }
   },
   {
@@ -896,7 +934,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -919,7 +958,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli isa"
    }
   },
   {
@@ -942,7 +982,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -965,7 +1006,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanavanemad"
    }
   },
   {
@@ -988,7 +1030,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -1011,7 +1054,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -1034,7 +1078,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -1070,7 +1115,8 @@
       "Laeva meeskond laeva värvimas, foto (MM F 260/39)",
       "https://www.muis.ee/museaalview/151787"
      ]
-    ]
+    ],
+    "suhe": null
    }
   },
   {
@@ -1093,7 +1139,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -1116,7 +1163,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -1139,7 +1187,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -1162,7 +1211,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -1185,7 +1235,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli isa"
    }
   },
   {
@@ -1208,7 +1259,8 @@
     "polv": [
      4
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanaisa"
    }
   },
   {
@@ -1231,7 +1283,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanaisa"
    }
   },
   {
@@ -1254,7 +1307,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanaema"
    }
   },
   {
@@ -1277,7 +1331,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli ema"
    }
   },
   {
@@ -1300,7 +1355,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -1323,7 +1379,8 @@
     "polv": [
      5
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Harry vanavanaema"
    }
   },
   {
@@ -1346,7 +1403,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Harry ema"
    }
   },
   {
@@ -1369,7 +1427,8 @@
     "polv": [
      3
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Harry isa"
    }
   },
   {
@@ -1392,7 +1451,8 @@
     "polv": [
      4
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vanaema"
    }
   },
   {
@@ -1415,7 +1475,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": "Heli vend"
    }
   },
   {
@@ -1438,7 +1499,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -1461,7 +1523,8 @@
     "polv": [
      2
     ],
-    "lingid": []
+    "lingid": [],
+    "suhe": null
    }
   },
   {
@@ -1477,7 +1540,8 @@
     "allikas": "MyHeritage",
     "polv": [
      5
-    ]
+    ],
+    "suhe": "Harry vanavanaisa"
    }
   },
   {
@@ -1493,7 +1557,8 @@
     "allikas": "MyHeritage",
     "polv": [
      4
-    ]
+    ],
+    "suhe": "Harry vanaema"
    }
   },
   {
@@ -1509,7 +1574,8 @@
     "allikas": "MyHeritage",
     "polv": [
      4
-    ]
+    ],
+    "suhe": "Harry vanaisa"
    }
   },
   {
@@ -1525,7 +1591,8 @@
     "allikas": "MyHeritage; TLA.238.1.100",
     "polv": [
      6
-    ]
+    ],
+    "suhe": "Heli vanavanavanavanaisa"
    }
   },
   {
@@ -1541,7 +1608,8 @@
     "allikas": "memoriaal.ee; „Terasest tugevamad“; mälestused MT 3542:1 (Mahtra muuseum)",
     "polv": [
      2
-    ]
+    ],
+    "suhe": null
    }
   },
   {
@@ -1557,7 +1625,8 @@
     "allikas": "MT 3542:1 (kirjeldus; käsikiri lugemata)",
     "polv": [
      2
-    ]
+    ],
+    "suhe": null
    }
   }
  ]

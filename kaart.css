@@ -216,3 +216,4 @@ html, body { margin: 0; height: 100%; background: var(--taust); color: var(--tek
 @media (max-width: 760px) { #ajaloo-info { bottom: 114px; width: 260px; } }
 .ajalugu-mark.mitu { width: 11px; height: 11px; margin-left: -5.5px; top: 36px; background: #ffd27a; }
 #ajaloo-info div + div { margin-top: 4px; }
+.suhe { color: var(--tuhm); font-weight: 400; font-size: .92em; }

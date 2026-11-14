@@ -336,11 +336,13 @@
         const suund = k.sihtkoht === koht.id
           ? esc(l.siia) + (k.liikumine === "elukoht" ? " (varem " + esc(lyhi(k.lahtekoht)) + ")" : "")
                                               : esc(l.ara) + " → " + esc(lyhi(k.sihtkoht));
-        return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.aeg) + '</span> <b>' + esc(k.isik) + '</b> ' + suund + (k.pool ? ' (' + esc(k.pool) + ')' : '') + '</li>';
+        return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.aeg) + '</span> <b>' + esc(k.isik) + '</b>' + suhe(k) + ' ' + suund + (k.pool ? ' (' + esc(k.pool) + ')' : '') + '</li>';
       }
-      return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.kuupaev) + '</span> <b>' + esc(k.isik) + '</b> ' + esc(k.tekst) +
+      return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.kuupaev) + '</span> <b>' + esc(k.isik) + '</b>' + suhe(k) + ' ' + esc(k.tekst) +
              '<div class="pp-allikas">' + esc(k.allikas) + '</div>' + lingid(k) + '</li>';
     }
+    // Sugulus Heli või Harry suhtes
+    function suhe(k) { return k.suhe ? ' <span class="suhe">(' + esc(k.suhe) + ')</span>' : ""; }
     // Lisalingid (ainult https, avanevad uues aknas)
     function lingid(k) {
       const l = (k.lingid || []).filter(([, u]) => /^https:\/\//.test(u));
@@ -354,7 +356,7 @@
              '<ul class="pp-sundmused">' + read + '</ul>';
     }
     function teekonnaPopup(k) {
-      return '<div class="pp-pealkiri" style="color:' + GRUPID[k.grupp].varv + '">' + esc(k.isik) + '</div>' +
+      return '<div class="pp-pealkiri" style="color:' + GRUPID[k.grupp].varv + '">' + esc(k.isik) + '</div>' + (k.suhe ? '<div class="suhe">' + esc(k.suhe) + '</div>' : '') +
              '<div>' + esc(kohad[k.lahtekoht].nimi) + ' → ' + esc(kohad[k.sihtkoht].nimi) + '</div>' +
              '<span class="pp-silt">' + esc(LIIK[k.liikumine].nimi) + '</span>' + (k.pool ? '<span class="pp-silt">' + esc(k.pool) + '</span>' : '') + '<span class="pp-silt">' + esc(k.aeg) + '</span><span class="pp-silt ' + k.kindlus + '">' + esc(KINDLUS[k.kindlus]) + '</span>' +
              '<div>' + esc(k.tekst) + '</div><div class="pp-allikas">Allikas: ' + esc(k.allikas) + '</div>';
@@ -382,7 +384,7 @@
         ? esc(LIIK[k.liikumine].nimi) + (k.pool ? " (" + esc(k.pool) + ")" : "") + ": " + esc(lyhi(k.lahtekoht)) + " → " + esc(lyhi(k.sihtkoht))
         : (k.koht ? esc(lyhi(k.koht)) : "");
       const sisu = k.liik === "teekond" ? "" : " " + esc(k.tekst);
-      li.innerHTML = '<span class="kp">' + esc(kp) + '</span><span><span class="isik">' + esc(k.isik) + '</span>' + sisu +
+      li.innerHTML = '<span class="kp">' + esc(kp) + '</span><span><span class="isik">' + esc(k.isik) + '</span>' + suhe(k) + sisu +
                      (kus ? '<br><span class="liik">' + kus + '</span>' : '') + '</span>';
       li.addEventListener("click", () => {
         if (olek.aasta < k.aasta) maaraAasta(k.aasta + 0.01);
