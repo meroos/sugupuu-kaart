@@ -30,7 +30,7 @@
     "id": "sondershausen",
     "nimi": "Schwarzburg-Sondershausen (Tüüringi, Saksamaa)",
     "tapsus": "rajoon",
-    "markus": "Johann Jacob Weissi sünnikoht MyHeritage'i puus: Schwarzburg-Sondershauseni vürstiriik. Punkt on vürstiriigi pealinnas Sondershausenis; vürstiriik koosnes kahest osast (Sondershausen ja Arnstadt). Eesti allikatest ei ole kohta seni leitud."
+    "markus": "Johann Jacob Weissi sünnikoht sugupuu andmetel: Schwarzburg-Sondershauseni vürstiriik. Punkt on vürstiriigi pealinnas Sondershausenis; vürstiriik koosnes kahest osast (Sondershausen ja Arnstadt). Eesti allikatest ei ole kohta seni leitud."
    }
   },
   {
@@ -94,7 +94,7 @@
     "id": "kiivera",
     "nimi": "Kiivera (Kõpu), Hiiumaa",
     "tapsus": "asula",
-    "markus": "Marie Weissi (o.s. Mardi) sünnikoht: majaraamatus Kõrgesaare vald, MyHeritage'is Kiivra. Punkt on tänase Kiivera küla kohal."
+    "markus": "Marie Weissi (o.s. Mardi) sünnikoht: majaraamatus Kõrgesaare vald, sugupuus Kiivra. Punkt on tänase Kiivera küla kohal."
    }
   },
   {
@@ -110,7 +110,7 @@
     "id": "maidla",
     "nimi": "Maidla, Juuru kihelkond",
     "tapsus": "asula",
-    "markus": "Ado ja Jaan Tulbi sünnikoht (MyHeritage)."
+    "markus": "Ado ja Jaan Tulbi sünnikoht."
    }
   },
   {
@@ -126,7 +126,7 @@
     "id": "kohila",
     "nimi": "Kohila",
     "tapsus": "asula",
-    "markus": "August Tulbi sünnikoht (MyHeritage)."
+    "markus": "August Tulbi sünnikoht; Liisa Maria Pesori kodukoht."
    }
   },
   {
@@ -382,7 +382,7 @@
     "id": "helda",
     "nimi": "Helda küla (Neo talu), Maidla vald",
     "tapsus": "asula",
-    "markus": "Jüri Tulbi talu Neo asus Helda külas Maidla vallas, Juuru kihelkonnas (MyHeritage). Talu täpne asukoht tuvastamata; punkt on küla keskel."
+    "markus": "Jüri Tulbi talu Neo asus Helda külas Maidla vallas, Juuru kihelkonnas. Talu täpne asukoht tuvastamata; punkt on küla keskel."
    }
   },
   {
@@ -414,7 +414,7 @@
     "id": "nomme",
     "nimi": "Nõmme kalmistu, Tallinn",
     "tapsus": "asula",
-    "markus": "August ja Aliide Tulbi matmiskoht (MyHeritage). Koordinaat on ligikaudne."
+    "markus": "August ja Aliide Tulbi matmiskoht. Koordinaat on ligikaudne."
    }
   },
   {
