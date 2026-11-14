@@ -334,7 +334,7 @@
     "id": "izjum",
     "nimi": "Izjum, Harkivi oblast (Ukraina)",
     "tapsus": "rajoon",
-    "markus": "Pataljon Narva lahingupiirkond 1943. a suvel Izjumi ümbruses; täpsed positsioonid on kirjas pataljoni ajaloos."
+    "markus": "Pataljon Narwa lahingupiirkond 1943. a suvel Izjumi ümbruses; täpsed positsioonid on kirjas pataljoni ajaloos."
    }
   },
   {
@@ -479,6 +479,38 @@
     "nimi": "Emumäe, Salla vald (Virumaa)",
     "tapsus": "rajoon",
     "markus": "Anna Maria Klaaseri sünnikoht. Punkt on Emumäe ümbruses ligikaudu."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7715,
+     59.4285
+    ]
+   },
+   "properties": {
+    "id": "lutheri30",
+    "nimi": "Lutheri-Vaestekooli 30 (praegu Lastekodu tn), Tallinn",
+    "tapsus": "aadress",
+    "markus": "Rosalie Weissi 1875. aastal ehitatud puumaja (kinnistu 819M); hiljem ka tagamaja. Teadaolevad Weisside korterid: 30-9 = 30-3 (Aleksander-Georg ja Marie, 1920–1927; numbrit muudeti), 30-5 (Marie 1924), 30-4 (Adele ja Karl Weiss 1924), 30-2 (Marie viimane elukoht 1959), 30-8/9 (Agnes Loo 1961). 1950. aastaks oli esimaja jagatud kuueks köök-tuba korteriks. Maja lammutati 1974 Keldrimäe elamukvartali ehitamiseks. Punkt on Lastekodu 24–28 juures ligikaudu."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.762,
+     59.4335
+    ]
+   },
+   "properties": {
+    "id": "suurtartu41",
+    "nimi": "Suur-Tartu mnt 41 (vana numeratsioon), Tallinn",
+    "tapsus": "aadress",
+    "markus": "Arnold Weissi (Veimre) kodu ja vastuvõtt, korter 3, 1932–1941. Vana nr 41 asus Tartu maantee põhjaküljel praeguse Pronksi tänava ristmiku lähedal; punkt on ligikaudne."
    }
   },
   {

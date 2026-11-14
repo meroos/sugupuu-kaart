@@ -167,12 +167,12 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     24.7536,
-     59.437
+     24.7715,
+     59.4285
     ]
    },
    "properties": {
-    "koht": "tallinn",
+    "koht": "lutheri30",
     "aasta": 1875.5,
     "kuupaev": "1875",
     "grupp": "weiss",
@@ -181,6 +181,144 @@
     "allikas": "EAA.33.3.958",
     "polv": [
      5
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7715,
+     59.4285
+    ]
+   },
+   "properties": {
+    "koht": "lutheri30",
+    "aasta": 1897.22,
+    "kuupaev": "20.03.1897",
+    "grupp": "weiss",
+    "isik": "Aleksander-Georg Weiss",
+    "tekst": "kolis Vladimiri tn 11-st ema Rosalie majja Lutheri-Vaestekooli 30; 14.04.1897 laulatati Marie Mardiga (Jaani kogudus)",
+    "allikas": "aadressikaart 1927; Kaarli koguduse perekonnaraamat 1919–1938, lk 182",
+    "polv": [
+     4
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7715,
+     59.4285
+    ]
+   },
+   "properties": {
+    "koht": "lutheri30",
+    "aasta": 1920.04,
+    "kuupaev": "15.01.1920",
+    "grupp": "weiss",
+    "isik": "Aleksander-Georg ja Marie Weiss",
+    "tekst": "elasid korteris 30-9 koos tütarde Agnes-Adelheidi ja Else-Armandinega; Aleksander-Georg oli lukksepp",
+    "allikas": "isikutunnistused nr 6479 ja 6480, TLA.186.1.175",
+    "polv": [
+     4
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7715,
+     59.4285
+    ]
+   },
+   "properties": {
+    "koht": "lutheri30",
+    "aasta": 1924.5,
+    "kuupaev": "1924",
+    "grupp": "weiss",
+    "isik": "Marie Weiss",
+    "tekst": "aadressraamatus korter 30-5; korteris 30-4 elasid Adele (Reinholdi t.) ja Karl (Johannese p.) Weiss, naabermajas 28-3 Woldemar (Karli p.) Weiss",
+    "allikas": "Tallinna aadressraamat 1924, lk 866",
+    "polv": [
+     4
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7715,
+     59.4285
+    ]
+   },
+   "properties": {
+    "koht": "lutheri30",
+    "aasta": 1927.07,
+    "kuupaev": "27.01.1927",
+    "grupp": "weiss",
+    "isik": "Aleksander-Georg Weiss",
+    "tekst": "aadressikaardil korter 3 (endine korter 9)",
+    "allikas": "aadressbüroo kaart 1927",
+    "polv": [
+     4
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7715,
+     59.4285
+    ]
+   },
+   "properties": {
+    "koht": "lutheri30",
+    "aasta": 1961.3,
+    "kuupaev": "20.04.1961",
+    "grupp": "weiss",
+    "isik": "Agnes Loo",
+    "tekst": "Marie tütar, elas Lastekodu 30-8/9; 1964 kuulus talle hoovimaja",
+    "allikas": "ERA.5078.1.10585; Õhtuleht 16.07.1964",
+    "polv": [
+     3
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7715,
+     59.4285
+    ]
+   },
+   "properties": {
+    "koht": "lutheri30",
+    "aasta": 1974.05,
+    "kuupaev": "01.1974",
+    "grupp": "weiss",
+    "isik": "Agnes Loo",
+    "tekst": "Lastekodu 30 (valdaja A. Loo) lammutati Keldrimäe elamukvartali ehitamiseks",
+    "allikas": "TLA toimik nr 6558, l 66",
+    "polv": [
+     3
     ],
     "lingid": []
    }
@@ -282,12 +420,12 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     24.7536,
-     59.437
+     24.7715,
+     59.4285
     ]
    },
    "properties": {
-    "koht": "tallinn",
+    "koht": "lutheri30",
     "aasta": 1920.55,
     "kuupaev": "27.07.1920",
     "grupp": "weiss",
@@ -546,7 +684,7 @@
     "kuupaev": "30.12.1926",
     "grupp": "veimre",
     "isik": "Udo Veiss (Veimre)",
-    "tekst": "sündis Tallinnas, Arnoldi ja Magda poeg; pere elas Tartu mnt 41",
+    "tekst": "sündis Tallinnas, Arnoldi ja Magda poeg",
     "allikas": "ERA.5201.2.36094; ERA.R-67.1.19",
     "polv": [
      2
@@ -720,12 +858,35 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     24.7536,
-     59.437
+     24.762,
+     59.4335
     ]
    },
    "properties": {
-    "koht": "tallinn",
+    "koht": "suurtartu41",
+    "aasta": 1932.58,
+    "kuupaev": "1.08.1932",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "teatas ajalehes: „Elan nüüd S. Tartu mnt. 41“ (korter 3); vastuvõtt kodus, südame-, kopsu-, mao- ja lastehaigused",
+    "allikas": "Päevaleht 1.08.1932",
+    "polv": [
+     3
+    ],
+    "lingid": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.762,
+     59.4335
+    ]
+   },
+   "properties": {
+    "koht": "suurtartu41",
     "aasta": 1936.3,
     "kuupaev": "21.04.1936",
     "grupp": "veimre",
@@ -881,7 +1042,7 @@
     "kuupaev": "2.10.1941",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "astus 39. politseipataljoni 4. kompaniisse ja teenis seal 12.08.1942-ni",
+    "tekst": "astus Saksa võimude alluvuses olnud 39. politseipataljoni 4. kompaniisse ja teenis seal 12.08.1942-ni",
     "allikas": "memoriaal.ee (Eestlased Soome ja Saksa sõjaväes)",
     "polv": [
      2
@@ -927,7 +1088,7 @@
     "kuupaev": "26.07.–10.08.1944",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "pere andmetel osales Sinimägede lahingutes. Dokumendiga seni tõendamata: memoriaal.ee kirje järgi lõppes tema teenistus pataljonis Narva juunis 1944, Mahtra käsikirja kirjelduse järgi kestis Saksa teenistus 1945. aastani. Väeosa selgub käsikirjast või veteranitoimikust",
+    "tekst": "pere andmetel osales Sinimägede lahingutes. Dokumendiga seni tõendamata: memoriaal.ee kirje järgi lõppes tema teenistus pataljonis Narwa juunis 1944, Mahtra käsikirja kirjelduse järgi kestis Saksa teenistus 1945. aastani. Väeosa selgub käsikirjast või veteranitoimikust",
     "allikas": "pere andmed; kontrollida MT 3542:1, ERA.5208.1.340",
     "polv": [
      2
@@ -1170,17 +1331,17 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     24.7536,
-     59.437
+     24.7715,
+     59.4285
     ]
    },
    "properties": {
-    "koht": "tallinn",
+    "koht": "lutheri30",
     "aasta": 1959.82,
     "kuupaev": "25.10.1959",
     "grupp": "weiss",
     "isik": "Marie Weiss",
-    "tekst": "suri; maeti Vana-Kaarli platsile VI-504",
+    "tekst": "suri; viimane elukoht Lastekodu 30-2; maeti Vana-Kaarli platsile VI-504",
     "allikas": "ERA.5078.1.10585; TLA.1531.1.467",
     "polv": [
      4
@@ -1362,7 +1523,7 @@
     "kuupaev": "06.1944–1945",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "Mahtra muuseumi käsikirja „Retk läbi punase udu“ kirjelduse järgi kestis tema Saksa teenistus 1945. aastani; väeosa pärast pataljoni Narva ja koht sõja lõpus on teadmata",
+    "tekst": "Mahtra muuseumi käsikirja „Retk läbi punase udu“ kirjelduse järgi kestis tema Saksa teenistus 1945. aastani; väeosa pärast pataljoni Narwa ja koht sõja lõpus on teadmata",
     "allikas": "MT 3542:1 (kirjeldus; käsikiri lugemata)",
     "polv": [
      2

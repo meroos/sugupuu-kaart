@@ -32,13 +32,13 @@
                      maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola 33)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
                      sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku", petseri: "Pihkva järv, Kolpino saar",
-                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", sinimaed: "Sinimäed", rummu: "Rummu", emumae: "Emumäe", reid: "„Jaen Teär“ reidil", kadriorg: "Kadrioru rand", helda: "Helda (Neo talu)", mahtra: "Mahtra mõis", nomme: "Nõmme kalmistu", krasnojarsk: "Krasnojarski krai" };
+                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", sinimaed: "Sinimäed", lutheri30: "Lutheri 30", suurtartu41: "Suur-Tartu 41", rummu: "Rummu", emumae: "Emumäe", reid: "„Jaen Teär“ reidil", kadriorg: "Kadrioru rand", helda: "Helda (Neo talu)", mahtra: "Mahtra mõis", nomme: "Nõmme kalmistu", krasnojarsk: "Krasnojarski krai" };
   const lyhi = id => LUHINIMI[id] || id;
   // Millisest suumist alates silt näha on
   const SILDI_SUUM = { tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, sondershausen: 2.5, janeda: 8, lehtse: 7, sarala: 4,
                        tartu: 5, kiivera: 5, alavere: 6, priiskovoje: 4, kuusiku: 7,
                        kohila: 7, maidla: 7, keila: 8, agja: 8, petseri: 5,
-                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3, sinimaed: 6, rummu: 8, emumae: 7, reid: 9, kadriorg: 10, helda: 8, mahtra: 8, nomme: 9 };
+                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3, sinimaed: 6, lutheri30: 12, suurtartu41: 13, rummu: 8, emumae: 7, reid: 9, kadriorg: 10, helda: 8, mahtra: 8, nomme: 9 };
   // Kaare kõverus üksikute teekondade kaupa (muidu grupi oma)
   const K_ERAND = { T11: 0.35, T8: 0.18, T9: 0.22, T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
   // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel
@@ -335,7 +335,7 @@
         const suund = k.sihtkoht === koht.id
           ? esc(l.siia) + (k.liikumine === "elukoht" ? " (varem " + esc(lyhi(k.lahtekoht)) + ")" : "")
                                               : esc(l.ara) + " → " + esc(lyhi(k.sihtkoht));
-        return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.aeg) + '</span> <b>' + esc(k.isik) + '</b> ' + suund + '</li>';
+        return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.aeg) + '</span> <b>' + esc(k.isik) + '</b> ' + suund + (k.pool ? ' (' + esc(k.pool) + ')' : '') + '</li>';
       }
       return '<li style="border-color:' + varv + '"><span class="kp">' + esc(k.kuupaev) + '</span> <b>' + esc(k.isik) + '</b> ' + esc(k.tekst) +
              '<div class="pp-allikas">' + esc(k.allikas) + '</div>' + lingid(k) + '</li>';
@@ -355,7 +355,7 @@
     function teekonnaPopup(k) {
       return '<div class="pp-pealkiri" style="color:' + GRUPID[k.grupp].varv + '">' + esc(k.isik) + '</div>' +
              '<div>' + esc(kohad[k.lahtekoht].nimi) + ' → ' + esc(kohad[k.sihtkoht].nimi) + '</div>' +
-             '<span class="pp-silt">' + esc(LIIK[k.liikumine].nimi) + '</span><span class="pp-silt">' + esc(k.aeg) + '</span><span class="pp-silt ' + k.kindlus + '">' + esc(KINDLUS[k.kindlus]) + '</span>' +
+             '<span class="pp-silt">' + esc(LIIK[k.liikumine].nimi) + '</span>' + (k.pool ? '<span class="pp-silt">' + esc(k.pool) + '</span>' : '') + '<span class="pp-silt">' + esc(k.aeg) + '</span><span class="pp-silt ' + k.kindlus + '">' + esc(KINDLUS[k.kindlus]) + '</span>' +
              '<div>' + esc(k.tekst) + '</div><div class="pp-allikas">Allikas: ' + esc(k.allikas) + '</div>';
     }
 
@@ -378,7 +378,7 @@
       li.dataset.grupp = k.grupp;
       const kp = k.liik === "teekond" ? k.aeg : k.kuupaev;
       const kus = k.liik === "teekond"
-        ? esc(LIIK[k.liikumine].nimi) + ": " + esc(lyhi(k.lahtekoht)) + " → " + esc(lyhi(k.sihtkoht))
+        ? esc(LIIK[k.liikumine].nimi) + (k.pool ? " (" + esc(k.pool) + ")" : "") + ": " + esc(lyhi(k.lahtekoht)) + " → " + esc(lyhi(k.sihtkoht))
         : (k.koht ? esc(lyhi(k.koht)) : "");
       const sisu = k.liik === "teekond" ? "" : " " + esc(k.tekst);
       li.innerHTML = '<span class="kp">' + esc(kp) + '</span><span><span class="isik">' + esc(k.isik) + '</span>' + sisu +
