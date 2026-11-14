@@ -33,13 +33,13 @@
                      maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola 33)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
                      sarala: "Sarala / Ordžonikidze", priiskovoje: "Priiskovõi", kuusiku: "Kuusiku", petseri: "Pihkva järv, Kolpino saar",
-                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", sinimaed: "Sinimäed", stockholm: "Stockholm", lutheri30: "Lutheri 30", suurtartu41: "Suur-Tartu 41", rummu: "Rummu", emumae: "Emumäe", reid: "„Jaen Teär“ reidil", kadriorg: "Kadrioru rand", helda: "Helda (Neo talu)", mahtra: "Mahtra mõis", nomme: "Nõmme kalmistu", krasnojarsk: "Krasnojarski krai" };
+                     debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", sinimaed: "Sinimäed", amsterdam: "Amsterdam", stockholm: "Stockholm", lutheri30: "Lutheri 30", suurtartu41: "Suur-Tartu 41", rummu: "Rummu", emumae: "Emumäe", reid: "„Jaen Teär“ reidil", kadriorg: "Kadrioru rand", helda: "Helda (Neo talu)", mahtra: "Mahtra mõis", nomme: "Nõmme kalmistu", krasnojarsk: "Krasnojarski krai" };
   const lyhi = id => LUHINIMI[id] || id;
   // Millisest suumist alates silt näha on
   const SILDI_SUUM = { tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, sondershausen: 2.5, janeda: 8, lehtse: 7, sarala: 4,
                        tartu: 5, kiivera: 5, alavere: 6, priiskovoje: 4, kuusiku: 7,
                        kohila: 7, maidla: 7, keila: 8, agja: 8, petseri: 5,
-                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3, sinimaed: 6, stockholm: 3, lutheri30: 12, suurtartu41: 13, rummu: 8, emumae: 7, reid: 9, kadriorg: 10, helda: 8, mahtra: 8, nomme: 9 };
+                       debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3, sinimaed: 6, amsterdam: 3, stockholm: 3, lutheri30: 12, suurtartu41: 13, rummu: 8, emumae: 7, reid: 9, kadriorg: 10, helda: 8, mahtra: 8, nomme: 9 };
   // Kaare kõverus üksikute teekondade kaupa (muidu grupi oma)
   const K_ERAND = { T11: 0.35, T8: 0.18, T9: 0.22, T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, W2c: 0.35, W2d: 0.3 };
   // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel

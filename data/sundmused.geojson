@@ -809,8 +809,128 @@
     "kuupaev": "20.12.1926",
     "grupp": "veimre",
     "isik": "Arnold Weiss",
-    "tekst": "lõpetas arstiteaduskonna: lõpueksam „cum laude“, tunnistati arsti astme vääriliseks; arstidiplom anti välja 21.12.1926 (ülikooli valitsuse otsus; ajutine tunnistus 22.12.1926)",
+    "tekst": "lõpetas 27-aastasena arstiteaduskonna: lõpueksam „cum laude“, tunnistati arsti astme vääriliseks; arstidiplom anti välja 21.12.1926 (ülikooli valitsuse otsus; ajutine tunnistus 22.12.1926)",
     "allikas": "EAA.2100.1.17928, kaader 47 (ajutine tunnistus nr 10276, 22.12.1926)",
+    "polv": [
+     3
+    ],
+    "lingid": [],
+    "suhe": "Heli isa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1914.5,
+    "kuupaev": "1914",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "hakkas 15-aastasena sportima: kergejõustik, uisutamine ja suusatamine",
+    "allikas": "ESBL „Veiss, Arnold Voldemar“",
+    "polv": [
+     3
+    ],
+    "lingid": [],
+    "suhe": "Heli isa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1918.5,
+    "kuupaev": "1918–1922",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "19–23-aastasena Eesti meistrivõistlustel 1500 m jooksus 1 kuld ja 4 hõbedat, 800 m jooksus 3 hõbedat ja 2 pronksi ning 400 m jooksus 3 pronksi; 1918 ja 1921 Eesti meister ja rekordi püstitaja 4 × 400 m teatejooksus",
+    "allikas": "ESBL „Veiss, Arnold Voldemar“",
+    "polv": [
+     3
+    ],
+    "lingid": [],
+    "suhe": "Heli isa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7536,
+     59.437
+    ]
+   },
+   "properties": {
+    "koht": "tallinn",
+    "aasta": 1919.0,
+    "kuupaev": "1918–1920",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "osales 19–21-aastasena Vabadussõjas",
+    "allikas": "ESBL; Album Academicum (memoriaal.ee)",
+    "polv": [
+     3
+    ],
+    "lingid": [],
+    "suhe": "Heli isa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     26.7322,
+     58.3781
+    ]
+   },
+   "properties": {
+    "koht": "tartu",
+    "aasta": 1921.1,
+    "kuupaev": "1921",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "oli 21–22-aastasena esimene Eesti suusatamismeister: 25 km Emajõel ajaga 2:40.20,6",
+    "allikas": "ESBL „Veiss, Arnold Voldemar“",
+    "polv": [
+     3
+    ],
+    "lingid": [],
+    "suhe": "Heli isa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9041,
+     52.3676
+    ]
+   },
+   "properties": {
+    "koht": "amsterdam",
+    "aasta": 1928.58,
+    "kuupaev": "07.–08.1928",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "oli 29-aastasena Amsterdami olümpiamängudel üks Eesti meeskonna kolmest esindajast (koos Harald Tammeri ja Johannes Villemsoniga); EKRAVE Liidu esimees 1927–1935",
+    "allikas": "ESBL; en.wikipedia „Estonia at the 1928 Summer Olympics“",
     "polv": [
      3
     ],
@@ -1230,7 +1350,7 @@
     "kuupaev": "14.04.1942",
     "grupp": "veimre",
     "isik": "Arnold Veimre",
-    "tekst": "suri laagris; surma põhjus surmatunnistusel „südamehalvatus“, uurimistoimikus „pole kindlaks tehtud“",
+    "tekst": "suri laagris 43-aastasena; surma põhjus surmatunnistusel „südamehalvatus“, uurimistoimikus „pole kindlaks tehtud“",
     "allikas": "ERAF.130SM.2.2-5; ERA.5078.1.10585",
     "polv": [
      3
@@ -1525,6 +1645,40 @@
     ],
     "lingid": [],
     "suhe": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "koht": null,
+    "aasta": 1922.55,
+    "kuupaev": "1922 ja 1923",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "oli 23- ja 24-aastasena Eesti meister ja rekordi püstitaja 400 m tõkkejooksus (63,6 ja 61,9)",
+    "allikas": "ESBL; EKJL Eesti meistrivõistluste kolm paremat",
+    "polv": [
+     3
+    ],
+    "suhe": "Heli isa"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "koht": null,
+    "aasta": 1931.0,
+    "kuupaev": "1927–1935",
+    "grupp": "veimre",
+    "isik": "Arnold Weiss",
+    "tekst": "oli 28–36-aastasena EKRAVE Liidu esimees, ÜENÜTO Spordiklubi esimees ja EASK juhatuse liige; Eesti Kooli- ja Lastearstide Seltsi asutajaliige",
+    "allikas": "ESBL „Veiss, Arnold Voldemar“",
+    "polv": [
+     3
+    ],
+    "suhe": "Heli isa"
    }
   },
   {

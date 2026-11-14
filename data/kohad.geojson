@@ -534,6 +534,22 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.9041,
+     52.3676
+    ]
+   },
+   "properties": {
+    "id": "amsterdam",
+    "nimi": "Amsterdam, Holland",
+    "tapsus": "asula",
+    "markus": "IX olümpiamängud 28.07.–12.08.1928."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      27.725,
      59.3667
     ]
