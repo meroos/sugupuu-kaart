@@ -574,7 +574,7 @@
     "id": "sinimaed",
     "nimi": "Sinimäed (Vaivara)",
     "tapsus": "asula",
-    "markus": "Tannenbergi liin Sinimägedel; lahingud 26.07.–10.08.1944."
+    "markus": "Tannenbergi liin Sinimägedel; lahingud 26.07.–10.08.1944. Harry oli juunis–juulis 1944 Narva rindel: reservis Sininõmmel ja positsioonil Kulgu jõe suudme lähedal."
    }
   },
   {
@@ -671,6 +671,54 @@
     "nimi": "Küün väikelinna serval, Põhja-Böömimaa (ligikaudne)",
     "tapsus": "rajoon",
     "markus": "Asukoht on oletus. Raamatu järgi viidi vangid öö jooksul itta väikelinnani, mille väravas olid Vene tankid T-34, ja suleti linnaserva küüni. Järgmine peatus oli staadion, mis Harry arvates võis olla Turnau. Punkt on Hirschbergi, Liberci ja Turnovi vahelise ala keskel; linna nimi ei ole teada."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.5684,
+     51.2465
+    ]
+   },
+   "properties": {
+    "id": "lublin",
+    "nimi": "Lublin",
+    "tapsus": "asula",
+    "markus": "Reservlaatsarett III, kus Harry oli pärast Tšerkassõ kotti veebruarist 1944 ravil."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.335,
+     59.336
+    ]
+   },
+   "properties": {
+    "id": "kehra",
+    "nimi": "Kehra",
+    "tapsus": "asula",
+    "markus": "Pataljon Narva (20. SS-Füsilier-Bataillon) oli 1944. a juunis siin ümberformeerimisel."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.235,
+     59.33
+    ]
+   },
+   "properties": {
+    "id": "klooga",
+    "nimi": "Klooga",
+    "tapsus": "asula",
+    "markus": "Eesti diviisi tagavararügemendi õppelaager; Harry oli siin 1944. a augustis väljaõppeinstruktor."
    }
   }
  ]

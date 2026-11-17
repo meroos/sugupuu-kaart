@@ -1348,12 +1348,12 @@
    },
    "properties": {
     "koht": "sinimaed",
-    "aasta": 1944.57,
-    "kuupaev": "26.07.–10.08.1944",
+    "aasta": 1944.52,
+    "kuupaev": "06.–25.07.1944",
     "grupp": "tulp",
     "isik": "Harry Tulp",
-    "tekst": "Sinimägede lahing (Tannenbergi liin): Saksa väed taandusid Narvast 16 km läände Sinimägedele, kus 20. Eesti diviis koos teiste üksustega pidas kaitselahinguid kuni 10.08.1944. Pataljon Narwa riismetest moodustati mais 1944 selle diviisi fusiljeeripataljon. Pere andmetel oli Harry Sinimägedel. Memoriaal.ee kirje järgi lõppes tema teenistus pataljonis Narwa juunis 1944; Mahtra muuseumi käsikirja kirjelduse järgi kestis tema Saksa teenistus 1945. aastani Raamatu järgi kutsuti Harry 25.07.1944 sõjakooli ja augustis oli ta Kloogal; Lisa 2 kirjutab aga „Sinimägedest Neweklau sõjakooli“. Tema osalemine lahingus on seega ebakindel.",
-    "allikas": "pere andmed; memoriaal.ee; en.wikipedia „Battle of Tannenberg Line“, „20th Waffen Grenadier Division of the SS“; MT 3542:1",
+    "tekst": "Narva rindel: reservis Sininõmmel (jaanipäev ja võidupüha), siis positsioonil Kulgu jõe suudme lähedal. 25.07.1944, Auvere lahingu algul, kutsuti ta sõjakooli (Lisa 2: „Sinimägedest Neweklau sõjakooli“). Sinimägede lahing kestis 26.07.–10.08.1944.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 90–92; Lisa 2",
     "polv": [
      2
     ],
@@ -1898,40 +1898,6 @@
   },
   {
    "type": "Feature",
-   "geometry": null,
-   "properties": {
-    "koht": null,
-    "aasta": 1944.3,
-    "kuupaev": "02.–06.1944",
-    "grupp": "tulp",
-    "isik": "Harry Tulp",
-    "tekst": "pärast haavatasaamist: pataljoni riismed murdsid 16./17.02.1944 kotist välja ja viidi kevadel Eestisse, kus pataljonist sai Eesti diviisi fusiljeeripataljon. Harry teenistus pataljonis kestis juunini 1944; kus ta ravil oli ja kus teenistus lõppes, teadmata",
-    "allikas": "memoriaal.ee; „Terasest tugevamad“; mälestused MT 3542:1 (Mahtra muuseum)",
-    "polv": [
-     2
-    ],
-    "suhe": null
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": null,
-   "properties": {
-    "koht": null,
-    "aasta": 1944.6,
-    "kuupaev": "07.–09.1944",
-    "grupp": "tulp",
-    "isik": "Harry Tulp",
-    "tekst": "raamatu järgi kutsuti ta 25.07.1944 sõjakooli; augustis oli ta Kloogal, 21.09.1944 algas õpe Neweklaus",
-    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 90–95, Lisa 2",
-    "polv": [
-     2
-    ],
-    "suhe": null
-   }
-  },
-  {
-   "type": "Feature",
    "geometry": {
     "type": "Point",
     "coordinates": [
@@ -1947,6 +1913,54 @@
     "isik": "Harry Tulp",
     "tekst": "Vene vägedele üle antud vangid suleti väikelinna serval küüni. Mehed matsid küüni põrandasse oma pagunid, sõduriraamatud ja aumärgid. Linna nimi ei ole teada; punkt on ligikaudne.",
     "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 104",
+    "polv": [
+     2
+    ],
+    "lingid": [],
+    "suhe": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.5684,
+     51.2465
+    ]
+   },
+   "properties": {
+    "koht": "lublin",
+    "aasta": 1944.15,
+    "kuupaev": "24.02.1944",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "jõudis laatsaretrongiga Lublini reservlaatsaretti III; 28.02.1944 reieoperatsioon, hiljem ülalõualuu operatsioon",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 86–88; Lisa 2",
+    "polv": [
+     2
+    ],
+    "lingid": [],
+    "suhe": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.235,
+     59.33
+    ]
+   },
+   "properties": {
+    "koht": "klooga",
+    "aasta": 1944.62,
+    "kuupaev": "08.1944",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "väljaõppeinstruktor tagavararügemendis; kohtus vend Guidoga",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 93",
     "polv": [
      2
     ],

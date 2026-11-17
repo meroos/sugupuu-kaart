@@ -1348,6 +1348,171 @@
      2
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      31.2,
+      49.2
+     ],
+     [
+      22.5684,
+      51.2465
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T18",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "02.1944",
+    "aasta": 1944.13,
+    "kindlus": "osaliselt",
+    "tekst": "Sai Tšerkassõ kotis haavata (5.02.1944) ja väljamurdel 16.–17.02.1944 uuesti: kild parema silma alt näkku ja kild paremasse reide. Lennukiga viidi ta Umani välilaatsaretti, sealt laatsaretrongiga Lublini reservlaatsaretti III (24.02.1944). Lisa 2 järgi sai ta Tšerkassõ kotis haavata neli korda.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 80–88; Lisa 2; memoriaal.ee (haavatud 5.02.1944)",
+    "liikumine": "haavatuna",
+    "lahtekoht": "olsana",
+    "sihtkoht": "lublin",
+    "polv": [
+     2
+    ],
+    "pool": "Saksa pool, pataljon Narva"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      22.5684,
+      51.2465
+     ],
+     [
+      25.335,
+      59.336
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T19",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "kevad–juuni 1944",
+    "aasta": 1944.4,
+    "kindlus": "osaliselt",
+    "tekst": "Pärast laatsaretti oli ta puhkusel Tallinnas vanemate juures, kes elasid pärast 9.03.1944 pommitamist Sakala tänaval. Siis läks ta tagasi pataljoni Narva juurde, mis oli Kehras ümberformeerimisel (20. SS-Füsilier-Bataillon). Ta oli allohvitser Kikase RK-rühma trupiülem.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 89–90; Lisa 2",
+    "liikumine": "teenistus",
+    "lahtekoht": "lublin",
+    "sihtkoht": "kehra",
+    "polv": [
+     2
+    ],
+    "pool": "Saksa pool, 20. Eesti diviis"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.335,
+      59.336
+     ],
+     [
+      27.725,
+      59.3667
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T20",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "06.–25.07.1944",
+    "aasta": 1944.5,
+    "kindlus": "osaliselt",
+    "tekst": "Täiendatud pataljon viidi Narva rindele. Jaanipäeva ja võidupüha pidasid nad reservis Sininõmmel, siis olid positsioonid Kulgu jõe suudme lähedal soos. 25.07.1944, Auvere lahingu algul, tuli kutse sõjakooli; Lisa 2 kirjutab „Sinimägedest Neweklau sõjakooli“. Sinimägede lahingutes (26.07.–10.08.1944) ta raamatu järgi enam ei osalenud.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 90–92; Lisa 2",
+    "liikumine": "teenistus",
+    "lahtekoht": "kehra",
+    "sihtkoht": "sinimaed",
+    "polv": [
+     2
+    ],
+    "pool": "Saksa pool, 20. Eesti diviis"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      27.725,
+      59.3667
+     ],
+     [
+      24.235,
+      59.33
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T21",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "08.1944",
+    "aasta": 1944.6,
+    "kindlus": "osaliselt",
+    "tekst": "Sõjakooli minejad ei pääsenud Riiast edasi ja jäeti Kloogale tagavararügemendi juurde. Harry oli väljaõppeinstruktor. Kloogal kohtus ta vend Guidoga, kes oli tulnud eriväljaõppelt Prantsusmaalt.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 92–93",
+    "liikumine": "teenistus",
+    "lahtekoht": "sinimaed",
+    "sihtkoht": "klooga",
+    "polv": [
+     2
+    ],
+    "pool": "Saksa pool, 20. Eesti diviis"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      24.235,
+      59.33
+     ],
+     [
+      14.5447,
+      49.7517
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T22",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "11.–21.09.1944",
+    "aasta": 1944.7,
+    "kindlus": "osaliselt",
+    "tekst": "11.09.1944 sõitsid sõjakooli minejad laevaga Paldiskist Danzigi, sealt rongiga Neweklausse (Tloskau loss), kuhu nad jõudsid 21.09.1944, samal päeval, kui Tallinn langes. Paldiski sadamas nägi ta väikest tüdrukut, kes tõi kaarikuga oma onu Riho Piirsalu laevale; aastaid hiljem selgus, et see oli Heli.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 93–96, 192; Lisa 2",
+    "liikumine": "opingud",
+    "lahtekoht": "klooga",
+    "sihtkoht": "neveklau",
+    "polv": [
+     2
+    ],
+    "pool": "Saksa pool, Eesti sõjakool"
+   }
   }
  ]
 }
