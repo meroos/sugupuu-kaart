@@ -898,6 +898,167 @@
     "type": "LineString",
     "coordinates": [
      [
+      14.5447,
+      49.7517
+     ],
+     [
+      15.7194,
+      50.9044
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T12",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "03.–05.1945",
+    "aasta": 1945.2,
+    "kindlus": "osaliselt",
+    "tekst": "Pärast Neweklau sõjakooli (21.09.1944–03.1945) teenis ta ohvitserina väeosas. Sõja lõpus, umbes 9.05.1945, oli ta Hirschbergi (Jelenia Góra) lähedal. Öö veedeti ühe väikelinna pargis ja hommikul tuli teade, et sõda on läbi. Teekond Neweklaust Hirschbergi on joonel lihtsustatud.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 100–103, Lisa 2",
+    "liikumine": "teenistus",
+    "pool": "Saksa pool",
+    "lahtekoht": "neveklau",
+    "sihtkoht": "hirschberg",
+    "polv": [
+     2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      15.7194,
+      50.9044
+     ],
+     [
+      15.1569,
+      50.5874
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T13",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "05.1945",
+    "aasta": 1945.36,
+    "kindlus": "oletus",
+    "tekst": "Umbes saja mehega rühm püüdis minna läbi Böömimaa metsade läände, Inglise-Ameerika tsooni; Prahast, kus 5. maist käis ülestõus, hoiti eemale. Tšehhi rahvusväeosad lasksid rühma läbi, kuid öösel jäid nad metsalagendikul Tšehhi kommunistide varitsusse. Neile lubati, et nad antakse üle inglastele, kuid tähtede järgi oli näha, et neid viiakse itta. Hommikul võtsid neid ühe väikelinna väravas vastu Vene tankid T-34; linnaserva küünis matsid mehed põrandasse pagunid, sõduriraamatud ja aumärgid. Siis viidi nad kogumispunkti staadionile, mis Harry arvates võis olla Turnau (Turnov). Eestlased registreeriti eraldi; SS-tunnustega mehi tapeti. Väikelinn on teadmata ja Turnov on Harry oletus.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 103–104",
+    "liikumine": "vangilangemine",
+    "lahtekoht": "hirschberg",
+    "sihtkoht": "turnov",
+    "polv": [
+     2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      15.1569,
+      50.5874
+     ],
+     [
+      14.9872,
+      51.1528
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T14",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "05.–06.1945",
+    "aasta": 1945.4,
+    "kindlus": "osaliselt",
+    "tekst": "Görlitzis oli kogumispunkt koolimajas. Eestlased viidi linna teises servas asuva tehase hoovile ja aeti seejärel kolonnis linnast linna.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 104–105",
+    "liikumine": "vangilangemine",
+    "lahtekoht": "turnov",
+    "sihtkoht": "gorlitz",
+    "polv": [
+     2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      14.9872,
+      51.1528
+     ],
+     [
+      26.047,
+      57.7769
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T15",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "06.1945",
+    "aasta": 1945.44,
+    "kindlus": "osaliselt",
+    "tekst": "Ühel hommikul jäid Harry ja tema kaaslased Lepp ja Kell kolonnist lihtsalt maha. Mahajäetud majadest leidsid nad tsiviilriided ja kolm kummideta jalgratast. Läände ei pääsenud, sest patrulle oli liiga palju, ja nad otsustasid minna Eestisse. Vene komandandi saatekirjas muutsid nad lilla tindiga sihtkohaks „Revel“. Oderi ääres pidasid poolakad nad kinni ja panid tööle; nad põgenesid ja läksid valvatud silla asemel üle Saksa miinivälja jõeluhal, kus nad leidsid kõrkjatest paadi ja sõudsid üle. Rattad vahetasid nad hiljem kolme leivapätsi vastu. Leedus pidas NKVD nad kinni, kuid lasi Eestisse minejad lahti; edasi sõideti kaubarongiga ja üks pioneeripataljon pani nad mitmeks päevaks liipreid vahetama. Teekond Poola ja Leedu kaudu on joonel lihtsustatud; Oderi ületuskoht ei ole teada.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 105–107, Lisa 2",
+    "liikumine": "pogenemine_vangist",
+    "lahtekoht": "gorlitz",
+    "sihtkoht": "valga",
+    "polv": [
+     2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      26.047,
+      57.7769
+     ],
+     [
+      24.7536,
+      59.437
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T16",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "06.1945",
+    "aasta": 1945.46,
+    "kindlus": "osaliselt",
+    "tekst": "Valgas said nad öömaja ühe naise juures, kelle nagis rippus NKVD-lase müts; naine andis neile raha rongipiletiks. Paar jaamavahet hiljem arreteeris patrull nad rongis. Tallinnas olid nad öö raudteemiilitsas Nunne tänaval ja siis Pika tänava NKVD keldris. Legendi järgi olid nad Saksamaal tööteenistuses ja kohtusid teel juhuslikult. Filtratsioonipaberiga nad vabastati ja suunati Türile raudteed taastama. Kodus ütles isa, et Guido just arreteeriti; Guido arreteeriti 19.06.1945, seega jõudis Harry koju ilmselt juuni teisel poolel (järeldus).",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 107–108",
+    "liikumine": "kojutulek",
+    "lahtekoht": "valga",
+    "sihtkoht": "tallinn",
+    "polv": [
+     2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
       24.7536,
       59.437
      ],

@@ -22,13 +22,16 @@
     sundumberpaigutus: { nimi: "sundümberpaigutus asumisel", siia: "paigutati siia ümber", ara: "paigutati ümber", silt: "viidi" },
     abiellumine:       { nimi: "abiellumine",         siia: "abiellus siin",            ara: "abiellus, abielu registreeriti", silt: "abiellusid" },
     vabastamine:       { nimi: "vabastamine asumiselt", siia: "tuli asumiselt tagasi", ara: "vabastati, tuli tagasi", silt: "vabastati" },
+    vangilangemine:    { nimi: "sõjavangistus",       siia: "toodi siia sõjavangina",   ara: "viidi sõjavangina",     silt: "sõjavang" },
+    pogenemine_vangist:{ nimi: "põgenemine vangistusest", siia: "jõudis siia põgenedes", ara: "põgenes vangistusest", silt: "põgenes" },
+    kojutulek:         { nimi: "kojutulek",           siia: "jõudis koju",              ara: "tuli koju",             silt: "koju" },
     tagasitulek:       { nimi: "tagasitulek asumiselt", siia: "tuli asumiselt tagasi", ara: "tuli tagasi Eestisse",  silt: "tagasi Eestisse" }
   };
   const KINDLUS = { toendatud: "tõendatud", osaliselt: "osaliselt tõendatud", oletus: "oletus" };
   const TAPSUS = { aadress: "täpne koht", asula: "asula", rajoon: "ainult piirkond", riik: "ainult riik" };
   const HALO_M = { rajoon: 45000, riik: 380000 };
   const HALO_ERAND = { keila: 9000, sondershausen: 40000, petseri: 20000 };
-  const LUHINIMI = { vankse: "Vankse", kalisz: "Kalisz", sondershausen: "Schwarzburg-Sondershausen", janeda: "Jäneda", lehtse: "Lehtse",
+  const LUHINIMI = { hirschberg: "Hirschberg", turnov: "Turnov", gorlitz: "Görlitz", valga: "Valga", vankse: "Vankse", kalisz: "Kalisz", sondershausen: "Schwarzburg-Sondershausen", janeda: "Jäneda", lehtse: "Lehtse",
                      alavere: "Alavere", kiivera: "Kiivera (Kõpu)",
                      maidla: "Maidla", kohila: "Kohila", tallinn: "Tallinn", tartu: "Tartu (Soola 33)", agja: "Agja (Klooga)",
                      keila: "Keila vald", turinsk: "Turinsk (Sevurallag)", polevoje: "Polevoje",
@@ -36,12 +39,12 @@
                      debica: "Dębica (Heidelager)", neveklau: "Neveklau", izjum: "Izjum", olsana: "Olšana", sennheim: "Sennheim", sinimaed: "Sinimäed", amsterdam: "Amsterdam", stockholm: "Stockholm", lutheri30: "Lutheri 30", suurtartu41: "Suur-Tartu 41", rummu: "Rummu", emumae: "Emumäe", reid: "„Jaen Teär“ reidil", kadriorg: "Kadrioru rand", helda: "Helda (Neo talu)", mahtra: "Mahtra mõis", nomme: "Nõmme kalmistu", krasnojarsk: "Krasnojarski krai" };
   const lyhi = id => LUHINIMI[id] || id;
   // Millisest suumist alates silt näha on
-  const SILDI_SUUM = { vankse: 9, tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, sondershausen: 2.5, janeda: 8, lehtse: 7, sarala: 4,
+  const SILDI_SUUM = { hirschberg: 5, turnov: 6, gorlitz: 5, valga: 6, vankse: 9, tallinn: 2, polevoje: 2.5, turinsk: 2.5, kalisz: 2.5, sondershausen: 2.5, janeda: 8, lehtse: 7, sarala: 4,
                        tartu: 5, kiivera: 5, alavere: 6, priiskovoje: 4, kuusiku: 7,
                        kohila: 7, maidla: 7, keila: 8, agja: 8, petseri: 5,
                        debica: 3, neveklau: 3.5, izjum: 3, olsana: 3, sennheim: 3, krasnojarsk: 3, sinimaed: 6, amsterdam: 3, stockholm: 3, lutheri30: 12, suurtartu41: 13, rummu: 8, emumae: 7, reid: 9, kadriorg: 10, helda: 8, mahtra: 8, nomme: 9 };
   // Kaare kõverus üksikute teekondade kaupa (muidu grupi oma)
-  const K_ERAND = { T11: 0.35, T8: 0.18, T9: 0.22, T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, V13: 0.08, W2c: 0.35, W2d: 0.3 };
+  const K_ERAND = { T11: 0.35, T8: 0.18, T9: 0.22, T5: 0.2, T6: 0.18, T7: 0.25, V7: 0.2, V8: 0.27, T3: 0.33, V10: 0.5, V13: 0.08, T15: 0.06, W2c: 0.35, W2d: 0.3 };
   // Kaare sildi asukoht (punkti indeks 0–64); vaikimisi keskel
   const SILT_I = { V6: 46, V7: 44, V8: 22, T3: 32, V11: 36, T4: 30, V13: 40 };
 

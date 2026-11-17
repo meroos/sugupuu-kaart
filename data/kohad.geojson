@@ -582,6 +582,70 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     15.7194,
+     50.9044
+    ]
+   },
+   "properties": {
+    "id": "hirschberg",
+    "nimi": "Hirschberg (Jelenia Góra), Alam-Sileesia",
+    "tapsus": "asula",
+    "markus": "1945. a mais olid selle ümbruses Eesti diviisi väeosad."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.1569,
+     50.5874
+    ]
+   },
+   "properties": {
+    "id": "turnov",
+    "nimi": "Turnau (Turnov), Böömimaa",
+    "tapsus": "asula",
+    "markus": "Sõjavangide kogumispunkt staadionil; Harry arvates „võis olla Turnau“, seega oletus."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.9872,
+     51.1528
+    ]
+   },
+   "properties": {
+    "id": "gorlitz",
+    "nimi": "Görlitz",
+    "tapsus": "asula",
+    "markus": "Sõjavangide kogumispunkt 1945. a mais–juunis."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     26.047,
+     57.7769
+    ]
+   },
+   "properties": {
+    "id": "valga",
+    "nimi": "Valga",
+    "tapsus": "asula",
+    "markus": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      31.2,
      49.2
     ]
