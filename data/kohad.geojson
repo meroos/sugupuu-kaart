@@ -656,6 +656,22 @@
     "tapsus": "asula",
     "markus": "Korsun–Tšerkassõ koti lõunaserv; Wiking kaitses Olšanat 1944. a jaanuari lõpus ja veebruaris. Koordinaat on ligikaudne."
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.25,
+     50.7
+    ]
+   },
+   "properties": {
+    "id": "kuun",
+    "nimi": "Küün väikelinna serval, Põhja-Böömimaa (ligikaudne)",
+    "tapsus": "rajoon",
+    "markus": "Asukoht on oletus. Raamatu järgi viidi vangid öö jooksul itta väikelinnani, mille väravas olid Vene tankid T-34, ja suleti linnaserva küüni. Järgmine peatus oli staadion, mis Harry arvates võis olla Turnau. Punkt on Hirschbergi, Liberci ja Turnovi vahelise ala keskel; linna nimi ei ole teada."
+   }
   }
  ]
 }

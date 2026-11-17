@@ -935,8 +935,8 @@
       50.9044
      ],
      [
-      15.1569,
-      50.5874
+      15.25,
+      50.7
      ]
     ]
    },
@@ -947,11 +947,11 @@
     "aeg": "05.1945",
     "aasta": 1945.36,
     "kindlus": "oletus",
-    "tekst": "Umbes saja mehega rühm püüdis minna läbi Böömimaa metsade läände, Inglise-Ameerika tsooni; Prahast, kus 5. maist käis ülestõus, hoiti eemale. Tšehhi rahvusväeosad lasksid rühma läbi, kuid öösel jäid nad metsalagendikul Tšehhi kommunistide varitsusse. Neile lubati, et nad antakse üle inglastele, kuid tähtede järgi oli näha, et neid viiakse itta. Hommikul võtsid neid ühe väikelinna väravas vastu Vene tankid T-34; linnaserva küünis matsid mehed põrandasse pagunid, sõduriraamatud ja aumärgid. Siis viidi nad kogumispunkti staadionile, mis Harry arvates võis olla Turnau (Turnov). Eestlased registreeriti eraldi; SS-tunnustega mehi tapeti. Väikelinn on teadmata ja Turnov on Harry oletus.",
+    "tekst": "Umbes saja mehega rühm püüdis minna läbi Böömimaa metsade läände, Inglise-Ameerika tsooni; Prahast, kus 5. maist käis ülestõus, hoiti eemale. Tšehhi rahvusväeosad lasksid rühma läbi, kuid öösel jäid nad metsalagendikul Tšehhi kommunistide varitsusse. Neile lubati, et nad antakse üle inglastele, kuid tähtede järgi oli näha, et neid viiakse itta. Hommikul võtsid neid ühe väikelinna väravas vastu Vene tankid T-34; linnaserva küünis matsid mehed põrandasse pagunid, sõduriraamatud ja aumärgid. Väikelinn on teadmata ja küüni punkt on ligikaudne.",
     "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 103–104",
     "liikumine": "vangilangemine",
     "lahtekoht": "hirschberg",
-    "sihtkoht": "turnov",
+    "sihtkoht": "kuun",
     "polv": [
      2
     ]
@@ -1312,6 +1312,38 @@
     "pool": "Saksa pool, pataljon Narwa",
     "lahtekoht": "izjum",
     "sihtkoht": "olsana",
+    "polv": [
+     2
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      15.25,
+      50.7
+     ],
+     [
+      15.1569,
+      50.5874
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T13b",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "aeg": "05.1945",
+    "aasta": 1945.37,
+    "kindlus": "oletus",
+    "tekst": "Küünis veedeti päev ja öö. Seejärel viidi vangid suuremasse kogumispunkti staadionil, mis Harry arvates võis olla Turnau (Turnov). Eestlased registreeriti eraldi; SS-tunnustega mehi tapeti.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 104",
+    "liikumine": "vangilangemine",
+    "lahtekoht": "kuun",
+    "sihtkoht": "turnov",
     "polv": [
      2
     ]

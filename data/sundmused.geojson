@@ -1929,6 +1929,30 @@
     ],
     "suhe": null
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.25,
+     50.7
+    ]
+   },
+   "properties": {
+    "koht": "kuun",
+    "aasta": 1945.355,
+    "kuupaev": "umbes 10.05.1945",
+    "grupp": "tulp",
+    "isik": "Harry Tulp",
+    "tekst": "Vene vägedele üle antud vangid suleti väikelinna serval küüni. Mehed matsid küüni põrandasse oma pagunid, sõduriraamatud ja aumärgid. Linna nimi ei ole teada; punkt on ligikaudne.",
+    "allikas": "H. Tulp, „Retk läbi punase udu“ (Tartu 2001), lk 104",
+    "polv": [
+     2
+    ],
+    "lingid": [],
+    "suhe": null
+   }
   }
  ]
 }
